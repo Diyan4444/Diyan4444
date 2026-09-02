@@ -1,438 +1,387 @@
 <!-- ========================================================= -->
-
 <!--                        HEADER                             -->
-
 <!-- ========================================================= -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d47a1,50:0077b6,100:00bcd4&height=230&section=header&text=DIYAN4444&fontSize=65&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:0d47a1,50:0077b6,100:00bcd4&height=230&section=header&text=Diyan&fontSize=65&fontColor=ffffff&animation=fadeIn&fontAlignY=35"
+    width="100%"
+    alt="Header"
+  />
 </p>
 
-<h1 align="center">Hey, I'm Diyan 👋</h1>
+<h2 align="center">
+  <span style="color:#00bfff;">IT Student • Developer • Builder</span>
+</h2>
 
 <p align="center">
-  <strong>IT Student • Developer • Builder • Problem Solver</strong>
+  <strong>
+    I build things, break things, fix things, and occasionally wonder why the code worked in the first place.
+  </strong>
 </p>
 
+<br>
+
+<!-- ======================== SOCIALS ======================== -->
+
 <p align="center">
-  I build things, break things, fix things, and occasionally wonder why the code worked in the first place.
+  <a href="https://github.com/Diyan4444" target="_blank">
+    <img
+      src="https://cdn.simpleicons.org/github/181717/ffffff"
+      width="40"
+      height="40"
+      alt="GitHub"
+    />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/" target="_blank">
+    <img
+      src="https://skillicons.dev/icons?i=linkedin"
+      width="40"
+      height="40"
+      alt="LinkedIn"
+    />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://instagram.com/diyanshah_xo" target="_blank">
+    <img
+      src="https://cdn.simpleicons.org/instagram/E4405F"
+      width="40"
+      height="40"
+      alt="Instagram"
+    />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:diyanshah2301@gmail.com">
+    <img
+      src="https://cdn.simpleicons.org/gmail/EA4335"
+      width="40"
+      height="40"
+      alt="Gmail"
+    />
+  </a>
 </p>
+
+<br>
 
 <p align="center">
   <a href="https://github.com/Diyan4444">
-    <img src="https://img.shields.io/badge/GitHub-Diyan4444-181717?style=for-the-badge&logo=github&logoColor=white">
+    <img src="https://img.shields.io/github/followers/Diyan4444?style=for-the-badge&logo=github&label=Followers" />
   </a>
-  <a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+  <a href="https://github.com/Diyan4444?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-9-blue?style=for-the-badge&logo=github" />
+  </a>
+  <a href="mailto:diyanshah2301@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail" />
   </a>
 </p>
-
----
-
-# 📑 Table of Contents
-
-* [🧑‍💻 About Me](#-about-me)
-* [⚡ Quick Snapshot](#-quick-snapshot)
-* [🛠️ Tech Stack](#️-tech-stack)
-
-  * [💻 Languages](#-languages)
-  * [🌐 Web Development](#-web-development)
-  * [🗄️ Backend & Databases](#️-backend--databases)
-  * [🤖 AI / Data / Computer Vision](#-ai--data--computer-vision)
-  * [🎮 Game Development](#-game-development)
-  * [🔧 Tools](#-tools)
-* [🚀 Domains & Projects](#-domains--projects)
-* [📚 What I'm Learning](#-what-im-learning)
-* [🔥 Development Philosophy](#-development-philosophy)
-* [🎯 Goals](#-goals)
-* [🌐 Connect With Me](#-connect-with-me)
-* [⚡ Fun Fact](#-fun-fact)
 
 ---
 
 # 🧑‍💻 About Me
 
-I'm a **B.Tech Information Technology student at VJTI Mumbai**, interested in software development, web development, AI/ML, game development, and building practical products.
+I'm **Diyan Shah**, a B.Tech Information Technology student at **VJTI Mumbai**, interested in software development, AI/ML, full-stack development, computer vision, game development and building practical products.
 
-I enjoy turning ideas into working projects and learning new technologies through actual implementation rather than just tutorials.
+I prefer learning by actually building things rather than only following tutorials.
 
-My interests currently span across several areas of development, including:
+### Currently interested in:
 
-* 💻 Software Development
-* 🌐 Full-Stack Web Development
-* 🤖 Artificial Intelligence & Machine Learning
-* 👁️ Computer Vision
-* 🎮 Game Development
-* 🧠 Data Structures & Algorithms
-* 🎨 UI/UX and interactive interfaces
-* 🚀 Product development
-
-I'm especially interested in projects where **technology, design and problem solving** come together.
-
-Rather than limiting myself to one particular domain, I like experimenting with different technologies and understanding how they can be combined to build useful applications.
+- 💻 Software Development
+- 🌐 Full-Stack Web Development
+- 🤖 Artificial Intelligence & Machine Learning
+- 👁️ Computer Vision
+- 🎮 Game Development
+- 📊 Data & Visualization
+- 🧠 Data Structures & Algorithms
+- 🎨 UI/UX & Interactive Interfaces
+- 🚀 Product Development
 
 ---
 
-# ⚡ Quick Snapshot
+# ⭐ Featured Projects
 
-<table align="center">
+<table align="center" width="100%">
 <tr>
 
-<td align="center" width="180">
+<td width="50%" valign="top">
 
-### 🎓
+<h3>💇 Glamourly</h3>
 
-**Education**
+<p>
+<strong>Salon discovery & reservation marketplace.</strong>
+</p>
 
-B.Tech IT
-VJTI Mumbai
+<p>
+A full-stack platform designed to help users discover salons,
+explore services and reserve appointments.
+</p>
 
-</td>
-
-<td align="center" width="180">
-
-### 💻
-
-**Primary Focus**
-
-Software
-Development
-
-</td>
-
-<td align="center" width="180">
-
-### 🤖
-
-**Exploring**
-
-AI / ML
-Computer Vision
+<p>
+<code>Next.js</code>
+<code>React</code>
+<code>Node.js</code>
+<code>MongoDB</code>
+</p>
 
 </td>
 
-<td align="center" width="180">
+<td width="50%" valign="top">
 
-### 🎮
+<h3>🌊 BlueByte AI</h3>
 
-**Also Building**
+<p>
+<strong>AI-driven marine data & intelligence platform.</strong>
+</p>
 
-Games
-& Interactive Apps
+<p>
+A unified platform combining marine data, AI-driven analysis
+and interactive data visualization.
+</p>
+
+<p>
+<code>Python</code>
+<code>AI/ML</code>
+<code>JavaScript</code>
+<code>Data Visualization</code>
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h3>⚔️ Rune-Striker</h3>
+
+<p>
+<strong>2D action platformer built with Godot.</strong>
+</p>
+
+<p>
+A pixel-art game focused on combat, exploration,
+game mechanics and interactive environments.
+</p>
+
+<p>
+<code>Godot</code>
+<code>GDScript</code>
+<code>Game Development</code>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>🎬 YouTube → MP4</h3>
+
+<p>
+<strong>Web-based media utility.</strong>
+</p>
+
+<p>
+A web application exploring frontend development,
+media processing and interactive user interfaces.
+</p>
+
+<p>
+<code>HTML</code>
+<code>CSS</code>
+<code>JavaScript</code>
+</p>
 
 </td>
 
 </tr>
 </table>
 
-<br>
-
-<p align="center">
-  <strong>Currently learning, experimenting, building and improving.</strong>
-</p>
-
 ---
 
-# 🛠️ Tech Stack
+# 💻 Tech Stack
 
-## 💻 Languages
+<div align="center">
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,python,javascript,html,css,json" />
-</p>
-
-<p align="center">
-
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge\&logo=cplusplus\&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge\&logo=json\&logoColor=white)
-
-</p>
-
----
-
-## 🌐 Web Development
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,nodejs,tailwind,react" />
-</p>
-
-<p align="center">
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge\&logo=nextdotjs\&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
-
-</p>
-
----
-
-## 🗄️ Backend & Databases
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,mongodb" />
-</p>
-
-<p align="center">
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
-
-</p>
-
----
-
-## 🤖 AI / Data / Computer Vision
-
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge\&logo=opencv\&logoColor=white)
-![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge\&logo=chartdotjs\&logoColor=white)
-
-</p>
-
-I'm exploring how AI and data processing can be used to turn raw information into useful insights.
-
-Areas of interest include:
-
-* Machine Learning
-* Data processing
-* Computer Vision
-* OpenCV
-* Data visualization
-* AI-assisted analysis
-* Practical AI applications
-
----
-
-## 🎮 Game Development
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=godot" />
-</p>
-
-<p align="center">
-
-![Godot](https://img.shields.io/badge/Godot-478CBF?style=for-the-badge\&logo=godotengine\&logoColor=white)
-![GDScript](https://img.shields.io/badge/GDScript-478CBF?style=for-the-badge\&logo=godotengine\&logoColor=white)
-
-</p>
-
-I've also explored game development using **Godot 4**, working with 2D physics, player movement, enemies, interactions, level design and game-state systems.
-
----
-
-## 🔧 Tools
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,linux,androidstudio" />
-</p>
-
-<p align="center">
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge\&logo=visualstudiocode\&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge\&logo=linux\&logoColor=black)
-![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge\&logo=androidstudio\&logoColor=white)
-
-</p>
-
----
-
-# 🚀 Domains & Projects
-
-Here are some of the areas and projects I've worked on while exploring different aspects of development.
-
-<table align="center">
+<table>
 <tr>
 
-<td align="center" width="250">
-
-### ⚔️ Rune-Striker
-
-**2D Game Development**
-
-Godot • GDScript • 2D Physics
-
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=cpp" width="70">
+<br>
+<strong>C++</strong>
 </td>
 
-<td align="center" width="250">
-
-### 💇 Glamourly
-
-**Full-Stack Web Development**
-
-Next.js • React • TypeScript • MongoDB
-
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=python" width="70">
+<br>
+<strong>Python</strong>
 </td>
 
-<td align="center" width="250">
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=html" width="70">
+<br>
+<strong>HTML5</strong>
+</td>
 
-### 🌊 BlueByte AI
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=css" width="70">
+<br>
+<strong>CSS3</strong>
+</td>
 
-**AI • Marine Data • SIH Project**
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=javascript" width="70">
+<br>
+<strong>JavaScript</strong>
+</td>
 
-Python • JavaScript • Data Visualization
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=react" width="70">
+<br>
+<strong>React</strong>
+</td>
 
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=nextjs" width="70">
+<br>
+<strong>Next.js</strong>
+</td>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=nodejs" width="70">
+<br>
+<strong>Node.js</strong>
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=mongodb" width="70">
+<br>
+<strong>MongoDB</strong>
+</td>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=linux" width="70">
+<br>
+<strong>Linux</strong>
+</td>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=github" width="70">
+<br>
+<strong>GitHub</strong>
+</td>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=godot" width="70">
+<br>
+<strong>Godot</strong>
+</td>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=androidstudio" width="70">
+<br>
+<strong>Android Studio</strong>
+</td>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=kotlin" width="70">
+<br>
+<strong>Kotlin</strong>
+</td>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=vscode" width="70">
+<br>
+<strong>VS Code</strong>
+</td>
+
+<td align="center" width="140">
+<img src="https://skillicons.dev/icons?i=figma" width="70">
+<br>
+<strong>Figma</strong>
 </td>
 
 </tr>
 </table>
 
+</div>
+
 <br>
-
-### 💻 Areas I've Worked On
-
-* 🌐 Full-Stack Web Applications
-* 🤖 AI / Machine Learning
-* 👁️ Computer Vision
-* 🌊 Marine Intelligence & Data Platforms
-* 🎮 2D Game Development
-* 📊 Data Visualization
-* 🗄️ Backend & Database Systems
-* 📱 Application Development
-* 🎨 Interactive UI/UX
-* 🧠 DSA & Problem Solving
-
----
-
-# 📚 What I'm Learning
-
-I'm continuously expanding my development skills across multiple areas.
-
-### 💻 Programming
-
-* C++
-* Python
-* JavaScript
-* Data Structures & Algorithms
-* Problem Solving
-* Object-Oriented Programming
-
-### 🌐 Web Development
-
-* React
-* Next.js
-* TypeScript
-* Node.js
-* REST APIs
-* Database integration
-* Authentication
-* Full-stack architecture
-
-### 🤖 AI / ML
-
-* Machine Learning
-* Computer Vision
-* OpenCV
-* Data processing
-* AI-assisted applications
-* Data visualization
-
-### 🎮 Game Development
-
-* Godot
-* GDScript
-* 2D Physics
-* Game mechanics
-* Level design
-* Interactive systems
-
----
-
-# 🔥 Development Philosophy
-
-### Build > Watch
-
-I learn best by actually building things.
-
-Instead of spending all my time watching tutorials, I prefer taking an idea and figuring out what is required to turn it into a working project.
-
-### Break Things
-
-Not everything works on the first attempt.
-
-Debugging errors, breaking implementations and understanding why something failed is part of the learning process.
-
-### Learn By Doing
-
-Every project is an opportunity to learn something new.
-
-Whether it is a web application, game, AI project or something completely different, I try to use projects as a way to understand technologies through implementation.
-
-### Keep Experimenting
-
-I'm not limiting myself to one specific area of development.
-
-I enjoy exploring different technologies and understanding how different areas of software development connect with each other.
-
----
-
-# 🎯 Goals
-
-My current goals are focused on becoming a stronger software developer while continuing to explore different areas of technology.
-
-### Short-Term
-
-* Improve DSA and problem-solving skills
-* Build more full-stack applications
-* Strengthen C++ and Python
-* Learn more about AI/ML
-* Improve software architecture knowledge
-* Build larger and more complete projects
-
-### Long-Term
-
-* Become a strong full-stack developer
-* Develop deeper expertise in AI/ML
-* Build products that solve real problems
-* Contribute to meaningful open-source projects
-* Work on technically challenging projects
-* Continue experimenting across different areas of technology
-
-
----
-
-# 🌐 Connect With Me
-
-<p align="center">
-
-<a href="https://github.com/Diyan4444">
-<img src="https://img.shields.io/badge/GitHub-Diyan4444-181717?style=for-the-badge&logo=github&logoColor=white">
-</a>
-
-<a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/">
-<img src="https://img.shields.io/badge/LinkedIn-Diyan%20Shah-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
-
-</p>
-
----
-
-# ⚡ Fun Fact
-
-I like building projects where I can learn something new while making something that actually works.
-
-Sometimes that means a web application.
-
-Sometimes it's a game.
-
-Sometimes it's an AI project.
-
-And sometimes it's spending an unreasonable amount of time figuring out why something that worked five minutes ago suddenly doesn't.
-
----
 
 <p align="center">
   <strong>Building. Learning. Breaking. Fixing. Repeating.</strong>
 </p>
 
+---
+
+# 📊 GitHub Analytics
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d47a1,50:0077b6,100:00bcd4&height=120&section=footer" width="100%">
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Diyan4444&theme=tokyonight"
+    width="95%"
+    alt="GitHub Profile Details"
+  />
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Diyan4444&theme=tokyonight"
+    width="47%"
+    alt="GitHub Statistics"
+  />
+  &nbsp;
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Diyan4444&theme=tokyonight&utcOffset=5.5"
+    width="47%"
+    alt="Productive Time"
+  />
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Diyan4444&theme=tokyonight"
+    width="47%"
+    alt="Repositories per Language"
+  />
+  &nbsp;
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Diyan4444&theme=tokyonight"
+    width="47%"
+    alt="Most Used Languages"
+  />
+</p>
+
+---
+
+# 🔥 Contribution Streak
+
+<p align="center">
+  <img
+    src="https://streak-stats.demolab.com?user=Diyan4444&theme=tokyonight&hide_border=true"
+    width="95%"
+    alt="GitHub Contribution Streak"
+  />
+</p>
+
+---
+
+# 📈 GitHub Activity
+
+<h2 align="center">✨ Diyan's Contribution Graph ✨</h2>
+
+<p align="center">
+  <img
+    src="https://activity-graph.vercel.app/graph?username=Diyan4444&theme=tokyo-night&hide_border=true&area=true"
+    width="100%"
+    alt="Diyan's Contribution Graph"
+  />
 </p>
