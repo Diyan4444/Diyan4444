@@ -43,7 +43,7 @@
     />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://instagram.com/diyanshah_xo" target="_blank">
+  <a href="https://www.instagram.com/diyan_xo/" target="_blank">
     <img
       src="https://cdn.simpleicons.org/instagram/E4405F"
       width="40"
