@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dbBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#100b22"/>
+    </linearGradient>
+    <linearGradient id="dbBox" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1438"/>
+      <stop offset="100%" stop-color="#120e26"/>
+    </linearGradient>
+    <style>
+      .step-title { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #c084fc; letter-spacing: 0.5px; }
+      .step-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11.5px; fill: #cbd5e1; }
+      .step-tag { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 9.5px; fill: #94a3b8; }
+      @keyframes dbFlow { to { stroke-dashoffset: -30; } }
+      .db-arrow { stroke-dasharray: 5, 5; animation: dbFlow 1.5s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="920" height="180" rx="10" fill="url(#dbBg)" stroke="#321f58" stroke-width="1.2"/>
+
+  <g transform="translate(25, 24)">
+    <circle cx="6" cy="6" r="4" fill="#9d4edd"/>
+    <text x="18" y="10" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#c084fc" letter-spacing="1">
+      AI DEBATE ARENA // MULTI-MODEL REASONING &amp; SCORING ORCHESTRATION
+    </text>
+  </g>
+
+  <!-- Step 1: Topic & Stance Ingestion -->
+  <g transform="translate(25, 45)">
+    <rect width="200" height="110" rx="8" fill="url(#dbBox)" stroke="#2f1e54" stroke-width="1.2"/>
+    <text x="14" y="24" class="step-title">01. DEBATE SETUP</text>
+    <text x="14" y="46" class="step-body">Topic &amp; motion config</text>
+    <text x="14" y="64" class="step-body">Select Model A vs B</text>
+    <text x="14" y="82" class="step-body">Difficulty &amp; rounds</text>
+    <text x="14" y="100" class="step-tag" fill="#c084fc">Express.js API</text>
+  </g>
+
+  <line class="db-arrow" x1="225" y1="100" x2="255" y2="100" stroke="#9d4edd" stroke-width="1.8"/>
+  <polygon points="255,96 261,100 255,104" fill="#9d4edd"/>
+
+  <!-- Step 2: OpenRouter Orchestration -->
+  <g transform="translate(265, 45)">
+    <rect width="200" height="110" rx="8" fill="url(#dbBox)" stroke="#9d4edd" stroke-width="1.2" stroke-opacity="0.8"/>
+    <text x="14" y="24" class="step-title">02. LLM ORCHESTRATOR</text>
+    <text x="14" y="46" class="step-body">Turn-based context pipe</text>
+    <text x="14" y="64" class="step-body">Prompt state injection</text>
+    <text x="14" y="82" class="step-body">OpenRouter gateway</text>
+    <text x="14" y="100" class="step-tag" fill="#00e5ff">Multi-Model Gateway</text>
+  </g>
+
+  <line class="db-arrow" x1="465" y1="100" x2="495" y2="100" stroke="#9d4edd" stroke-width="1.8"/>
+  <polygon points="495,96 501,100 495,104" fill="#9d4edd"/>
+
+  <!-- Step 3: Rebuttal & Round Processing -->
+  <g transform="translate(505, 45)">
+    <rect width="200" height="110" rx="8" fill="url(#dbBox)" stroke="#2f1e54" stroke-width="1.2"/>
+    <text x="14" y="24" class="step-title">03. REBUTTAL ENGINE</text>
+    <text x="14" y="46" class="step-body">Cross-examination state</text>
+    <text x="14" y="64" class="step-body">Multi-turn memory loop</text>
+    <text x="14" y="82" class="step-body">Real-time stream response</text>
+    <text x="14" y="100" class="step-tag" fill="#c084fc">MongoDB Persistence</text>
+  </g>
+
+  <line class="db-arrow" x1="705" y1="100" x2="735" y2="100" stroke="#9d4edd" stroke-width="1.8"/>
+  <polygon points="735,96 741,100 735,104" fill="#9d4edd"/>
+
+  <!-- Step 4: Fallacy Scoring -->
+  <g transform="translate(745, 45)">
+    <rect width="150" height="110" rx="8" fill="url(#dbBox)" stroke="#2f1e54" stroke-width="1.2"/>
+    <text x="14" y="24" class="step-title" fill="#00f5d4">04. AI JUDGE</text>
+    <text x="14" y="46" class="step-body">Fallacy detection</text>
+    <text x="14" y="64" class="step-body">Persuasion metrics</text>
+    <text x="14" y="82" class="step-body">Dynamic scorecard</text>
+    <text x="14" y="100" class="step-tag" fill="#c084fc">Objective Evaluation</text>
+  </g>
+</svg>

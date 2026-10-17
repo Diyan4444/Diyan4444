@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b1222"/>
+      <stop offset="100%" stop-color="#0e172a"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="100%" stop-color="#0f192e"/>
+    </linearGradient>
+    <style>
+      .step-title { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #00e5ff; letter-spacing: 0.5px; }
+      .step-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11.5px; fill: #cbd5e1; }
+      .step-tag { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 9.5px; fill: #94a3b8; }
+      @keyframes gFlow { to { stroke-dashoffset: -30; } }
+      .g-arrow { stroke-dasharray: 5, 5; animation: gFlow 1.5s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="920" height="180" rx="10" fill="url(#gBg)" stroke="#1a2d4e" stroke-width="1.2"/>
+
+  <!-- Header Banner Inside -->
+  <g transform="translate(25, 24)">
+    <circle cx="6" cy="6" r="4" fill="#00e5ff"/>
+    <text x="18" y="10" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#00e5ff" letter-spacing="1">
+      GLAMOURLY // ARCHITECTURAL FLOW (MUMBAI SALON ECOSYSTEM)
+    </text>
+  </g>
+
+  <!-- Step 1: User / Provider Discovery -->
+  <g transform="translate(25, 45)">
+    <rect width="195" height="110" rx="8" fill="url(#boxGrad)" stroke="#1f3458" stroke-width="1.2"/>
+    <text x="15" y="24" class="step-title">01. DISCOVERY &amp; GEO</text>
+    <text x="15" y="46" class="step-body">Mumbai salon filtering</text>
+    <text x="15" y="64" class="step-body">Transparent rate cards</text>
+    <text x="15" y="82" class="step-body">AI Concierge assistant</text>
+    <text x="15" y="100" class="step-tag" fill="#00f5d4">Next.js • Tailwind CSS</text>
+  </g>
+
+  <!-- Flow Connector 1 -->
+  <line class="g-arrow" x1="220" y1="100" x2="255" y2="100" stroke="#00e5ff" stroke-width="1.8"/>
+  <polygon points="255,96 261,100 255,104" fill="#00e5ff"/>
+
+  <!-- Step 2: Scheduling & Booking Engine -->
+  <g transform="translate(265, 45)">
+    <rect width="195" height="110" rx="8" fill="url(#boxGrad)" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.7"/>
+    <text x="15" y="24" class="step-title">02. BOOKING ENGINE</text>
+    <text x="15" y="46" class="step-body">Real-time slot lock</text>
+    <text x="15" y="64" class="step-body">Stylist roster allocation</text>
+    <text x="15" y="82" class="step-body">Zero forced prepayment</text>
+    <text x="15" y="100" class="step-tag" fill="#00f5d4">TypeScript • React</text>
+  </g>
+
+  <!-- Flow Connector 2 -->
+  <line class="g-arrow" x1="460" y1="100" x2="495" y2="100" stroke="#00e5ff" stroke-width="1.8"/>
+  <polygon points="495,96 501,100 495,104" fill="#00e5ff"/>
+
+  <!-- Step 3: Persistence & Verification -->
+  <g transform="translate(505, 45)">
+    <rect width="195" height="110" rx="8" fill="url(#boxGrad)" stroke="#1f3458" stroke-width="1.2"/>
+    <text x="15" y="24" class="step-title">03. DATA &amp; COMPLIANCE</text>
+    <text x="15" y="46" class="step-body">Shop Act licensing check</text>
+    <text x="15" y="64" class="step-body">Provider shift management</text>
+    <text x="15" y="82" class="step-body">Customer order history</text>
+    <text x="15" y="100" class="step-tag" fill="#00f5d4">MongoDB • Node.js</text>
+  </g>
+
+  <!-- Flow Connector 3 -->
+  <line class="g-arrow" x1="700" y1="100" x2="735" y2="100" stroke="#00e5ff" stroke-width="1.8"/>
+  <polygon points="735,96 741,100 735,104" fill="#00e5ff"/>
+
+  <!-- Step 4: Confirmation & Passes -->
+  <g transform="translate(745, 45)">
+    <rect width="150" height="110" rx="8" fill="url(#boxGrad)" stroke="#1f3458" stroke-width="1.2"/>
+    <text x="14" y="24" class="step-title" fill="#00f5d4">04. PASS DISPATCH</text>
+    <text x="14" y="46" class="step-body">Instant email pass</text>
+    <text x="14" y="64" class="step-body">Google Maps link</text>
+    <text x="14" y="82" class="step-body">Status updates</text>
+    <text x="14" y="100" class="step-tag" fill="#00e5ff">Offline Payment</text>
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ytBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#140b0e"/>
+      <stop offset="100%" stop-color="#1c0f14"/>
+    </linearGradient>
+    <linearGradient id="ytBox" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c141d"/>
+      <stop offset="100%" stop-color="#1c0c12"/>
+    </linearGradient>
+    <style>
+      .step-title { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #fb7185; letter-spacing: 0.5px; }
+      .step-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11.5px; fill: #f1f5f9; }
+      .step-tag { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 9.5px; fill: #fda4af; }
+      @keyframes ytFlow { to { stroke-dashoffset: -30; } }
+      .yt-arrow { stroke-dasharray: 5, 5; animation: ytFlow 1.5s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="920" height="180" rx="10" fill="url(#ytBg)" stroke="#4c1d2d" stroke-width="1.2"/>
+
+  <g transform="translate(25, 24)">
+    <circle cx="6" cy="6" r="4" fill="#f43f5e"/>
+    <text x="18" y="10" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#fb7185" letter-spacing="1">
+      YOUTUBE CONVERTER (YT-TO-MP4) // MEDIA PROCESSING PIPELINE
+    </text>
+  </g>
+
+  <!-- Step 1: Input URL & Format Probe -->
+  <g transform="translate(25, 45)">
+    <rect width="200" height="110" rx="8" fill="url(#ytBox)" stroke="#4c1d2d" stroke-width="1.2"/>
+    <text x="14" y="24" class="step-title">01. INGESTION &amp; PROBE</text>
+    <text x="14" y="46" class="step-body">YouTube URL validation</text>
+    <text x="14" y="64" class="step-body">Metadata &amp; format probe</text>
+    <text x="14" y="82" class="step-body">MP4 / MP3 bitrate selector</text>
+    <text x="14" y="100" class="step-tag">Flask REST API</text>
+  </g>
+
+  <line class="yt-arrow" x1="225" y1="100" x2="255" y2="100" stroke="#f43f5e" stroke-width="1.8"/>
+  <polygon points="255,96 261,100 255,104" fill="#f43f5e"/>
+
+  <!-- Step 2: Concurrency & Worker Queue -->
+  <g transform="translate(265, 45)">
+    <rect width="200" height="110" rx="8" fill="url(#ytBox)" stroke="#f43f5e" stroke-width="1.2" stroke-opacity="0.8"/>
+    <text x="14" y="24" class="step-title">02. WORKER CONTROL</text>
+    <text x="14" y="46" class="step-body">MAX_CONCURRENT=5 limit</text>
+    <text x="14" y="64" class="step-body">Asynchronous job IDs</text>
+    <text x="14" y="82" class="step-body">Real-time ETA &amp; speed</text>
+    <text x="14" y="100" class="step-tag" fill="#00e5ff">Python Backend Core</text>
+  </g>
+
+  <line class="yt-arrow" x1="465" y1="100" x2="495" y2="100" stroke="#f43f5e" stroke-width="1.8"/>
+  <polygon points="495,96 501,100 495,104" fill="#f43f5e"/>
+
+  <!-- Step 3: Transcoding Engine -->
+  <g transform="translate(505, 45)">
+    <rect width="200" height="110" rx="8" fill="url(#ytBox)" stroke="#4c1d2d" stroke-width="1.2"/>
+    <text x="14" y="24" class="step-title">03. TRANSCODING</text>
+    <text x="14" y="46" class="step-body">yt-dlp stream extraction</text>
+    <text x="14" y="64" class="step-body">FFmpeg audio/video muxing</text>
+    <text x="14" y="82" class="step-body">Temporary file auto-clean</text>
+    <text x="14" y="100" class="step-tag">yt-dlp + FFmpeg</text>
+  </g>
+
+  <line class="yt-arrow" x1="705" y1="100" x2="735" y2="100" stroke="#f43f5e" stroke-width="1.8"/>
+  <polygon points="735,96 741,100 735,104" fill="#f43f5e"/>
+
+  <!-- Step 4: Streaming & Docker Container -->
+  <g transform="translate(745, 45)">
+    <rect width="150" height="110" rx="8" fill="url(#ytBox)" stroke="#4c1d2d" stroke-width="1.2"/>
+    <text x="14" y="24" class="step-title" fill="#00f5d4">04. RUNTIME</text>
+    <text x="14" y="46" class="step-body">Chunked file delivery</text>
+    <text x="14" y="64" class="step-body">Dockerized isolation</text>
+    <text x="14" y="82" class="step-body">Render cloud deployment</text>
+    <text x="14" y="100" class="step-tag">Docker Container</text>
+  </g>
+</svg>

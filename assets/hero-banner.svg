@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="50%" stop-color="#0a1020"/>
+      <stop offset="100%" stop-color="#080d1a"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4"/>
+      <stop offset="50%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#7928ca"/>
+    </linearGradient>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#00e5ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111c33" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0b1324" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#162544" stroke-width="0.8" stroke-opacity="0.6"/>
+      <circle cx="0" cy="0" r="1.5" fill="#00e5ff" fill-opacity="0.25"/>
+    </pattern>
+
+    <style>
+      @keyframes pulseDot {
+        0%, 100% { opacity: 0.3; transform: scale(0.9); }
+        50% { opacity: 1; transform: scale(1.15); }
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -80; }
+      }
+      @keyframes floatParticle {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .telemetry-text {
+        font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+        font-size: 11px;
+        fill: #00e5ff;
+        letter-spacing: 1.5px;
+      }
+      .tagline-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
+        font-size: 14.5px;
+        fill: #94a3b8;
+        letter-spacing: 0.3px;
+      }
+      .name-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 44px;
+        font-weight: 800;
+        letter-spacing: 2.5px;
+      }
+      .badge-text {
+        font-family: 'JetBrains Mono', Consolas, monospace;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      .flowing-line {
+        stroke-dasharray: 8, 12;
+        animation: dashFlow 3s linear infinite;
+      }
+      .live-dot {
+        animation: pulseDot 2s ease-in-out infinite;
+        transform-origin: 104px 44px;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="960" height="320" rx="14" fill="url(#bgGrad)"/>
+  <rect width="960" height="320" rx="14" fill="url(#techGrid)"/>
+
+  <!-- Top Decorative Circuit Borders -->
+  <path d="M 20 40 L 80 40 L 95 25 L 400 25" fill="none" stroke="#1d2e54" stroke-width="1.5"/>
+  <path d="M 560 25 L 865 25 L 880 40 L 940 40" fill="none" stroke="#1d2e54" stroke-width="1.5"/>
+  <circle cx="80" cy="40" r="3" fill="#00e5ff"/>
+  <circle cx="880" cy="40" r="3" fill="#00e5ff"/>
+
+  <!-- Flowing Circuit Line across Header -->
+  <path class="flowing-line" d="M 30 160 L 140 160 L 170 190 L 260 190" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path class="flowing-line" d="M 700 130 L 790 130 L 820 160 L 930 160" fill="none" stroke="#9d4edd" stroke-width="1.5" stroke-opacity="0.7"/>
+
+  <!-- Top Telemetry Status Pill -->
+  <g transform="translate(40, 32)">
+    <rect width="260" height="26" rx="13" fill="#0d172e" stroke="#1d3056" stroke-width="1.2"/>
+    <circle class="live-dot" cx="16" cy="13" r="4.5" fill="#00f5d4" filter="url(#subtleGlow)"/>
+    <text x="32" y="17" class="telemetry-text" fill="#00f5d4">STATUS: ONLINE // READY TO BUILD</text>
+  </g>
+
+  <!-- Top Right Terminal Tag -->
+  <g transform="translate(680, 32)">
+    <rect width="240" height="26" rx="6" fill="#0d172e" stroke="#1d3056" stroke-width="1.2"/>
+    <text x="16" y="17" class="telemetry-text" fill="#94a3b8">SYS.LOC: VJTI_MUMBAI // IT</text>
+  </g>
+
+  <!-- Center Content Block -->
+  <g transform="translate(70, 95)">
+    <!-- Subtitle / Role Tracker -->
+    <text x="0" y="24" class="telemetry-text" fill="#00e5ff" font-weight="600">
+      &gt; ARCHITECTING SYSTEMS • BUILDING INTERFACES • SHIPPING VALUE
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="70" class="name-text" fill="#ffffff">
+      DIYAN <tspan fill="url(#cyanGrad)">SHAH</tspan>
+    </text>
+
+    <!-- One-line Summary -->
+    <text x="0" y="105" class="tagline-text">
+      Information Technology Student @ <tspan fill="#ffffff" font-weight="600">VJTI Mumbai</tspan>.
+      Engineering full-stack architectures, systems tooling, AI workflows &amp; interactive software.
+    </text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 130)">
+      <!-- Badge 1: Academic Base -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="30" rx="6" fill="#0d1830" stroke="#00e5ff" stroke-width="1" stroke-opacity="0.4"/>
+        <circle cx="14" cy="15" r="3.5" fill="#00e5ff"/>
+        <text x="26" y="19" class="badge-text" fill="#f1f5f9">B.Tech IT • VJTI</text>
+      </g>
+
+      <!-- Badge 2: Systems & Full-Stack -->
+      <g transform="translate(155, 0)">
+        <rect width="175" height="30" rx="6" fill="#0d1830" stroke="#00f5d4" stroke-width="1" stroke-opacity="0.4"/>
+        <circle cx="14" cy="15" r="3.5" fill="#00f5d4"/>
+        <text x="26" y="19" class="badge-text" fill="#f1f5f9">Full-Stack &amp; Systems</text>
+      </g>
+
+      <!-- Badge 3: Applied AI & ML -->
+      <g transform="translate(340, 0)">
+        <rect width="155" height="30" rx="6" fill="#0d1830" stroke="#9d4edd" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="14" cy="15" r="3.5" fill="#9d4edd"/>
+        <text x="26" y="19" class="badge-text" fill="#f1f5f9">Applied AI &amp; Data</text>
+      </g>
+
+      <!-- Badge 4: Interactive Systems -->
+      <g transform="translate(505, 0)">
+        <rect width="170" height="30" rx="6" fill="#0d1830" stroke="#f7c948" stroke-width="1" stroke-opacity="0.4"/>
+        <circle cx="14" cy="15" r="3.5" fill="#f7c948"/>
+        <text x="26" y="19" class="badge-text" fill="#f1f5f9">Interactive &amp; Game Dev</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Decorative Radar / Node Orb -->
+  <g transform="translate(830, 180)">
+    <!-- Rotating Ring -->
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#16274a" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.4" stroke-dasharray="6, 6"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#9d4edd" stroke-width="1.5" stroke-opacity="0.6"/>
+    <circle cx="0" cy="0" r="8" fill="#00e5ff" filter="url(#glowCyan)"/>
+
+    <!-- Orbital Satellites -->
+    <circle cx="36" cy="-22" r="3" fill="#00f5d4"/>
+    <circle cx="-30" cy="30" r="3.5" fill="#f7c948"/>
+    <circle cx="-38" cy="-18" r="2.5" fill="#9d4edd"/>
+    <line x1="0" y1="0" x2="36" y2="-22" stroke="#00f5d4" stroke-width="0.8" stroke-opacity="0.5"/>
+    <line x1="0" y1="0" x2="-30" y2="30" stroke="#f7c948" stroke-width="0.8" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Bottom Terminal Status Bar -->
+  <g transform="translate(0, 288)">
+    <rect width="960" height="32" fill="#050811" fill-opacity="0.9" stroke="#16233d" stroke-width="1"/>
+    <text x="35" y="20" class="telemetry-text" fill="#64748b">
+      CORE_STACK: <tspan fill="#00e5ff">TypeScript</tspan> • <tspan fill="#00e5ff">C++</tspan> • <tspan fill="#00e5ff">Python</tspan> • <tspan fill="#00e5ff">Next.js</tspan> • <tspan fill="#00e5ff">Node.js</tspan> • <tspan fill="#00e5ff">Godot</tspan> • <tspan fill="#00e5ff">Docker</tspan>
+    </text>
+    <text x="760" y="20" class="telemetry-text" fill="#00f5d4">
+      [ 17 REPOSITORIES // ACTIVE ]
+    </text>
+  </g>
+
+  <!-- Outer Border Frame with Glowing Corner Accents -->
+  <rect x="1" y="1" width="958" height="318" rx="13" fill="none" stroke="#1b2a4a" stroke-width="1.5"/>
+  <path d="M 1 30 L 1 1 L 30 1" fill="none" stroke="#00e5ff" stroke-width="2.5"/>
+  <path d="M 930 1 L 959 1 L 959 30" fill="none" stroke="#00e5ff" stroke-width="2.5"/>
+  <path d="M 1 290 L 1 319 L 30 319" fill="none" stroke="#00e5ff" stroke-width="2.5"/>
+  <path d="M 930 319 L 959 319 L 959 290" fill="none" stroke="#00e5ff" stroke-width="2.5"/>
+</svg>
