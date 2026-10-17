@@ -9,17 +9,20 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg-midnight: #0c1017;
-      --bg-surface: #121822;
-      --bg-card: #15202c;
-      --border-subtle: #1e2b3c;
-      --border-bright: #2d425c;
-      --accent-green: #22c55e;
-      --accent-lime: #39d353;
+      --bg-midnight: #0a0b0e;
+      --bg-surface: #12141a;
+      --bg-card: #171922;
+      --border-subtle: #331c22;
+      --border-bright: #4a242b;
+      --accent-red: #ff3355;
+      --accent-orange: #ff6b35;
       --accent-amber: #f59e0b;
-      --accent-cyan: #38bdf8;
-      --text-primary: #f0f6fc;
-      --text-secondary: #8b949e;
+      --accent-white: #ffffff;
+      --accent-green: #ff3355;
+      --accent-lime: #ff6b35;
+      --accent-cyan: #ff6b35;
+      --text-primary: #ffffff;
+      --text-secondary: #94a3b8;
       --text-muted: #64748b;
       --font-mono: 'JetBrains Mono', Consolas, monospace;
       --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -38,10 +41,10 @@
       line-height: 1.6;
       overflow-x: hidden;
       background-image: 
-        radial-gradient(circle at 15% 10%, rgba(57, 211, 83, 0.04) 0%, transparent 40%),
-        radial-gradient(circle at 85% 60%, rgba(245, 158, 11, 0.03) 0%, transparent 40%),
-        linear-gradient(rgba(30, 43, 60, 0.2) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(30, 43, 60, 0.2) 1px, transparent 1px);
+        radial-gradient(circle at 15% 10%, rgba(255, 51, 85, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 85% 60%, rgba(255, 107, 53, 0.05) 0%, transparent 40%),
+        linear-gradient(rgba(45, 26, 34, 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 26, 34, 0.25) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
     }
 
@@ -57,7 +60,7 @@
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: var(--accent-lime);
+      background: var(--accent-orange);
     }
 
     .container {

@@ -27,7 +27,7 @@ jobs:
         with:
           github_user_name: Diyan4444
           outputs: |
-            assets/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#39d353&color_dots=#16202c,#123821,#1b5e34,#22c55e,#39d353
+            assets/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#ff3355&color_dots=#161820,#4c1d1d,#881337,#ea580c,#ff6b35
 
       - name: Commit and push generated asset
         run: |

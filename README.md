@@ -12,10 +12,10 @@
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-Diyan4444-22c55e?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=16202c)](https://github.com/Diyan4444)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-39d353?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=16202c)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Diyan4444-f59e0b?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=16202c)](https://leetcode.com/u/diddy4/)
-[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-38bdf8?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=16202c)](mailto:diyanshah2301@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Diyan4444-ef4444?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=171922)](https://github.com/Diyan4444)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-f97316?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=171922)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-diddy4-ff6b35?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=171922)](https://leetcode.com/u/diddy4/)
+[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-ff3355?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=171922)](mailto:diyanshah2301@gmail.com)
 
 </div>
 
@@ -274,15 +274,15 @@ A snapshot of my development activity across 17 public repositories with live co
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Diyan4444&show_icons=true&theme=tokyonight&bg_color=0c1017&border_color=202c3c&title_color=39d353&text_color=94a3b8&icon_color=22c55e&hide_border=false" width="48%" alt="Diyan's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Diyan4444&show_icons=true&theme=radical&bg_color=0a0b0e&border_color=331c22&title_color=ff3355&text_color=cbd5e1&icon_color=ff6b35&hide_border=false" width="48%" alt="Diyan's GitHub Stats" />
   &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Diyan4444&layout=compact&theme=tokyonight&bg_color=0c1017&border_color=202c3c&title_color=39d353&text_color=94a3b8&icon_color=22c55e&hide_border=false" width="48%" alt="Top Languages Used" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Diyan4444&layout=compact&theme=radical&bg_color=0a0b0e&border_color=331c22&title_color=ff3355&text_color=cbd5e1&icon_color=ff6b35&hide_border=false" width="48%" alt="Top Languages Used" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Diyan4444&theme=tokyonight&background=0c1017&border=202c3c&stroke=39d353&ring=22c55e&fire=f59e0b&currStreakLabel=39d353" width="97%" alt="Contribution Streak" />
+  <img src="https://streak-stats.demolab.com?user=Diyan4444&theme=radical&background=0a0b0e&border=331c22&stroke=ff3355&ring=ff6b35&fire=ff3355&currStreakLabel=ff6b35" width="97%" alt="Contribution Streak" />
 </div>
 
 <br>
@@ -332,19 +332,19 @@ I'm always keen to chat about software engineering, developer tooling, or discus
 <div align="center">
 
 <a href="mailto:diyanshah2301@gmail.com">
-  <img src="https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-38bdf8?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=16202c" alt="Send Email" />
+  <img src="https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-ff3355?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=171922" alt="Send Email" />
 </a>
 &nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20Diyan-39d353?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=16202c" alt="Connect on LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20Diyan-f97316?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=171922" alt="Connect on LinkedIn" />
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/Diyan4444" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-22c55e?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=16202c" alt="Follow on GitHub" />
+  <img src="https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-ef4444?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=171922" alt="Follow on GitHub" />
 </a>
 &nbsp;&nbsp;
 <a href="https://leetcode.com/u/diddy4/" target="_blank">
-  <img src="https://img.shields.io/badge/LeetCode-Diyan4444-f59e0b?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=16202c" alt="View LeetCode Profile" />
+  <img src="https://img.shields.io/badge/LeetCode-diddy4-ff6b35?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=171922" alt="View LeetCode Profile" />
 </a>
 
 </div>

@@ -1,98 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" width="100%" height="100%">
   <defs>
     <linearGradient id="wfBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#121820"/>
+      <stop offset="0%" stop-color="#0a0b0e"/>
+      <stop offset="100%" stop-color="#12141a"/>
     </linearGradient>
     <linearGradient id="wfCard" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#141f2a"/>
-      <stop offset="100%" stop-color="#101720"/>
+      <stop offset="0%" stop-color="#18141b"/>
+      <stop offset="100%" stop-color="#121117"/>
     </linearGradient>
     <style>
       .wf-step-num { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; font-weight: 800; }
-      .wf-step-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #f0f6fc; }
-      .wf-step-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; fill: #8b949e; line-height: 1.4; }
-      .wf-step-tag { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 9.5px; fill: #39d353; }
+      .wf-step-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .wf-step-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; fill: #94a3b8; line-height: 1.4; }
+      .wf-step-tag { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 9.5px; fill: #ff6b35; }
       @keyframes wfFlow { to { stroke-dashoffset: -20; } }
       .wf-conn { stroke-dasharray: 4, 4; animation: wfFlow 2s linear infinite; }
     </style>
   </defs>
 
-  <rect width="1000" height="220" rx="12" fill="url(#wfBg)" stroke="#212e3e" stroke-width="1.2"/>
+  <rect width="1000" height="220" rx="12" fill="url(#wfBg)" stroke="#331c22" stroke-width="1.2"/>
 
   <g transform="translate(40, 22)">
-    <text x="0" y="0" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#39d353" letter-spacing="1">
+    <text x="0" y="0" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#ff3355" letter-spacing="1">
       HOW I APPROACH BUILDING THINGS
     </text>
   </g>
 
-  <!-- 5 Equal Phases: width 170 each, gap 16. Total width: 5*170 + 4*16 = 914. x=40 -> ends at 954. Right margin: 46px! -->
+  <!-- 5 Equal Phases: width 170 each, gap 16. Total width: 914. x=40 -> ends at 954 (46px right margin) -->
 
   <!-- Phase 1: Problem & Spec (x=40) -->
   <g transform="translate(40, 44)">
-    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#212e3e" stroke-width="1.2"/>
-    <text x="14" y="24" class="wf-step-num" fill="#39d353">PHASE 01</text>
+    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#4a242b" stroke-width="1.2"/>
+    <text x="14" y="24" class="wf-step-num" fill="#ff3355">PHASE 01</text>
     <text x="14" y="44" class="wf-step-title">Problem &amp; Spec</text>
     <text x="14" y="66" class="wf-step-desc">Break down core user</text>
     <text x="14" y="82" class="wf-step-desc">pain points &amp; system</text>
     <text x="14" y="98" class="wf-step-desc">bottlenecks first.</text>
-    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d141d"/>
-    <text x="18" y="131" class="wf-step-tag">System Blueprint</text>
+    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d0e14"/>
+    <text x="18" y="131" class="wf-step-tag" fill="#ff3355">System Blueprint</text>
   </g>
 
-  <line class="wf-conn" x1="210" y1="118" x2="226" y2="118" stroke="#39d353" stroke-width="1.5"/>
+  <line class="wf-conn" x1="210" y1="118" x2="226" y2="118" stroke="#ff3355" stroke-width="1.5"/>
 
   <!-- Phase 2: Schema & Engine (x=226) -->
   <g transform="translate(226, 44)">
-    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#234e32" stroke-width="1.2"/>
-    <text x="14" y="24" class="wf-step-num" fill="#22c55e">PHASE 02</text>
+    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#4a242b" stroke-width="1.2"/>
+    <text x="14" y="24" class="wf-step-num" fill="#f43f5e">PHASE 02</text>
     <text x="14" y="44" class="wf-step-title">Schema &amp; Logic</text>
     <text x="14" y="66" class="wf-step-desc">Type-safe models,</text>
     <text x="14" y="82" class="wf-step-desc">clean DB schemas &amp;</text>
     <text x="14" y="98" class="wf-step-desc">core state machines.</text>
-    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d141d"/>
-    <text x="18" y="131" class="wf-step-tag" fill="#22c55e">APIs &amp; State Logic</text>
+    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d0e14"/>
+    <text x="18" y="131" class="wf-step-tag" fill="#f43f5e">APIs &amp; State Logic</text>
   </g>
 
-  <line class="wf-conn" x1="396" y1="118" x2="412" y2="118" stroke="#39d353" stroke-width="1.5"/>
+  <line class="wf-conn" x1="396" y1="118" x2="412" y2="118" stroke="#ff6b35" stroke-width="1.5"/>
 
   <!-- Phase 3: Interactive UI (x=412) -->
   <g transform="translate(412, 44)">
-    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#212e3e" stroke-width="1.2"/>
-    <text x="14" y="24" class="wf-step-num" fill="#f59e0b">PHASE 03</text>
+    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#4a242b" stroke-width="1.2"/>
+    <text x="14" y="24" class="wf-step-num" fill="#ff6b35">PHASE 03</text>
     <text x="14" y="44" class="wf-step-title">Frontend &amp; UX</text>
     <text x="14" y="66" class="wf-step-desc">Fast, responsive UI,</text>
     <text x="14" y="82" class="wf-step-desc">dark mode layout &amp;</text>
     <text x="14" y="98" class="wf-step-desc">fluid user feedback.</text>
-    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d141d"/>
-    <text x="18" y="131" class="wf-step-tag" fill="#f59e0b">Next.js • React • CSS</text>
+    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d0e14"/>
+    <text x="18" y="131" class="wf-step-tag" fill="#ff6b35">Next.js • React • CSS</text>
   </g>
 
-  <line class="wf-conn" x1="582" y1="118" x2="598" y2="118" stroke="#39d353" stroke-width="1.5"/>
+  <line class="wf-conn" x1="582" y1="118" x2="598" y2="118" stroke="#ff6b35" stroke-width="1.5"/>
 
   <!-- Phase 4: Resilience & Tests (x=598) -->
   <g transform="translate(598, 44)">
-    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#212e3e" stroke-width="1.2"/>
-    <text x="14" y="24" class="wf-step-num" fill="#38bdf8">PHASE 04</text>
+    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#4a242b" stroke-width="1.2"/>
+    <text x="14" y="24" class="wf-step-num" fill="#f59e0b">PHASE 04</text>
     <text x="14" y="44" class="wf-step-title">Resilience &amp; Tests</text>
     <text x="14" y="66" class="wf-step-desc">Edge-case testing,</text>
     <text x="14" y="82" class="wf-step-desc">offline retry queues &amp;</text>
     <text x="14" y="98" class="wf-step-desc">error recovery.</text>
-    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d141d"/>
-    <text x="18" y="131" class="wf-step-tag" fill="#38bdf8">50+ Tests • Edge Cases</text>
+    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d0e14"/>
+    <text x="18" y="131" class="wf-step-tag" fill="#f59e0b">50+ Tests • Edge Cases</text>
   </g>
 
-  <line class="wf-conn" x1="768" y1="118" x2="784" y2="118" stroke="#39d353" stroke-width="1.5"/>
+  <line class="wf-conn" x1="768" y1="118" x2="784" y2="118" stroke="#ffffff" stroke-width="1.5"/>
 
-  <!-- Phase 5: Ship & Deploy (x=784 -> ends at 954px. Clean 46px margin on right!) -->
+  <!-- Phase 5: Ship & Deploy (x=784 -> ends at 954px) -->
   <g transform="translate(784, 44)">
-    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#234e32" stroke-width="1.2"/>
-    <text x="14" y="24" class="wf-step-num" fill="#39d353">PHASE 05</text>
+    <rect width="170" height="148" rx="8" fill="url(#wfCard)" stroke="#4a242b" stroke-width="1.2"/>
+    <text x="14" y="24" class="wf-step-num" fill="#ffffff">PHASE 05</text>
     <text x="14" y="44" class="wf-step-title">Ship &amp; Deploy</text>
     <text x="14" y="66" class="wf-step-desc">Docker images,</text>
     <text x="14" y="82" class="wf-step-desc">CI/CD workflows &amp;</text>
     <text x="14" y="98" class="wf-step-desc">production hosting.</text>
-    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d141d"/>
-    <text x="18" y="131" class="wf-step-tag" fill="#39d353">Deploy &amp; Monitor</text>
+    <rect x="12" y="118" width="146" height="18" rx="4" fill="#0d0e14"/>
+    <text x="18" y="131" class="wf-step-tag" fill="#ffffff">Deploy &amp; Monitor</text>
   </g>
 </svg>
