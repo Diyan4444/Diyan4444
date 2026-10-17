@@ -367,7 +367,7 @@ I'm always keen to chat about software engineering, developer tooling, or discus
   <img src="https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-22c55e?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=16202c" alt="Follow on GitHub" />
 </a>
 &nbsp;&nbsp;
-<a href="https://leetcode.com/u/Diyan4444/" target="_blank">
+<a href="https://leetcode.com/u/diddy/" target="_blank">
   <img src="https://img.shields.io/badge/LeetCode-Diyan4444-f59e0b?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=16202c" alt="View LeetCode Profile" />
 </a>
 
