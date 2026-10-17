@@ -9,18 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg-midnight: #080c16;
-      --bg-surface: #0e1628;
-      --bg-card: #121c32;
-      --border-subtle: #1c2b4c;
-      --border-bright: #2d4474;
-      --accent-cyan: #00e5ff;
-      --accent-teal: #00f5d4;
-      --accent-violet: #9d4edd;
-      --accent-amber: #f7c948;
-      --accent-rose: #f43f5e;
-      --text-primary: #f8fafc;
-      --text-secondary: #94a3b8;
+      --bg-midnight: #0c1017;
+      --bg-surface: #121822;
+      --bg-card: #15202c;
+      --border-subtle: #1e2b3c;
+      --border-bright: #2d425c;
+      --accent-green: #22c55e;
+      --accent-lime: #39d353;
+      --accent-amber: #f59e0b;
+      --accent-cyan: #38bdf8;
+      --text-primary: #f0f6fc;
+      --text-secondary: #8b949e;
       --text-muted: #64748b;
       --font-mono: 'JetBrains Mono', Consolas, monospace;
       --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -39,10 +38,10 @@
       line-height: 1.6;
       overflow-x: hidden;
       background-image: 
-        radial-gradient(circle at 15% 10%, rgba(0, 229, 255, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 85% 60%, rgba(157, 78, 221, 0.05) 0%, transparent 40%),
-        linear-gradient(rgba(28, 43, 76, 0.15) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(28, 43, 76, 0.15) 1px, transparent 1px);
+        radial-gradient(circle at 15% 10%, rgba(57, 211, 83, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 85% 60%, rgba(245, 158, 11, 0.03) 0%, transparent 40%),
+        linear-gradient(rgba(30, 43, 60, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30, 43, 60, 0.2) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
     }
 
@@ -58,7 +57,7 @@
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: var(--accent-cyan);
+      background: var(--accent-lime);
     }
 
     .container {
@@ -73,7 +72,7 @@
       top: 0;
       z-index: 100;
       backdrop-filter: blur(12px);
-      background: rgba(8, 12, 22, 0.85);
+      background: rgba(12, 16, 23, 0.88);
       border-bottom: 1px solid var(--border-subtle);
     }
     .nav-inner {
@@ -84,9 +83,9 @@
     }
     .nav-brand {
       font-family: var(--font-mono);
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 700;
-      color: var(--accent-cyan);
+      color: var(--accent-lime);
       letter-spacing: 1px;
       display: flex;
       align-items: center;
@@ -96,8 +95,8 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: var(--accent-teal);
-      box-shadow: 0 0 10px var(--accent-teal);
+      background: var(--accent-green);
+      box-shadow: 0 0 10px var(--accent-green);
       animation: pulse 2s infinite;
     }
     .nav-links {
@@ -113,19 +112,19 @@
       transition: color 0.2s;
     }
     .nav-links a:hover {
-      color: var(--accent-cyan);
+      color: var(--accent-lime);
     }
 
     /* Hero */
     .hero-section {
-      padding: 60px 0 40px;
+      padding: 50px 0 30px;
     }
     .hero-card {
       border: 1px solid var(--border-subtle);
-      border-radius: 16px;
+      border-radius: 14px;
       overflow: hidden;
       background: var(--bg-surface);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       transition: border-color 0.3s;
     }
     .hero-card:hover {
@@ -139,18 +138,16 @@
 
     /* Section Headers */
     .section-title {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 800;
       margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
+      color: var(--text-primary);
     }
     .section-tag {
       font-family: var(--font-mono);
       font-size: 11px;
-      color: var(--accent-cyan);
-      letter-spacing: 2px;
+      color: var(--accent-lime);
+      letter-spacing: 1.5px;
       text-transform: uppercase;
       margin-bottom: 6px;
     }
@@ -158,34 +155,60 @@
     /* On-Demand Viewport Animated Elements */
     .viewport-reveal {
       opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .viewport-reveal.is-visible {
       opacity: 1;
       transform: translateY(0);
     }
 
+    /* Live Animated Counter Stats */
+    .counters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .counter-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .counter-number {
+      font-family: var(--font-mono);
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--accent-lime);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .counter-label {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--text-secondary);
+      letter-spacing: 0.5px;
+    }
+
     /* Projects Grid */
     .projects-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 28px;
-      margin-top: 24px;
+      gap: 24px;
+      margin-top: 20px;
     }
     .project-card {
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 14px;
-      padding: 24px;
-      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-      position: relative;
-      overflow: hidden;
+      border-radius: 12px;
+      padding: 22px;
+      transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
     }
     .project-card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-3px);
       border-color: var(--border-bright);
-      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.6);
     }
     .project-header {
       display: flex;
@@ -194,31 +217,32 @@
       margin-bottom: 12px;
     }
     .project-name {
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 700;
       color: #fff;
     }
     .project-repo-link {
       font-family: var(--font-mono);
       font-size: 12px;
-      color: var(--accent-cyan);
+      color: var(--accent-lime);
       text-decoration: none;
       padding: 4px 12px;
       border-radius: 6px;
-      background: rgba(0, 229, 255, 0.1);
-      border: 1px solid rgba(0, 229, 255, 0.2);
-      transition: background 0.2s;
+      background: rgba(57, 211, 83, 0.1);
+      border: 1px solid rgba(57, 211, 83, 0.25);
+      transition: background 0.2s, color 0.2s;
     }
     .project-repo-link:hover {
-      background: rgba(0, 229, 255, 0.2);
+      background: rgba(57, 211, 83, 0.2);
+      color: #fff;
     }
     .project-desc {
       color: var(--text-secondary);
       font-size: 14px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
     .project-diagram {
-      margin: 16px 0;
+      margin: 14px 0;
       border-radius: 8px;
       overflow: hidden;
       border: 1px solid var(--border-subtle);
@@ -232,13 +256,13 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 14px;
+      margin-top: 12px;
     }
     .tech-tag {
       font-family: var(--font-mono);
       font-size: 11px;
       background: var(--bg-card);
-      color: var(--accent-teal);
+      color: var(--accent-green);
       border: 1px solid var(--border-subtle);
       padding: 3px 10px;
       border-radius: 4px;
@@ -247,25 +271,22 @@
     /* Skills Grid */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      margin-top: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
     }
     .skill-card {
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 20px;
+      border-radius: 10px;
+      padding: 18px;
     }
     .skill-category {
       font-family: var(--font-mono);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
-      color: var(--accent-cyan);
+      color: var(--accent-lime);
       margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
     .skill-list {
       display: flex;
@@ -273,58 +294,44 @@
       gap: 8px;
     }
     .skill-item {
-      font-size: 13px;
+      font-size: 12.5px;
       background: var(--bg-card);
       color: var(--text-primary);
       padding: 4px 10px;
-      border-radius: 6px;
+      border-radius: 5px;
       border: 1px solid var(--border-subtle);
     }
 
     /* Footer */
     footer {
       border-top: 1px solid var(--border-subtle);
-      padding: 48px 0;
-      margin-top: 80px;
+      padding: 40px 0;
+      margin-top: 70px;
       text-align: center;
-    }
-    .footer-terminal {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 13px;
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      padding: 10px 24px;
-      border-radius: 8px;
-      color: var(--text-secondary);
-      margin-bottom: 20px;
-    }
-    .footer-terminal span {
-      color: var(--accent-teal);
     }
     .footer-links {
       display: flex;
       justify-content: center;
       gap: 24px;
+      margin-bottom: 14px;
     }
     .footer-links a {
-      color: var(--accent-cyan);
+      color: var(--accent-lime);
       text-decoration: none;
       font-family: var(--font-mono);
       font-size: 13px;
       transition: color 0.2s;
     }
     .footer-links a:hover {
-      color: var(--accent-teal);
+      color: var(--accent-green);
     }
 
-    /* Keyframes */
     @keyframes pulse {
       0%, 100% { opacity: 0.4; }
       50% { opacity: 1; }
     }
 
-    /* Accessibility / Reduced Motion */
+    /* Reduced Motion */
     @media (prefers-reduced-motion: reduce) {
       .viewport-reveal {
         opacity: 1 !important;
@@ -336,29 +343,28 @@
       }
     }
 
-    /* Mobile */
     @media (max-width: 768px) {
       .nav-links { display: none; }
-      .section-title { font-size: 20px; }
+      .section-title { font-size: 19px; }
       .project-header { flex-direction: column; gap: 8px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Sticky Navigation -->
+  <!-- Top Navigation -->
   <header>
     <div class="container nav-inner">
       <div class="nav-brand">
         <div class="pulse-dot"></div>
-        <span>DIYAN SHAH // THE ENGINEERING PLAYGROUND</span>
+        <span>DIYAN SHAH • THE ENGINEERING PLAYGROUND</span>
       </div>
       <ul class="nav-links">
         <li><a href="#network">Network</a></li>
         <li><a href="#profile">Console</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#workflow">Workflow</a></li>
-        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#analytics">Telemetry</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -366,7 +372,7 @@
 
   <main class="container">
 
-    <!-- Hero Section -->
+    <!-- Hero Banner -->
     <section class="hero-section viewport-reveal">
       <div class="hero-card">
         <img src="../assets/hero-banner.svg" alt="Diyan Shah Hero Banner" />
@@ -374,29 +380,29 @@
     </section>
 
     <!-- Engineering Network Section -->
-    <section id="network" style="margin-top: 48px;" class="viewport-reveal">
-      <div class="section-tag">// ARCHITECTURE TOPOLOGY</div>
+    <section id="network" style="margin-top: 40px;" class="viewport-reveal">
+      <div class="section-tag">ENGINEERING TOPOLOGY</div>
       <h2 class="section-title">The Engineering Playground Network</h2>
-      <div class="hero-card" style="margin-top: 16px;">
+      <div class="hero-card" style="margin-top: 14px;">
         <img src="../assets/engineering-network.svg" alt="Engineering Network Topology" />
       </div>
     </section>
 
-    <!-- Identity & Profile HUD Console -->
-    <section id="profile" style="margin-top: 48px;" class="viewport-reveal">
-      <div class="section-tag">// IDENTITY &amp; TELEMETRY MATRIX</div>
-      <h2 class="section-title">Developer Console HUD</h2>
-      <div class="hero-card" style="margin-top: 16px;">
+    <!-- Identity & Developer Console HUD -->
+    <section id="profile" style="margin-top: 40px;" class="viewport-reveal">
+      <div class="section-tag">AUDITED CONSOLE HUD</div>
+      <h2 class="section-title">Developer Console Matrix</h2>
+      <div class="hero-card" style="margin-top: 14px;">
         <img src="../assets/profile-matrix.svg" alt="Profile HUD Matrix" />
       </div>
     </section>
 
     <!-- Project Constellation Showcase -->
-    <section id="projects" style="margin-top: 56px;">
-      <div class="section-tag">// VERIFIED WORK</div>
+    <section id="projects" style="margin-top: 48px;">
+      <div class="section-tag">VERIFIED WORK</div>
       <h2 class="section-title">Project Constellation Showcase</h2>
-      <p style="color: var(--text-secondary); font-size: 14.5px;">
-        Handcrafted systems, developer platforms, and interactive applications grounded in repository source code.
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        Systems, developer platforms, and interactive applications grounded in repository source code.
       </p>
 
       <div class="projects-grid">
@@ -405,10 +411,7 @@
         <article class="project-card viewport-reveal">
           <div class="project-header">
             <div>
-              <h3 class="project-name">Glamourly — Mumbai Salon Discovery &amp; Booking Marketplace</h3>
-              <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 11.5px; margin-top: 4px;">
-                FULL-STACK SAAS • REAL-TIME SCHEDULING • VERIFIED PROVIDERS
-              </p>
+              <h3 class="project-name">Glamourly — Mumbai Salon Discovery &amp; Booking Platform</h3>
             </div>
             <a href="https://github.com/Diyan4444/Glamourly" target="_blank" class="project-repo-link">View Repo ↗</a>
           </div>
@@ -425,7 +428,6 @@
             <span class="tech-tag">Tailwind CSS</span>
             <span class="tech-tag">Node.js</span>
             <span class="tech-tag">MongoDB Atlas</span>
-            <span class="tech-tag">AI Concierge</span>
           </div>
         </article>
 
@@ -434,14 +436,11 @@
           <div class="project-header">
             <div>
               <h3 class="project-name">Leet-Vault — Chrome MV3 Solution Synchronization System</h3>
-              <p style="color: var(--accent-teal); font-family: var(--font-mono); font-size: 11.5px; margin-top: 4px;">
-                BROWSER EXTENSION • DETERMINISTIC FSM • OAUTH BROKER • 50+ TESTS
-              </p>
             </div>
             <a href="https://github.com/Diyan4444/Leet-Vault" target="_blank" class="project-repo-link">View Repo ↗</a>
           </div>
           <p class="project-desc">
-            Production-ready Chrome Extension (Manifest V3) that synchronizes accepted LeetCode solutions to GitHub. Engineered with user-controlled named solutions (e.g., <code>heap-sort.cpp</code>, <code>merge-sort.cpp</code>), snapshot state machine triggered exclusively on submission, zero-PAT OAuth broker, SHA duplicate detection, collision resolution, offline alarm queue, and 18+ language mappings.
+            Chrome Extension (Manifest V3) that synchronizes accepted LeetCode solutions to GitHub. Engineered with user-controlled named solutions (e.g., <code>heap-sort.cpp</code>, <code>merge-sort.cpp</code>), snapshot state machine triggered exclusively on submission, zero-PAT OAuth broker, SHA duplicate detection, collision resolution, offline alarm queue, and 18+ language mappings.
           </p>
           <div class="project-diagram">
             <img src="../assets/pipeline-leetvault.svg" alt="Leet-Vault Pipeline Diagram" />
@@ -461,9 +460,6 @@
           <div class="project-header">
             <div>
               <h3 class="project-name">AI Debate Arena — Multi-Model Argumentation Engine</h3>
-              <p style="color: var(--accent-violet); font-family: var(--font-mono); font-size: 11.5px; margin-top: 4px;">
-                LLM ORCHESTRATION • DUAL-MODEL SPARRING • AUTOMATED JUDGING
-              </p>
             </div>
             <a href="https://github.com/Diyan4444/AI-Debater" target="_blank" class="project-repo-link">View Repo ↗</a>
           </div>
@@ -478,7 +474,7 @@
             <span class="tech-tag">Express.js API</span>
             <span class="tech-tag">MongoDB</span>
             <span class="tech-tag">OpenRouter API</span>
-            <span class="tech-tag">Prompt Engineering</span>
+            <span class="tech-tag">JavaScript (ES6+)</span>
           </div>
         </article>
 
@@ -486,15 +482,12 @@
         <article class="project-card viewport-reveal">
           <div class="project-header">
             <div>
-              <h3 class="project-name">OceanGuard AI — Marine Oil Spill Detection &amp; Vessel Attribution</h3>
-              <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 11.5px; margin-top: 4px;">
-                SMART INDIA HACKATHON 2026 (SIH26143) • SAR SATELLITE RADAR • AIS TELEMETRY
-              </p>
+              <h3 class="project-name">OceanGuard AI — SAR Satellite Oil Spill &amp; AIS Vessel Attribution</h3>
             </div>
             <a href="https://github.com/Diyan4444/OceanGuard" target="_blank" class="project-repo-link">View Repo ↗</a>
           </div>
           <p class="project-desc">
-            AI-powered satellite intelligence system built for Smart India Hackathon 2026. Segments oil slicks from SAR radar imagery, executes hydrodynamic backward-in-time drift trajectory hindcasting to pinpoint exact origin coordinates, and attributes spills to candidate vessels using AIS GPS cross-matching and anomaly scoring.
+            Satellite intelligence system built for Smart India Hackathon 2026. Segments oil slicks from SAR radar imagery, executes hydrodynamic backward-in-time drift trajectory hindcasting to pinpoint exact origin coordinates, and attributes spills to candidate vessels using AIS GPS cross-matching and anomaly scoring.
           </p>
           <div class="project-diagram">
             <img src="../assets/pipeline-oceanguard.svg" alt="OceanGuard Pipeline Diagram" />
@@ -505,7 +498,6 @@
             <span class="tech-tag">React 19 &amp; Vite</span>
             <span class="tech-tag">Leaflet &amp; CartoDB</span>
             <span class="tech-tag">SAR Radar Segmentation</span>
-            <span class="tech-tag">AIS Vessel Scoring</span>
           </div>
         </article>
 
@@ -514,14 +506,11 @@
           <div class="project-header">
             <div>
               <h3 class="project-name">Rune-Striker — 2D Retro Action-Platformer</h3>
-              <p style="color: var(--accent-amber); font-family: var(--font-mono); font-size: 11.5px; margin-top: 4px;">
-                GODOT 4.6 • KINEMATIC PHYSICS • COYOTE TIME • STANDALONE .EXE
-              </p>
             </div>
             <a href="https://github.com/Diyan4444/Rune-Striker" target="_blank" class="project-repo-link">View Repo ↗</a>
           </div>
           <p class="project-desc">
-            Handcrafted retro 2D platformer for Windows built with Godot Engine 4.6. Implements responsive kinematic movement with Coyote Time jump forgiveness, input buffering, CharacterBody2D state machines (IDLE/RUN/JUMP), raycast-based slime patrol AI, decoupled coin event bus, contextual NPC dialogues, and standalone Windows build packaging.
+            Handcrafted retro 2D platformer for Windows built with Godot Engine 4.6. Implements responsive kinematic movement with Coyote Time jump forgiveness, input buffering, CharacterBody2D state machines (IDLE/RUN/JUMP), raycast-based slime patrol AI, decoupled coin event bus, and standalone Windows build packaging.
           </p>
           <div class="project-diagram">
             <img src="../assets/pipeline-runestriker.svg" alt="Rune-Striker Pipeline Diagram" />
@@ -540,9 +529,6 @@
           <div class="project-header">
             <div>
               <h3 class="project-name">YouTube Converter (yt-to-mp4) — Stream Transcoding Engine</h3>
-              <p style="color: var(--accent-rose); font-family: var(--font-mono); font-size: 11.5px; margin-top: 4px;">
-                PYTHON • FLASK • YOUTUBE-DLP • FFMPEG • DOCKER
-              </p>
             </div>
             <a href="https://github.com/Diyan4444/yt-to-mp4" target="_blank" class="project-repo-link">View Repo ↗</a>
           </div>
@@ -557,126 +543,79 @@
             <span class="tech-tag">yt-dlp</span>
             <span class="tech-tag">FFmpeg Transcoding</span>
             <span class="tech-tag">Docker</span>
-            <span class="tech-tag">Render Cloud</span>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- Development Workflow: Inside the Build -->
-    <section id="workflow" style="margin-top: 56px;" class="viewport-reveal">
-      <div class="section-tag">// ENGINEERING METHODOLOGY</div>
+    <!-- Methodology: Inside the Build -->
+    <section id="workflow" style="margin-top: 48px;" class="viewport-reveal">
+      <div class="section-tag">ENGINEERING METHODOLOGY</div>
       <h2 class="section-title">Inside the Build: How I Architect &amp; Ship</h2>
-      <div class="hero-card" style="margin-top: 16px;">
+      <div class="hero-card" style="margin-top: 14px;">
         <img src="../assets/workflow-inside-build.svg" alt="Development Workflow" />
       </div>
     </section>
 
-    <!-- Skills & Technologies -->
-    <section id="skills" style="margin-top: 56px;" class="viewport-reveal">
-      <div class="section-tag">// DEMONSTRATED CAPABILITIES</div>
-      <h2 class="section-title">Technologies &amp; Systems Tooling</h2>
+    <!-- Live Animated Telemetry Section with Count-Up -->
+    <section id="analytics" style="margin-top: 48px;" class="viewport-reveal">
+      <div class="section-tag">LIVE BENCHMARKS</div>
+      <h2 class="section-title">Verified GitHub Activity &amp; Telemetry</h2>
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-category"><span>01</span> LANGUAGES</div>
-          <div class="skill-list">
-            <span class="skill-item">TypeScript</span>
-            <span class="skill-item">JavaScript (ES6+)</span>
-            <span class="skill-item">C++ (STL, DSA)</span>
-            <span class="skill-item">Python</span>
-            <span class="skill-item">GDScript</span>
-            <span class="skill-item">SQL (PostgreSQL)</span>
-            <span class="skill-item">HTML5 / CSS3</span>
-          </div>
+      <!-- Native JavaScript Count-Up Counters -->
+      <div class="counters-grid">
+        <div class="counter-box">
+          <div class="counter-number" data-target="187">0</div>
+          <div class="counter-label">CONTRIBUTIONS (YTD)</div>
         </div>
+        <div class="counter-box">
+          <div class="counter-number" data-target="17">0</div>
+          <div class="counter-label">PUBLIC REPOSITORIES</div>
+        </div>
+        <div class="counter-box">
+          <div class="counter-number" data-target="13" style="color: var(--accent-amber);">0</div>
+          <div class="counter-label">LONGEST STREAK (DAYS)</div>
+        </div>
+        <div class="counter-box">
+          <div class="counter-number" data-target="74" style="color: var(--accent-cyan);">0<span style="font-size: 20px;">%</span></div>
+          <div class="counter-label">TYPESCRIPT DOMINANCE</div>
+        </div>
+      </div>
 
-        <div class="skill-card">
-          <div class="skill-category"><span>02</span> FRONTEND &amp; UI</div>
-          <div class="skill-list">
-            <span class="skill-item">Next.js (App Router)</span>
-            <span class="skill-item">React 19</span>
-            <span class="skill-item">Tailwind CSS</span>
-            <span class="skill-item">Vite</span>
-            <span class="skill-item">Leaflet &amp; CartoDB</span>
-            <span class="skill-item">Recharts</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-category"><span>03</span> BACKEND &amp; APIS</div>
-          <div class="skill-list">
-            <span class="skill-item">Node.js</span>
-            <span class="skill-item">Express.js</span>
-            <span class="skill-item">FastAPI</span>
-            <span class="skill-item">Flask</span>
-            <span class="skill-item">RESTful APIs</span>
-            <span class="skill-item">OpenRouter Gateway</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-category"><span>04</span> DATABASES &amp; STORAGE</div>
-          <div class="skill-list">
-            <span class="skill-item">MongoDB Atlas</span>
-            <span class="skill-item">PostgreSQL (Prisma)</span>
-            <span class="skill-item">Redis</span>
-            <span class="skill-item">SQLite</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-category"><span>05</span> SYSTEMS, DEVOPS &amp; TOOLS</div>
-          <div class="skill-list">
-            <span class="skill-item">Chrome Extensions (MV3)</span>
-            <span class="skill-item">Docker Containers</span>
-            <span class="skill-item">Git &amp; GitHub Actions</span>
-            <span class="skill-item">FFmpeg &amp; yt-dlp</span>
-            <span class="skill-item">Linux</span>
-            <span class="skill-item">Netlify / Render</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-category"><span>06</span> ACTIVE LEARNING / EXPLORATION</div>
-          <div class="skill-list">
-            <span class="skill-item" style="color: var(--accent-amber);">Computer Vision (OpenCV)</span>
-            <span class="skill-item" style="color: var(--accent-amber);">Multi-Agent LLM Orchestration</span>
-            <span class="skill-item" style="color: var(--accent-amber);">SAR Satellite Radar Processing</span>
-          </div>
-        </div>
+      <div class="hero-card" style="margin-top: 14px;">
+        <img src="../assets/github-stats-animated.svg" alt="Animated Stats Rolling Counters" />
       </div>
     </section>
 
     <!-- Contribution Universe -->
-    <section id="contributions" style="margin-top: 56px;" class="viewport-reveal">
-      <div class="section-tag">// ACTIVITY STREAM</div>
+    <section id="contributions" style="margin-top: 48px;" class="viewport-reveal">
+      <div class="section-tag">ACTIVITY CALENDAR</div>
       <h2 class="section-title">GitHub Contribution Universe</h2>
-      <div class="hero-card" style="margin-top: 16px;">
+      <div class="hero-card" style="margin-top: 14px;">
         <img src="../assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Grid" />
       </div>
     </section>
 
     <!-- Contact & Collaboration -->
-    <section id="contact" style="margin-top: 56px;" class="viewport-reveal">
-      <div class="section-tag">// INITIATE CONNECTION</div>
+    <section id="contact" style="margin-top: 48px;" class="viewport-reveal">
+      <div class="section-tag">CONNECT</div>
       <h2 class="section-title">Let's Build Something Exceptional</h2>
       <p style="color: var(--text-secondary); max-width: 600px; margin-top: 8px;">
-        Currently open to engineering internships, technical collaborations, and building impactful software products.
+        Open to software engineering internships, technical collaborations, and building impactful software products.
       </p>
 
-      <div style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 14px;">
-        <a href="mailto:diyanshah2301@gmail.com" class="project-repo-link" style="padding: 10px 20px; font-size: 13px;">
+      <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 12px;">
+        <a href="mailto:diyanshah2301@gmail.com" class="project-repo-link" style="padding: 9px 18px; font-size: 13px;">
           ✉ Email: diyanshah2301@gmail.com
         </a>
-        <a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/" target="_blank" class="project-repo-link" style="padding: 10px 20px; font-size: 13px;">
+        <a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/" target="_blank" class="project-repo-link" style="padding: 9px 18px; font-size: 13px;">
           💼 LinkedIn Profile ↗
         </a>
-        <a href="https://github.com/Diyan4444" target="_blank" class="project-repo-link" style="padding: 10px 20px; font-size: 13px;">
+        <a href="https://github.com/Diyan4444" target="_blank" class="project-repo-link" style="padding: 9px 18px; font-size: 13px;">
           🐙 GitHub Profile ↗
         </a>
-        <a href="https://leetcode.com/u/Diyan4444/" target="_blank" class="project-repo-link" style="padding: 10px 20px; font-size: 13px;">
+        <a href="https://leetcode.com/u/Diyan4444/" target="_blank" class="project-repo-link" style="padding: 9px 18px; font-size: 13px;">
           ⚔ LeetCode Profile ↗
         </a>
       </div>
@@ -687,44 +626,58 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-terminal">
-        Diyan@vjti:~$ <span>./ship_next_project.sh --status=operational</span>
-      </div>
       <div class="footer-links">
         <a href="https://github.com/Diyan4444">GitHub</a>
         <a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/">LinkedIn</a>
         <a href="https://leetcode.com/u/Diyan4444/">LeetCode</a>
         <a href="mailto:diyanshah2301@gmail.com">Email</a>
       </div>
-      <p style="color: var(--text-muted); font-size: 12px; margin-top: 18px; font-family: var(--font-mono);">
-        Crafted with precision for Diyan Shah • VJTI Mumbai
+      <p style="color: var(--text-muted); font-size: 12px; font-family: var(--font-mono);">
+        Diyan Shah • VJTI Mumbai
       </p>
     </div>
   </footer>
 
-  <!-- IntersectionObserver for True Viewport-Triggered Animations -->
+  <!-- IntersectionObserver for Viewport Triggers & JavaScript Count-Up -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px 0px -50px 0px',
-        threshold: 0.15
-      };
-
-      const observer = new IntersectionObserver((entries, obs) => {
+      // 1. Reveal sections on scroll
+      const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
-          } else {
-            // Optional: reset on scroll away for replayability
-            // entry.target.classList.remove('is-visible');
           }
         });
-      }, observerOptions);
+      }, { threshold: 0.12 });
 
-      document.querySelectorAll('.viewport-reveal').forEach(el => {
-        observer.observe(el);
-      });
+      document.querySelectorAll('.viewport-reveal').forEach(el => observer.observe(el));
+
+      // 2. Count-Up Animation for numbers
+      let counted = false;
+      const countObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !counted) {
+            counted = true;
+            document.querySelectorAll('.counter-number').forEach(counter => {
+              const target = +counter.getAttribute('data-target');
+              const hasPercent = counter.innerHTML.includes('%');
+              let current = 0;
+              const step = Math.max(1, Math.ceil(target / 40));
+              const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                  current = target;
+                  clearInterval(timer);
+                }
+                counter.innerHTML = hasPercent ? `${current}<span style="font-size: 20px;">%</span>` : `${current}`;
+              }, 25);
+            });
+          }
+        });
+      }, { threshold: 0.25 });
+
+      const analyticsSection = document.getElementById('analytics');
+      if (analyticsSection) countObserver.observe(analyticsSection);
     });
   </script>
 </body>

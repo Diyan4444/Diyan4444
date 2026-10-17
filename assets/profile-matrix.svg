@@ -1,119 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 230" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="100%" height="100%">
   <defs>
-    <linearGradient id="matrixBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080d1a"/>
-      <stop offset="100%" stop-color="#0c1426"/>
+    <linearGradient id="hudBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1017"/>
+      <stop offset="100%" stop-color="#121820"/>
     </linearGradient>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#121e38" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#0e172c" stop-opacity="0.95"/>
+    <linearGradient id="hudCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141d28"/>
+      <stop offset="100%" stop-color="#101720"/>
     </linearGradient>
-    <pattern id="matrixGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#162442" stroke-width="0.5"/>
-    </pattern>
     <style>
-      .mat-title {
+      .hud-title {
         font-family: 'JetBrains Mono', Consolas, monospace;
         font-size: 11px;
-        fill: #00e5ff;
-        letter-spacing: 1.5px;
+        fill: #39d353;
+        letter-spacing: 1px;
         font-weight: 700;
       }
-      .mat-val {
+      .hud-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         font-size: 13.5px;
-        fill: #e2e8f0;
+        fill: #f0f6fc;
         line-height: 1.5;
       }
-      .mat-metric-num {
+      .hud-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 12px;
+        fill: #8b949e;
+      }
+      .hud-num {
         font-family: 'JetBrains Mono', Consolas, monospace;
         font-size: 26px;
         font-weight: 800;
-        fill: #00f5d4;
+        fill: #39d353;
       }
-      .mat-metric-lbl {
+      .hud-lbl {
         font-family: 'JetBrains Mono', Consolas, monospace;
-        font-size: 10px;
-        fill: #94a3b8;
-        letter-spacing: 1px;
+        font-size: 9.5px;
+        fill: #8b949e;
+        letter-spacing: 0.8px;
       }
     </style>
   </defs>
 
-  <rect width="960" height="230" rx="12" fill="url(#matrixBg)"/>
-  <rect width="960" height="230" rx="12" fill="url(#matrixGrid)"/>
+  <rect width="960" height="220" rx="12" fill="url(#hudBg)"/>
 
-  <!-- Col 1: Identity & Engineering Philosophy -->
-  <g transform="translate(30, 25)">
-    <rect width="280" height="180" rx="10" fill="url(#cardBg)" stroke="#1d2e50" stroke-width="1.2"/>
-    <text x="20" y="30" class="mat-title">01 // IDENTITY MATRIX</text>
+  <!-- Col 1: Identity & Educational Base -->
+  <g transform="translate(30, 20)">
+    <rect width="280" height="180" rx="8" fill="url(#hudCard)" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="20" y="28" class="hud-title">01 • IDENTITY MATRIX</text>
     
-    <text x="20" y="58" class="mat-val" font-weight="700" fill="#ffffff">Diyan Shah</text>
-    <text x="20" y="78" class="mat-val" fill="#94a3b8">B.Tech Information Technology</text>
-    <text x="20" y="98" class="mat-val" fill="#00e5ff" font-weight="600">VJTI Mumbai (Veermata Jijabai)</text>
+    <text x="20" y="56" class="hud-text" font-weight="700">Diyan Shah</text>
+    <text x="20" y="76" class="hud-sub">Information Technology Sophomore</text>
+    <text x="20" y="96" class="hud-sub" fill="#39d353" font-weight="600">VJTI Mumbai</text>
     
-    <line x1="20" y1="115" x2="260" y2="115" stroke="#1d2e50" stroke-width="1"/>
+    <line x1="20" y1="112" x2="260" y2="112" stroke="#1e293b" stroke-width="1"/>
     
-    <text x="20" y="138" class="mat-val" font-size="11.5" fill="#cbd5e1">
-      "Learn by building real software.
+    <text x="20" y="136" class="hud-sub" fill="#cbd5e1">
+      "Building software from first principles.
     </text>
-    <text x="20" y="156" class="mat-val" font-size="11.5" fill="#cbd5e1">
-      Architect robust, verifiable products."
+    <text x="20" y="154" class="hud-sub" fill="#cbd5e1">
+      Deep dives over surface tutorials."
     </text>
   </g>
 
-  <!-- Col 2: Engineering Domains -->
-  <g transform="translate(330, 25)">
-    <rect width="300" height="180" rx="10" fill="url(#cardBg)" stroke="#1d2e50" stroke-width="1.2"/>
-    <text x="20" y="30" class="mat-title">02 // ACTIVE DOMAINS</text>
-    
-    <g transform="translate(20, 50)">
-      <circle cx="5" cy="5" r="3" fill="#00e5ff"/>
-      <text x="16" y="9" class="mat-val" font-size="12">Full-Stack Web &amp; Distributed APIs</text>
-      
-      <circle cx="5" cy="30" r="3" fill="#00f5d4"/>
-      <text x="16" y="34" class="mat-val" font-size="12">Chrome Extensions (Manifest V3 Systems)</text>
-      
-      <circle cx="5" cy="55" r="3" fill="#9d4edd"/>
-      <text x="16" y="59" class="mat-val" font-size="12">Multi-LLM Debate &amp; Prompt Orchestration</text>
-      
-      <circle cx="5" cy="80" r="3" fill="#f7c948"/>
-      <text x="16" y="84" class="mat-val" font-size="12">Game Architecture &amp; Mechanics (Godot)</text>
-      
-      <circle cx="5" cy="105" r="3" fill="#00e5ff"/>
-      <text x="16" y="109" class="mat-val" font-size="12">Data Structures &amp; Problem-Solving (C++)</text>
-    </g>
-  </g>
-
-  <!-- Col 3: Verified Evidence Metrics -->
-  <g transform="translate(650, 25)">
-    <rect width="280" height="180" rx="10" fill="url(#cardBg)" stroke="#1d2e50" stroke-width="1.2"/>
-    <text x="20" y="30" class="mat-title">03 // VERIFIED TELEMETRY</text>
+  <!-- Col 2: Active Engineering Domains -->
+  <g transform="translate(330, 20)">
+    <rect width="300" height="180" rx="8" fill="url(#hudCard)" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="20" y="28" class="hud-title">02 • ACTIVE DOMAINS</text>
     
     <g transform="translate(20, 48)">
-      <!-- Metric 1 -->
+      <circle cx="5" cy="5" r="3" fill="#39d353"/>
+      <text x="16" y="9" class="hud-sub" fill="#f0f6fc">Full-Stack Web &amp; Distributed APIs</text>
+      
+      <circle cx="5" cy="28" r="3" fill="#22c55e"/>
+      <text x="16" y="32" class="hud-sub" fill="#f0f6fc">Chrome Extensions (Manifest V3 Systems)</text>
+      
+      <circle cx="5" cy="51" r="3" fill="#f59e0b"/>
+      <text x="16" y="55" class="hud-sub" fill="#f0f6fc">Multi-LLM Debate &amp; Prompt Orchestration</text>
+      
+      <circle cx="5" cy="74" r="3" fill="#38bdf8"/>
+      <text x="16" y="78" class="hud-sub" fill="#f0f6fc">Game Architecture &amp; Mechanics (Godot)</text>
+      
+      <circle cx="5" cy="97" r="3" fill="#39d353"/>
+      <text x="16" y="101" class="hud-sub" fill="#f0f6fc">Data Structures &amp; Problem-Solving (C++)</text>
+    </g>
+  </g>
+
+  <!-- Col 3: Audited Telemetry Metrics -->
+  <g transform="translate(650, 20)">
+    <rect width="280" height="180" rx="8" fill="url(#hudCard)" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="20" y="28" class="hud-title">03 • AUDITED METRICS</text>
+    
+    <g transform="translate(20, 48)">
+      <!-- Metric 1: Public Repos -->
       <g transform="translate(0, 0)">
-        <text x="0" y="24" class="mat-metric-num">17</text>
-        <text x="0" y="40" class="mat-metric-lbl">PUBLIC REPOSITORIES</text>
+        <text x="0" y="24" class="hud-num">17</text>
+        <text x="0" y="40" class="hud-lbl">PUBLIC REPOSITORIES</text>
       </g>
-      <!-- Metric 2 -->
+      <!-- Metric 2: Contributions -->
       <g transform="translate(130, 0)">
-        <text x="0" y="24" class="mat-metric-num" fill="#00e5ff">18+</text>
-        <text x="0" y="40" class="mat-metric-lbl">DSA TOPICS (C++)</text>
+        <text x="0" y="24" class="hud-num" fill="#22c55e">187</text>
+        <text x="0" y="40" class="hud-lbl">CONTRIBUTIONS (YTD)</text>
       </g>
-      <!-- Metric 3 -->
-      <g transform="translate(0, 65)">
-        <text x="0" y="24" class="mat-metric-num" fill="#9d4edd">5+</text>
-        <text x="0" y="40" class="mat-metric-lbl">SYSTEM STACKS SHIPPED</text>
+      <!-- Metric 3: DSA Topics -->
+      <g transform="translate(0, 62)">
+        <text x="0" y="24" class="hud-num" fill="#f59e0b">18+</text>
+        <text x="0" y="40" class="hud-lbl">DSA TOPICS (C++)</text>
       </g>
-      <!-- Metric 4 -->
-      <g transform="translate(130, 65)">
-        <text x="0" y="24" class="mat-metric-num" fill="#f7c948">100%</text>
-        <text x="0" y="40" class="mat-metric-lbl">EVIDENCE-GROUNDED</text>
+      <!-- Metric 4: Shipped Architectures -->
+      <g transform="translate(130, 62)">
+        <text x="0" y="24" class="hud-num" fill="#38bdf8">6</text>
+        <text x="0" y="40" class="hud-lbl">CORE ARCHITECTURES</text>
       </g>
     </g>
   </g>
 
-  <!-- Outer Border -->
-  <rect x="1" y="1" width="958" height="228" rx="11" fill="none" stroke="#1d2e50" stroke-width="1.2"/>
+  <!-- Outer Border Frame -->
+  <rect x="1" y="1" width="958" height="218" rx="11" fill="none" stroke="#1e293b" stroke-width="1.2"/>
 </svg>

@@ -1,77 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 175" width="100%" height="100%">
   <defs>
     <linearGradient id="lvBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0b1222"/>
-      <stop offset="100%" stop-color="#0c1626"/>
+      <stop offset="0%" stop-color="#0c1017"/>
+      <stop offset="100%" stop-color="#121820"/>
     </linearGradient>
     <linearGradient id="lvBox" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#14213d"/>
-      <stop offset="100%" stop-color="#0f192e"/>
+      <stop offset="0%" stop-color="#141f2a"/>
+      <stop offset="100%" stop-color="#101720"/>
     </linearGradient>
     <style>
-      .step-title { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #00f5d4; letter-spacing: 0.5px; }
+      .step-title { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #39d353; letter-spacing: 0.5px; }
       .step-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11.5px; fill: #cbd5e1; }
-      .step-tag { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 9.5px; fill: #94a3b8; }
-      @keyframes lvFlow { to { stroke-dashoffset: -30; } }
-      .lv-arrow { stroke-dasharray: 5, 5; animation: lvFlow 1.5s linear infinite; }
+      .step-tag { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 9.5px; fill: #8b949e; }
+      @keyframes lvFlow { to { stroke-dashoffset: -20; } }
+      .lv-arrow { stroke-dasharray: 4, 4; animation: lvFlow 1.5s linear infinite; }
     </style>
   </defs>
 
-  <rect width="920" height="180" rx="10" fill="url(#lvBg)" stroke="#1a2d4e" stroke-width="1.2"/>
+  <rect width="920" height="175" rx="10" fill="url(#lvBg)" stroke="#1e293b" stroke-width="1.2"/>
 
-  <g transform="translate(25, 24)">
-    <circle cx="6" cy="6" r="4" fill="#00f5d4"/>
-    <text x="18" y="10" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#00f5d4" letter-spacing="1">
-      LEET-VAULT // CHROME EXTENSION (MANIFEST V3) SUBMISSION PIPELINE
+  <g transform="translate(25, 22)">
+    <circle cx="6" cy="6" r="4" fill="#39d353"/>
+    <text x="18" y="10" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#39d353" letter-spacing="1">
+      LEET-VAULT • CHROME EXTENSION (MV3) SUBMISSION PIPELINE
     </text>
   </g>
 
-  <!-- Step 1: Submit Event & Snapshot State Machine -->
-  <g transform="translate(25, 45)">
-    <rect width="200" height="110" rx="8" fill="url(#lvBox)" stroke="#1f3458" stroke-width="1.2"/>
+  <!-- Step 1 -->
+  <g transform="translate(25, 42)">
+    <rect width="200" height="110" rx="8" fill="url(#lvBox)" stroke="#1e293b" stroke-width="1.2"/>
     <text x="14" y="24" class="step-title">01. SUBMISSION FSM</text>
     <text x="14" y="46" class="step-body">Submit click hook</text>
     <text x="14" y="64" class="step-body">Instant DOM snapshot</text>
     <text x="14" y="82" class="step-body">Zero false-positives</text>
-    <text x="14" y="100" class="step-tag" fill="#00f5d4">Chrome MV3 Content Script</text>
+    <text x="14" y="100" class="step-tag" fill="#22c55e">Chrome MV3 Content Script</text>
   </g>
 
-  <line class="lv-arrow" x1="225" y1="100" x2="255" y2="100" stroke="#00f5d4" stroke-width="1.8"/>
-  <polygon points="255,96 261,100 255,104" fill="#00f5d4"/>
+  <line class="lv-arrow" x1="225" y1="97" x2="255" y2="97" stroke="#39d353" stroke-width="1.5"/>
+  <polygon points="255,94 261,97 255,100" fill="#39d353"/>
 
-  <!-- Step 2: Auth & Permission Verification -->
-  <g transform="translate(265, 45)">
-    <rect width="200" height="110" rx="8" fill="url(#lvBox)" stroke="#00f5d4" stroke-width="1.2" stroke-opacity="0.8"/>
+  <!-- Step 2 -->
+  <g transform="translate(265, 42)">
+    <rect width="200" height="110" rx="8" fill="url(#lvBox)" stroke="#234932" stroke-width="1.2"/>
     <text x="14" y="24" class="step-title">02. SECURE OAUTH BROKER</text>
     <text x="14" y="46" class="step-body">launchWebAuthFlow</text>
     <text x="14" y="64" class="step-body">Zero PAT exposure</text>
     <text x="14" y="82" class="step-body">Push &amp; admin verify</text>
-    <text x="14" y="100" class="step-tag" fill="#00e5ff">Chrome Identity API</text>
+    <text x="14" y="100" class="step-tag" fill="#39d353">Chrome Identity API</text>
   </g>
 
-  <line class="lv-arrow" x1="465" y1="100" x2="495" y2="100" stroke="#00f5d4" stroke-width="1.8"/>
-  <polygon points="495,96 501,100 495,104" fill="#00f5d4"/>
+  <line class="lv-arrow" x1="465" y1="97" x2="495" y2="97" stroke="#39d353" stroke-width="1.5"/>
+  <polygon points="495,94 501,97 495,100" fill="#39d353"/>
 
-  <!-- Step 3: Custom Naming & Collision Check -->
-  <g transform="translate(505, 45)">
-    <rect width="200" height="110" rx="8" fill="url(#lvBox)" stroke="#1f3458" stroke-width="1.2"/>
+  <!-- Step 3 -->
+  <g transform="translate(505, 42)">
+    <rect width="200" height="110" rx="8" fill="url(#lvBox)" stroke="#1e293b" stroke-width="1.2"/>
     <text x="14" y="24" class="step-title">03. SMART NAMING &amp; DUP</text>
     <text x="14" y="46" class="step-body">Custom: heap-sort.cpp</text>
     <text x="14" y="64" class="step-body">Deterministic N-fallback</text>
     <text x="14" y="82" class="step-body">SHA code fingerprinting</text>
-    <text x="14" y="100" class="step-tag" fill="#00f5d4">18+ Languages Mapped</text>
+    <text x="14" y="100" class="step-tag" fill="#22c55e">18+ Languages Mapped</text>
   </g>
 
-  <line class="lv-arrow" x1="705" y1="100" x2="735" y2="100" stroke="#00f5d4" stroke-width="1.8"/>
-  <polygon points="735,96 741,100 735,104" fill="#00f5d4"/>
+  <line class="lv-arrow" x1="705" y1="97" x2="735" y2="97" stroke="#39d353" stroke-width="1.5"/>
+  <polygon points="735,94 741,97 735,100" fill="#39d353"/>
 
-  <!-- Step 4: GitHub Push & Queue -->
-  <g transform="translate(745, 45)">
-    <rect width="150" height="110" rx="8" fill="url(#lvBox)" stroke="#1f3458" stroke-width="1.2"/>
-    <text x="14" y="24" class="step-title" fill="#00e5ff">04. GIT SYNC</text>
+  <!-- Step 4 -->
+  <g transform="translate(745, 42)">
+    <rect width="150" height="110" rx="8" fill="url(#lvBox)" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="14" y="24" class="step-title" fill="#22c55e">04. GIT SYNC</text>
     <text x="14" y="46" class="step-body">Dual README update</text>
     <text x="14" y="64" class="step-body">Alarm retry queue</text>
     <text x="14" y="82" class="step-body">50+ unit tests</text>
-    <text x="14" y="100" class="step-tag" fill="#00f5d4">GitHub REST API</text>
+    <text x="14" y="100" class="step-tag" fill="#39d353">GitHub REST API</text>
   </g>
 </svg>

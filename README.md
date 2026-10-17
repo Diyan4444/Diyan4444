@@ -12,10 +12,10 @@
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-Diyan4444-00e5ff?style=for-the-badge&logo=github&logoColor=080c16&labelColor=0d1628)](https://github.com/Diyan4444)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-00f5d4?style=for-the-badge&logo=linkedin&logoColor=080c16&labelColor=0d1628)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Diyan4444-f7c948?style=for-the-badge&logo=leetcode&logoColor=080c16&labelColor=0d1628)](https://leetcode.com/u/Diyan4444/)
-[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-9d4edd?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=0d1628)](mailto:diyanshah2301@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Diyan4444-22c55e?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=16202c)](https://github.com/Diyan4444)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-39d353?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=16202c)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Diyan4444-f59e0b?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=16202c)](https://leetcode.com/u/Diyan4444/)
+[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-38bdf8?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=16202c)](mailto:diyanshah2301@gmail.com)
 
 </div>
 
@@ -25,18 +25,16 @@
 
 ## ⚡ Executive Summary
 
-I am **Diyan Shah**, a B.Tech Information Technology student at **VJTI Mumbai (Veermata Jijabai Technological Institute)**. 
+I am **Diyan Shah**, an **Information Technology Sophomore at VJTI Mumbai (Veermata Jijabai Technological Institute)**. 
 
 I engineer software by building real systems from first principles. Rather than relying on passive tutorials or superficial templates, I explore and ship across diverse technical domains: from high-concurrency full-stack platforms and production Chrome extensions (Manifest V3) to multi-model LLM debate engines, satellite radar geospatial pipelines, and Godot 2D game architecture.
 
 ```text
   [ Core Stack ]   TypeScript • C++ • Python • Next.js • Node.js • Godot • Docker • MongoDB
-  [ Education  ]   B.Tech Information Technology — VJTI Mumbai
+  [ Education  ]   Information Technology Sophomore — VJTI Mumbai
   [ Focus Area ]   Full-Stack Systems • Browser Architecture • Applied AI • Algorithmic Problem Solving
   [ Philosophy ]   "Learn by shipping real software. Architect resilient, verifiable systems."
 ```
-
-> 💡 **Interactive Web Portfolio**: For an interactive version with true viewport-triggered animations and node inspection, explore [`preview/index.html`](file:///c:/Users/Diyan/Desktop/Github%20Readme/preview/index.html).
 
 ---
 
@@ -58,7 +56,7 @@ The architectural map below illustrates how my core engineering foundation conne
    * **[RentWheels](https://github.com/Diyan4444/RentWheels)**: Responsive vehicle rental platform deployed live at [wheel-rent.netlify.app](https://wheel-rent.netlify.app/).
 
 2. **Browser Systems & Tooling**  
-   * **[Leet-Vault](https://github.com/Diyan4444/Leet-Vault)**: Production-ready Chrome Extension (Manifest V3) engineered with a strict DOM snapshot state machine, serverless OAuth broker, 18+ language mappings, collision resolution, and offline alarm retry queues backed by 50+ unit/integration tests.
+   * **[Leet-Vault](https://github.com/Diyan4444/Leet-Vault)**: Chrome Extension (Manifest V3) engineered with a strict DOM snapshot state machine, serverless OAuth broker, 18+ language mappings, collision resolution, and offline alarm retry queues backed by 50+ unit/integration tests.
 
 3. **Applied AI & LLM Sparring**  
    * **[AI Debate Arena](https://github.com/Diyan4444/AI-Debater)**: Turn-based debate platform comparing how different language models argue and respond to topics using Express.js, MongoDB, and OpenRouter API, featuring real-time argument streaming and automated fallacy judging.
@@ -90,7 +88,7 @@ A detailed look at my primary verified projects, their technical architecture, a
 <br>
 
 ### 1. 💇 Glamourly — Mumbai Salon Discovery & Direct Booking Platform
-> **Repository:** [`Diyan4444/Glamourly`](https://github.com/Diyan4444/Glamourly) • **Status:** Active Full-Stack Application
+> **Repository:** [`Diyan4444/Glamourly`](https://github.com/Diyan4444/Glamourly)
 
 <div align="center">
   <img src="assets/pipeline-glamourly.svg" width="100%" alt="Glamourly Pipeline Diagram" />
@@ -107,7 +105,7 @@ A detailed look at my primary verified projects, their technical architecture, a
 ---
 
 ### 2. ⚡ Leet-Vault — Chrome Extension (Manifest V3) Solution Sync
-> **Repository:** [`Diyan4444/Leet-Vault`](https://github.com/Diyan4444/Leet-Vault) • **Status:** Production-Ready Chrome Extension • **Test Suite:** 50+ Unit/Integration Tests
+> **Repository:** [`Diyan4444/Leet-Vault`](https://github.com/Diyan4444/Leet-Vault) • **Test Suite:** 50+ Unit/Integration Tests
 
 <div align="center">
   <img src="assets/pipeline-leetvault.svg" width="100%" alt="Leet-Vault Pipeline Diagram" />
@@ -125,7 +123,7 @@ A detailed look at my primary verified projects, their technical architecture, a
 ---
 
 ### 3. 🤖 AI Debate Arena — Multi-Model Argumentation & Scoring Engine
-> **Repository:** [`Diyan4444/AI-Debater`](https://github.com/Diyan4444/AI-Debater) • **Status:** Active Development & Exploration
+> **Repository:** [`Diyan4444/AI-Debater`](https://github.com/Diyan4444/AI-Debater)
 
 <div align="center">
   <img src="assets/pipeline-debater.svg" width="100%" alt="AI Debate Arena Pipeline Diagram" />
@@ -141,7 +139,7 @@ A detailed look at my primary verified projects, their technical architecture, a
 ---
 
 ### 4. 🛰️ OceanGuard AI — SAR Satellite Oil Spill & AIS Vessel Attribution
-> **Repository:** [`Diyan4444/OceanGuard`](https://github.com/Diyan4444/OceanGuard) • **Status:** Smart India Hackathon 2026 (Problem SIH26143)
+> **Repository:** [`Diyan4444/OceanGuard`](https://github.com/Diyan4444/OceanGuard) • Built for Smart India Hackathon 2026 (Problem SIH26143)
 
 <div align="center">
   <img src="assets/pipeline-oceanguard.svg" width="100%" alt="OceanGuard AI Pipeline Diagram" />
@@ -158,7 +156,7 @@ A detailed look at my primary verified projects, their technical architecture, a
 ---
 
 ### 5. ⚔️ Rune-Striker — 2D Retro Action-Platformer
-> **Repository:** [`Diyan4444/Rune-Striker`](https://github.com/Diyan4444/Rune-Striker) • **Status:** Standalone Windows Release Available
+> **Repository:** [`Diyan4444/Rune-Striker`](https://github.com/Diyan4444/Rune-Striker)
 
 <div align="center">
   <img src="assets/pipeline-runestriker.svg" width="100%" alt="Rune-Striker Pipeline Diagram" />
@@ -176,7 +174,7 @@ A detailed look at my primary verified projects, their technical architecture, a
 ---
 
 ### 6. 🎬 YouTube Converter (`yt-to-mp4`) — Media Transcoding Service
-> **Repository:** [`Diyan4444/yt-to-mp4`](https://github.com/Diyan4444/yt-to-mp4) • **Status:** Containerized Microservice
+> **Repository:** [`Diyan4444/yt-to-mp4`](https://github.com/Diyan4444/yt-to-mp4)
 
 <div align="center">
   <img src="assets/pipeline-ytconverter.svg" width="100%" alt="YouTube Converter Pipeline Diagram" />
@@ -291,35 +289,38 @@ Technologies categorized strictly by demonstrated repository source code:
 
 ## 📊 Live GitHub Analytics & Telemetry
 
-A cohesive dashboard tracking public development activity across my 17 repositories:
+A cohesive dashboard tracking public development activity across my 17 repositories with animated counters:
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Diyan4444&show_icons=true&theme=tokyonight&bg_color=080c16&border_color=1c2b4c&title_color=00e5ff&text_color=94a3b8&icon_color=00f5d4&hide_border=false" width="48%" alt="Diyan's GitHub Stats" />
+  <img src="assets/github-stats-animated.svg" width="100%" alt="Live Telemetry & Activity Benchmarks" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Diyan4444&show_icons=true&theme=tokyonight&bg_color=0c1017&border_color=202c3c&title_color=39d353&text_color=94a3b8&icon_color=22c55e&hide_border=false" width="48%" alt="Diyan's GitHub Stats" />
   &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Diyan4444&layout=compact&theme=tokyonight&bg_color=080c16&border_color=1c2b4c&title_color=00e5ff&text_color=94a3b8&icon_color=00f5d4&hide_border=false" width="48%" alt="Top Languages Used" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Diyan4444&layout=compact&theme=tokyonight&bg_color=0c1017&border_color=202c3c&title_color=39d353&text_color=94a3b8&icon_color=22c55e&hide_border=false" width="48%" alt="Top Languages Used" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Diyan4444&theme=tokyonight&background=080c16&border=1c2b4c&stroke=00e5ff&ring=00f5d4&fire=00e5ff&currStreakLabel=00f5d4" width="97%" alt="Contribution Streak" />
+  <img src="https://streak-stats.demolab.com?user=Diyan4444&theme=tokyonight&background=0c1017&border=202c3c&stroke=39d353&ring=22c55e&fire=f59e0b&currStreakLabel=39d353" width="97%" alt="Contribution Streak" />
 </div>
 
 <br>
 
-<details>
-  <summary><b>🔍 Verified Telemetry Breakdown (Audited Data)</b></summary>
-  <br>
+### 📋 Audited Repository Telemetry
 
 | Metric Dimension | Audited Value | Primary Data Source |
 | :--- | :--- | :--- |
 | **Public Repositories** | **17 Repositories** | GitHub REST API (`/users/Diyan4444`) |
-| **Dominant Languages** | **TypeScript, C++, JavaScript, Python, GDScript** | GitHub Languages Byte Counts |
+| **Contributions (YTD)** | **187 Contributions** | GitHub Public Contributions Stream |
+| **Dominant Languages** | **TypeScript (74%), JavaScript (12%), C++ (5%), Python (4%)** | GitHub Languages Byte Counts |
 | **Algorithmic Topics** | **18+ DSA Directories (C++)** | [`Diyan4444/LeetCode`](https://github.com/Diyan4444/LeetCode) |
 | **Shipped System Stacks** | **6 Production Architectures** | Full-stack, Extensions, Games, AI, Media, Corporate Intel |
 | **Hackathon Work** | **Smart India Hackathon 2026** | Problem Statement SIH26143 (`OceanGuard AI`) |
-
-</details>
 
 ---
 
@@ -329,10 +330,6 @@ Below is my contribution calendar stream, maintained and refreshed through autom
 
 <div align="center">
   <img src="assets/github-contribution-grid-snake.svg" width="100%" alt="Diyan Shah Contribution Snake Animation" />
-</div>
-
-<div align="center">
-  <sub>Automated animation refreshed via <code>.github/workflows/snake.yml</code> • Standalone vector asset</sub>
 </div>
 
 ---
@@ -359,27 +356,21 @@ I am always keen to discuss software engineering, distributed systems, developer
 <div align="center">
 
 <a href="mailto:diyanshah2301@gmail.com">
-  <img src="https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-00e5ff?style=for-the-badge&logo=gmail&logoColor=080c16&labelColor=0d1628" alt="Send Email" />
+  <img src="https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-38bdf8?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=16202c" alt="Send Email" />
 </a>
 &nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20Diyan-00f5d4?style=for-the-badge&logo=linkedin&logoColor=080c16&labelColor=0d1628" alt="Connect on LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20Diyan-39d353?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=16202c" alt="Connect on LinkedIn" />
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/Diyan4444" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-9d4edd?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=0d1628" alt="Follow on GitHub" />
+  <img src="https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-22c55e?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=16202c" alt="Follow on GitHub" />
 </a>
 &nbsp;&nbsp;
 <a href="https://leetcode.com/u/Diyan4444/" target="_blank">
-  <img src="https://img.shields.io/badge/LeetCode-Diyan4444-f7c948?style=for-the-badge&logo=leetcode&logoColor=080c16&labelColor=0d1628" alt="View LeetCode Profile" />
+  <img src="https://img.shields.io/badge/LeetCode-Diyan4444-f59e0b?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=16202c" alt="View LeetCode Profile" />
 </a>
 
-</div>
-
-<br>
-
-<div align="center">
-  <code>Diyan@vjti:~$ ./ship_next_project.sh --status=operational --target=production</code>
 </div>
 
 <!-- ================================================================= -->
