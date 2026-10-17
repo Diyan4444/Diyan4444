@@ -23,27 +23,27 @@
 
 ---
 
-## ⚡ Executive Summary
+## ⚡ About Me
 
-I am **Diyan Shah**, an **Information Technology Sophomore at VJTI Mumbai (Veermata Jijabai Technological Institute)**. 
+I'm **Diyan Shah**, an **Information Technology Sophomore at VJTI Mumbai (Veermata Jijabai Technological Institute)**. 
 
-I engineer software by building real systems from first principles. Rather than relying on passive tutorials or superficial templates, I explore and ship across diverse technical domains: from high-concurrency full-stack platforms and production Chrome extensions (Manifest V3) to multi-model LLM debate engines, satellite radar geospatial pipelines, and Godot 2D game architecture.
+I love engineering software by building real systems from the ground up. Instead of just following tutorials, I learn by shipping: from full-stack platforms and production Chrome extensions (Manifest V3) to multi-model LLM debate engines, satellite radar geospatial pipelines, and 2D games in Godot.
 
 ```text
   [ Core Stack ]   TypeScript • C++ • Python • Next.js • Node.js • Godot • Docker • MongoDB
   [ Education  ]   Information Technology Sophomore — VJTI Mumbai
-  [ Focus Area ]   Full-Stack Systems • Browser Architecture • Applied AI • Algorithmic Problem Solving
-  [ Philosophy ]   "Learn by shipping real software. Architect resilient, verifiable systems."
+  [ Focus Area ]   Full-Stack Systems • Browser Tools • Applied AI • Algorithmic Problem Solving
+  [ Philosophy ]   "Learn by shipping real software. Deep dives over surface tutorials."
 ```
 
 ---
 
-## 🌐 The Engineering Playground Network
+## 🌐 Project Architecture & Domains
 
-The architectural map below illustrates how my core engineering foundation connects each technical domain and repository.
+The diagram below shows how my core foundation connects across different technical domains and projects.
 
 <div align="center">
-  <img src="assets/engineering-network.svg" width="100%" alt="The Engineering Playground Network Architecture" />
+  <img src="assets/engineering-network.svg" width="100%" alt="Project Network Architecture" />
 </div>
 
 <br>
@@ -81,9 +81,9 @@ The architectural map below illustrates how my core engineering foundation conne
 
 ---
 
-## 🚀 Project Constellation Showcase
+## 🚀 Featured Projects
 
-A detailed look at my primary verified projects, their technical architecture, and the engineering problems they solve.
+A closer look at some of the primary projects I've built, how they work under the hood, and the problems they solve.
 
 <br>
 
@@ -190,12 +190,12 @@ A detailed look at my primary verified projects, their technical architecture, a
 
 ---
 
-## 🛠️ Inside the Build: Engineering Methodology
+## 🛠️ How I Build Software
 
-How I take an engineering idea from specification to a hardened, deployed product:
+How I take an idea from initial specification to a deployed, working build:
 
 <div align="center">
-  <img src="assets/workflow-inside-build.svg" width="100%" alt="Inside the Build Workflow" />
+  <img src="assets/workflow-inside-build.svg" width="100%" alt="How I Build Software" />
 </div>
 
 <br>
@@ -210,9 +210,9 @@ How I take an engineering idea from specification to a hardened, deployed produc
 
 ---
 
-## 💻 Demonstrated Skills & Technologies
+## 💻 Skills & Technologies
 
-Technologies categorized strictly by demonstrated repository source code:
+Technologies I actively work with and have shipped projects using:
 
 <table>
   <tr>
@@ -287,9 +287,9 @@ Technologies categorized strictly by demonstrated repository source code:
 
 ---
 
-## 📊 Live GitHub Analytics & Telemetry
+## 📊 GitHub Stats & Activity
 
-A cohesive dashboard tracking public development activity across my 17 repositories with animated counters:
+A snapshot of my development activity across 17 public repositories with live counters:
 
 <div align="center">
   <img src="assets/github-stats-animated.svg" width="100%" alt="Live Telemetry & Activity Benchmarks" />
@@ -311,7 +311,7 @@ A cohesive dashboard tracking public development activity across my 17 repositor
 
 <br>
 
-### 📋 Audited Repository Telemetry
+### 📋 Activity Overview
 
 | Metric Dimension | Audited Value | Primary Data Source |
 | :--- | :--- | :--- |
@@ -324,9 +324,9 @@ A cohesive dashboard tracking public development activity across my 17 repositor
 
 ---
 
-## 🌌 GitHub Contribution Universe
+## 🟩 Contribution Calendar
 
-Below is my contribution calendar stream, maintained and refreshed through automated actions:
+A visual calendar of my GitHub contributions over the past year:
 
 <div align="center">
   <img src="assets/github-contribution-grid-snake.svg" width="100%" alt="Diyan Shah Contribution Snake Animation" />
@@ -334,7 +334,7 @@ Below is my contribution calendar stream, maintained and refreshed through autom
 
 ---
 
-## 🧭 Technical Journey & Trajectory
+## 🧭 My Journey & What's Next
 
 ```text
 [ FOUNDATIONS ]  ───────►  [ SYSTEMS & FULL-STACK ]  ───────►  [ ADVANCED DOMAINS ]  ───────►  [ FUTURE AMBITIONS ]
@@ -343,15 +343,15 @@ Below is my contribution calendar stream, maintained and refreshed through autom
  • Algorithmic Rigor        • Docker Containerization          • Godot Kinematic Physics        • Intelligent Cloud Platforms
 ```
 
-* **Demonstrated:** Building complete, verifiable products that work end-to-end (booking platforms, browser extensions, game engines, media processors).
-* **Current Exploration:** Deepening knowledge in autonomous multi-agent systems, computer vision (OpenCV), and high-concurrency microservice architectures.
-* **Future Ambition:** Designing resilient, large-scale distributed systems and developer tooling that empower software teams globally.
+* **Where I've spent time:** Building complete products from start to finish—salon booking platforms, browser extensions, 2D game mechanics, and media processing tools.
+* **What I'm exploring now:** Multi-agent LLM systems, computer vision with OpenCV, and scalable backend design.
+* **What I want to build:** High-throughput distributed systems and developer tools that make developers' lives easier.
 
 ---
 
-## 📬 Connect & Collaborate
+## 📬 Get in Touch
 
-I am always keen to discuss software engineering, distributed systems, developer tooling, or explore engineering internship and collaboration opportunities.
+I'm always keen to chat about software engineering, developer tooling, or discuss internship and collaboration opportunities.
 
 <div align="center">
 

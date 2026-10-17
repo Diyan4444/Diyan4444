@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" width="100%" height="100%">
   <defs>
     <linearGradient id="hudBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c1017"/>
+      <stop offset="0%" stop-color="#0d1117"/>
       <stop offset="100%" stop-color="#121820"/>
     </linearGradient>
     <linearGradient id="hudCard" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#141d28"/>
+      <stop offset="0%" stop-color="#141e2a"/>
       <stop offset="100%" stop-color="#101720"/>
     </linearGradient>
     <style>
@@ -13,14 +13,13 @@
         font-family: 'JetBrains Mono', Consolas, monospace;
         font-size: 11px;
         fill: #39d353;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
         font-weight: 700;
       }
       .hud-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         font-size: 13.5px;
         fill: #f0f6fc;
-        line-height: 1.5;
       }
       .hud-sub {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -37,23 +36,23 @@
         font-family: 'JetBrains Mono', Consolas, monospace;
         font-size: 9.5px;
         fill: #8b949e;
-        letter-spacing: 0.8px;
+        letter-spacing: 0.6px;
       }
     </style>
   </defs>
 
-  <rect width="960" height="220" rx="12" fill="url(#hudBg)"/>
+  <rect width="1000" height="220" rx="12" fill="url(#hudBg)"/>
 
-  <!-- Col 1: Identity & Educational Base -->
-  <g transform="translate(30, 20)">
-    <rect width="280" height="180" rx="8" fill="url(#hudCard)" stroke="#1e293b" stroke-width="1.2"/>
-    <text x="20" y="28" class="hud-title">01 • IDENTITY MATRIX</text>
+  <!-- Col 1: Identity & Education (width: 290) -->
+  <g transform="translate(35, 20)">
+    <rect width="290" height="180" rx="8" fill="url(#hudCard)" stroke="#212e3e" stroke-width="1.2"/>
+    <text x="20" y="28" class="hud-title">01 • ABOUT ME</text>
     
     <text x="20" y="56" class="hud-text" font-weight="700">Diyan Shah</text>
     <text x="20" y="76" class="hud-sub">Information Technology Sophomore</text>
     <text x="20" y="96" class="hud-sub" fill="#39d353" font-weight="600">VJTI Mumbai</text>
     
-    <line x1="20" y1="112" x2="260" y2="112" stroke="#1e293b" stroke-width="1"/>
+    <line x1="20" y1="112" x2="270" y2="112" stroke="#212e3e" stroke-width="1"/>
     
     <text x="20" y="136" class="hud-sub" fill="#cbd5e1">
       "Building software from first principles.
@@ -63,10 +62,10 @@
     </text>
   </g>
 
-  <!-- Col 2: Active Engineering Domains -->
-  <g transform="translate(330, 20)">
-    <rect width="300" height="180" rx="8" fill="url(#hudCard)" stroke="#1e293b" stroke-width="1.2"/>
-    <text x="20" y="28" class="hud-title">02 • ACTIVE DOMAINS</text>
+  <!-- Col 2: Active Engineering Domains (width: 320) -->
+  <g transform="translate(340, 20)">
+    <rect width="320" height="180" rx="8" fill="url(#hudCard)" stroke="#212e3e" stroke-width="1.2"/>
+    <text x="20" y="28" class="hud-title">02 • AREAS OF INTEREST</text>
     
     <g transform="translate(20, 48)">
       <circle cx="5" cy="5" r="3" fill="#39d353"/>
@@ -86,10 +85,10 @@
     </g>
   </g>
 
-  <!-- Col 3: Audited Telemetry Metrics -->
-  <g transform="translate(650, 20)">
-    <rect width="280" height="180" rx="8" fill="url(#hudCard)" stroke="#1e293b" stroke-width="1.2"/>
-    <text x="20" y="28" class="hud-title">03 • AUDITED METRICS</text>
+  <!-- Col 3: Key Metrics (width: 290) -->
+  <g transform="translate(675, 20)">
+    <rect width="290" height="180" rx="8" fill="url(#hudCard)" stroke="#212e3e" stroke-width="1.2"/>
+    <text x="20" y="28" class="hud-title">03 • AT A GLANCE</text>
     
     <g transform="translate(20, 48)">
       <!-- Metric 1: Public Repos -->
@@ -98,7 +97,7 @@
         <text x="0" y="40" class="hud-lbl">PUBLIC REPOSITORIES</text>
       </g>
       <!-- Metric 2: Contributions -->
-      <g transform="translate(130, 0)">
+      <g transform="translate(135, 0)">
         <text x="0" y="24" class="hud-num" fill="#22c55e">187</text>
         <text x="0" y="40" class="hud-lbl">CONTRIBUTIONS (YTD)</text>
       </g>
@@ -108,13 +107,13 @@
         <text x="0" y="40" class="hud-lbl">DSA TOPICS (C++)</text>
       </g>
       <!-- Metric 4: Shipped Architectures -->
-      <g transform="translate(130, 62)">
+      <g transform="translate(135, 62)">
         <text x="0" y="24" class="hud-num" fill="#38bdf8">6</text>
         <text x="0" y="40" class="hud-lbl">CORE ARCHITECTURES</text>
       </g>
     </g>
   </g>
 
-  <!-- Outer Border Frame -->
-  <rect x="1" y="1" width="958" height="218" rx="11" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+  <!-- Outer Frame -->
+  <rect x="1" y="1" width="998" height="218" rx="11" fill="none" stroke="#212e3e" stroke-width="1.2"/>
 </svg>

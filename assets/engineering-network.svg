@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 490" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
   <defs>
     <linearGradient id="netBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c1017"/>
+      <stop offset="0%" stop-color="#0d1117"/>
       <stop offset="100%" stop-color="#121820"/>
     </linearGradient>
     <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -10,7 +10,7 @@
       <stop offset="100%" stop-color="#0e1713"/>
     </linearGradient>
     <linearGradient id="hubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141d28"/>
+      <stop offset="0%" stop-color="#141f2a"/>
       <stop offset="100%" stop-color="#101720"/>
     </linearGradient>
 
@@ -43,111 +43,111 @@
     </style>
   </defs>
 
-  <rect width="960" height="490" rx="12" fill="url(#netBg)"/>
+  <rect width="1000" height="500" rx="12" fill="url(#netBg)"/>
 
-  <!-- Section Header -->
-  <g transform="translate(40, 32)">
+  <!-- Section Header (Clean, zero backslashes) -->
+  <g transform="translate(45, 32)">
     <text x="0" y="0" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#39d353" letter-spacing="1">
-      ENGINEERING TOPOLOGY • DOMAINS &amp; REPOSITORIES
+      PROJECT NETWORK &amp; CONNECTED DOMAINS
     </text>
     <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#f0f6fc">
-      The Engineering Playground Network
+      What I Build &amp; How It Connects
     </text>
   </g>
 
-  <!-- Central Core: (480, 260) -->
+  <!-- Central Core: (500, 265) -->
 
   <!-- Interconnect Lines -->
-  <!-- Hub 1: Top-Left (210, 130) -->
-  <path d="M 480 260 Q 320 210 210 130" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
-  <path class="conn-trace" d="M 480 260 Q 320 210 210 130" fill="none" stroke="#39d353" stroke-width="1.8"/>
+  <!-- Hub 1: Top-Left (230, 135) -->
+  <path d="M 500 265 Q 340 215 230 135" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
+  <path class="conn-trace" d="M 500 265 Q 340 215 230 135" fill="none" stroke="#39d353" stroke-width="1.8"/>
 
-  <!-- Hub 2: Top-Right (750, 130) -->
-  <path d="M 480 260 Q 640 210 750 130" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
-  <path class="conn-trace" d="M 480 260 Q 640 210 750 130" fill="none" stroke="#22c55e" stroke-width="1.8"/>
+  <!-- Hub 2: Top-Right (770, 135) -->
+  <path d="M 500 265 Q 660 215 770 135" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
+  <path class="conn-trace" d="M 500 265 Q 660 215 770 135" fill="none" stroke="#22c55e" stroke-width="1.8"/>
 
-  <!-- Hub 3: Mid-Right (780, 275) -->
-  <path d="M 480 260 L 780 275" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
-  <path class="conn-trace" d="M 480 260 L 780 275" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
+  <!-- Hub 3: Mid-Right (800, 280) -->
+  <path d="M 500 265 L 800 280" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
+  <path class="conn-trace" d="M 500 265 L 800 280" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
 
-  <!-- Hub 4: Bottom-Right (740, 415) -->
-  <path d="M 480 260 Q 620 350 740 415" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
-  <path class="conn-trace" d="M 480 260 Q 620 350 740 415" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+  <!-- Hub 4: Bottom-Right (760, 420) -->
+  <path d="M 500 265 Q 640 355 760 420" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
+  <path class="conn-trace" d="M 500 265 Q 640 355 760 420" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
 
-  <!-- Hub 5: Bottom-Left (220, 415) -->
-  <path d="M 480 260 Q 330 350 220 415" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
-  <path class="conn-trace" d="M 480 260 Q 330 350 220 415" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
+  <!-- Hub 5: Bottom-Left (240, 420) -->
+  <path d="M 500 265 Q 350 355 240 420" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
+  <path class="conn-trace" d="M 500 265 Q 350 355 240 420" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
 
-  <!-- Hub 6: Mid-Left (180, 275) -->
-  <path d="M 480 260 L 180 275" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
-  <path class="conn-trace" d="M 480 260 L 180 275" fill="none" stroke="#39d353" stroke-width="1.8"/>
+  <!-- Hub 6: Mid-Left (200, 280) -->
+  <path d="M 500 265 L 200 280" fill="none" stroke="#1c2b3e" stroke-width="2.5"/>
+  <path class="conn-trace" d="M 500 265 L 200 280" fill="none" stroke="#39d353" stroke-width="1.8"/>
 
   <!-- ==================== SATELLITE HUBS ==================== -->
 
   <!-- Hub 1: Full-Stack Web & SaaS (Top Left) -->
-  <g transform="translate(90, 80)">
-    <rect width="240" height="92" rx="8" fill="url(#hubGrad)" stroke="#234932" stroke-width="1.2"/>
+  <g transform="translate(100, 85)">
+    <rect width="250" height="92" rx="8" fill="url(#hubGrad)" stroke="#234e32" stroke-width="1.2"/>
     <circle cx="18" cy="22" r="4.5" fill="#39d353"/>
     <text x="32" y="26" class="hub-title" fill="#f0f6fc">Full-Stack SaaS &amp; Web</text>
     <text x="18" y="46" class="hub-desc">PROJECTS: Glamourly • Report-Maker</text>
     <text x="18" y="63" class="hub-desc">STACK: Next.js • React • TS • MongoDB</text>
-    <text x="18" y="80" class="hub-desc" fill="#22c55e">→ Real-time slots, Shop Act check</text>
+    <text x="18" y="80" class="hub-desc" fill="#22c55e">Real-time slots, verified listings</text>
   </g>
 
   <!-- Hub 2: Browser Systems & Extensions (Top Right) -->
-  <g transform="translate(630, 80)">
-    <rect width="240" height="92" rx="8" fill="url(#hubGrad)" stroke="#234932" stroke-width="1.2"/>
+  <g transform="translate(650, 85)">
+    <rect width="250" height="92" rx="8" fill="url(#hubGrad)" stroke="#234e32" stroke-width="1.2"/>
     <circle cx="18" cy="22" r="4.5" fill="#22c55e"/>
     <text x="32" y="26" class="hub-title" fill="#f0f6fc">Browser Systems &amp; Tools</text>
     <text x="18" y="46" class="hub-desc">PROJECT: Leet-Vault (Chrome MV3)</text>
     <text x="18" y="63" class="hub-desc">TECH: TypeScript • OAuth Flow • DOM FSM</text>
-    <text x="18" y="80" class="hub-desc" fill="#22c55e">→ Multi-named sync, collision queue</text>
+    <text x="18" y="80" class="hub-desc" fill="#22c55e">Multi-named sync, collision queue</text>
   </g>
 
   <!-- Hub 3: Applied AI & Language Models (Mid Right) -->
-  <g transform="translate(660, 230)">
-    <rect width="240" height="92" rx="8" fill="url(#hubGrad)" stroke="#1e293b" stroke-width="1.2"/>
+  <g transform="translate(680, 235)">
+    <rect width="250" height="92" rx="8" fill="url(#hubGrad)" stroke="#212e3e" stroke-width="1.2"/>
     <circle cx="18" cy="22" r="4.5" fill="#f59e0b"/>
     <text x="32" y="26" class="hub-title" fill="#f0f6fc">Applied AI &amp; LLM Arenas</text>
     <text x="18" y="46" class="hub-desc">PROJECT: AI Debate Arena</text>
     <text x="18" y="63" class="hub-desc">STACK: Express • OpenRouter • Multi-LLM</text>
-    <text x="18" y="80" class="hub-desc" fill="#f59e0b">→ Dual-model rebuttal, fallacy judge</text>
+    <text x="18" y="80" class="hub-desc" fill="#f59e0b">Dual-model rebuttal, fallacy scoring</text>
   </g>
 
   <!-- Hub 4: Marine AI & Geospatial (Bottom Right) -->
-  <g transform="translate(620, 375)">
-    <rect width="250" height="92" rx="8" fill="url(#hubGrad)" stroke="#1e293b" stroke-width="1.2"/>
+  <g transform="translate(640, 380)">
+    <rect width="255" height="92" rx="8" fill="url(#hubGrad)" stroke="#212e3e" stroke-width="1.2"/>
     <circle cx="18" cy="22" r="4.5" fill="#38bdf8"/>
     <text x="32" y="26" class="hub-title" fill="#f0f6fc">Marine Geospatial Intel</text>
     <text x="18" y="46" class="hub-desc">PROJECT: OceanGuard (SIH 2026)</text>
     <text x="18" y="63" class="hub-desc">STACK: FastAPI • SciPy • Leaflet • SAR</text>
-    <text x="18" y="80" class="hub-desc" fill="#38bdf8">→ Drift hindcasting &amp; AIS scoring</text>
+    <text x="18" y="80" class="hub-desc" fill="#38bdf8">Drift hindcasting &amp; AIS scoring</text>
   </g>
 
   <!-- Hub 5: Game Dev & Physics (Bottom Left) -->
-  <g transform="translate(90, 375)">
-    <rect width="250" height="92" rx="8" fill="url(#hubGrad)" stroke="#1e293b" stroke-width="1.2"/>
+  <g transform="translate(100, 380)">
+    <rect width="255" height="92" rx="8" fill="url(#hubGrad)" stroke="#212e3e" stroke-width="1.2"/>
     <circle cx="18" cy="22" r="4.5" fill="#f59e0b"/>
     <text x="32" y="26" class="hub-title" fill="#f0f6fc">Game Dev &amp; Physics</text>
     <text x="18" y="46" class="hub-desc">PROJECT: Rune-Striker (Godot 4.6)</text>
     <text x="18" y="63" class="hub-desc">ENGINE: Godot • GDScript • Windows .exe</text>
-    <text x="18" y="80" class="hub-desc" fill="#f59e0b">→ Coyote time, input buffer, Raycast AI</text>
+    <text x="18" y="80" class="hub-desc" fill="#f59e0b">Coyote time, input buffer, Raycast AI</text>
   </g>
 
   <!-- Hub 6: Media Utilities & Algorithms (Mid Left) -->
-  <g transform="translate(60, 230)">
-    <rect width="240" height="92" rx="8" fill="url(#hubGrad)" stroke="#234932" stroke-width="1.2"/>
+  <g transform="translate(70, 235)">
+    <rect width="250" height="92" rx="8" fill="url(#hubGrad)" stroke="#234e32" stroke-width="1.2"/>
     <circle cx="18" cy="22" r="4.5" fill="#39d353"/>
     <text x="32" y="26" class="hub-title" fill="#f0f6fc">Media Utilities &amp; DSA</text>
     <text x="18" y="46" class="hub-desc">PROJECTS: yt-to-mp4 • LeetCode (C++)</text>
     <text x="18" y="63" class="hub-desc">STACK: Python • Flask • FFmpeg • Docker</text>
-    <text x="18" y="80" class="hub-desc" fill="#22c55e">→ 18+ DSA topics, async transcoding</text>
+    <text x="18" y="80" class="hub-desc" fill="#22c55e">18+ DSA topics, async transcoding</text>
   </g>
 
   <!-- ==================== CENTRAL CORE NODE ==================== -->
-  <g transform="translate(480, 260)">
+  <g transform="translate(500, 265)">
     <circle cx="0" cy="0" r="70" fill="none" stroke="#1c2b3e" stroke-width="1.5"/>
-    <circle cx="0" cy="0" r="56" fill="none" stroke="#234932" stroke-width="1.2" stroke-dasharray="6, 5"/>
+    <circle cx="0" cy="0" r="56" fill="none" stroke="#234e32" stroke-width="1.2" stroke-dasharray="6, 5"/>
 
     <circle cx="0" cy="0" r="44" fill="url(#coreGrad)" stroke="#22c55e" stroke-width="1.5"/>
 
@@ -161,5 +161,5 @@
   </g>
 
   <!-- Outer Frame -->
-  <rect x="1" y="1" width="958" height="488" rx="11" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+  <rect x="1" y="1" width="998" height="498" rx="11" fill="none" stroke="#212e3e" stroke-width="1.2"/>
 </svg>

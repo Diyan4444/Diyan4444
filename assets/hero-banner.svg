@@ -1,39 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="100%">
   <defs>
     <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c1017"/>
+      <stop offset="0%" stop-color="#0d1117"/>
       <stop offset="50%" stop-color="#121820"/>
-      <stop offset="100%" stop-color="#0e141d"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
     </linearGradient>
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f0f6fc"/>
-      <stop offset="60%" stop-color="#f0f6fc"/>
+      <stop offset="70%" stop-color="#f0f6fc"/>
       <stop offset="100%" stop-color="#39d353"/>
     </linearGradient>
     <pattern id="techGrid" width="36" height="36" patternUnits="userSpaceOnUse">
       <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#162230" stroke-width="0.8"/>
-      <circle cx="0" cy="0" r="1.2" fill="#39d353" fill-opacity="0.2"/>
+      <circle cx="0" cy="0" r="1.2" fill="#39d353" fill-opacity="0.15"/>
     </pattern>
 
     <style>
-      .telemetry-text {
-        font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+      .mono-pill {
+        font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
         font-size: 11px;
         fill: #39d353;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
+        font-weight: 600;
       }
       .tagline-primary {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
-        font-size: 15px;
+        font-size: 15.5px;
         font-weight: 600;
         fill: #f0f6fc;
-        letter-spacing: 0.2px;
       }
       .tagline-sub {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
         font-size: 13.5px;
         fill: #8b949e;
-        letter-spacing: 0.2px;
       }
       .name-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -43,7 +42,7 @@
       }
       .badge-label {
         font-family: 'JetBrains Mono', Consolas, monospace;
-        font-size: 10.5px;
+        font-size: 11px;
         font-weight: 600;
         letter-spacing: 0.3px;
         fill: #f0f6fc;
@@ -51,87 +50,87 @@
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="960" height="290" rx="12" fill="url(#heroBg)"/>
-  <rect width="960" height="290" rx="12" fill="url(#techGrid)"/>
+  <rect width="1000" height="300" rx="12" fill="url(#heroBg)"/>
+  <rect width="1000" height="300" rx="12" fill="url(#techGrid)"/>
 
   <!-- Top Circuit Accent Line -->
-  <path d="M 30 25 L 350 25 L 365 38 L 595 38 L 610 25 L 930 25" fill="none" stroke="#1c2b3e" stroke-width="1.2"/>
-  <circle cx="350" cy="25" r="2.5" fill="#39d353"/>
-  <circle cx="610" cy="25" r="2.5" fill="#39d353"/>
+  <path d="M 35 25 L 360 25 L 375 38 L 610 38 L 625 25 L 965 25" fill="none" stroke="#1c2b3e" stroke-width="1.2"/>
+  <circle cx="360" cy="25" r="2.5" fill="#39d353"/>
+  <circle cx="625" cy="25" r="2.5" fill="#39d353"/>
 
-  <!-- Top Status Pill: ONLINE / READY TO BUILD (Wider container: 290px width) -->
-  <g transform="translate(40, 24)">
-    <rect width="280" height="28" rx="14" fill="#132219" stroke="#234932" stroke-width="1.2"/>
+  <!-- Top Status Pill: ONLINE • READY TO BUILD (Width: 290px, generous padding) -->
+  <g transform="translate(45, 24)">
+    <rect width="290" height="28" rx="14" fill="#13241b" stroke="#234e32" stroke-width="1.2"/>
+    <!-- Subtle contained pulsing dot, never flickers outside -->
     <circle cx="16" cy="14" r="4.5" fill="#39d353">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
     </circle>
-    <text x="30" y="18" class="telemetry-text">ONLINE • READY TO BUILD</text>
+    <text x="32" y="18" class="mono-pill">ONLINE • READY TO BUILD</text>
   </g>
 
-  <!-- Top Right Academic Tag -->
-  <g transform="translate(680, 24)">
-    <rect width="240" height="28" rx="6" fill="#131b26" stroke="#1e293b" stroke-width="1.2"/>
-    <text x="16" y="18" class="telemetry-text" fill="#8b949e">VJTI MUMBAI • IT SOPHOMORE</text>
+  <!-- Top Right Academic Tag (Width: 260px) -->
+  <g transform="translate(695, 24)">
+    <rect width="260" height="28" rx="6" fill="#141d28" stroke="#212e3e" stroke-width="1.2"/>
+    <text x="18" y="18" class="mono-pill" fill="#8b949e">VJTI MUMBAI • IT SOPHOMORE</text>
   </g>
 
   <!-- Main Identity Content Block -->
-  <g transform="translate(60, 78)">
-    <!-- Subtitle / Role Tracker -->
-    <text x="0" y="18" class="telemetry-text" fill="#39d353" font-weight="600">
+  <g transform="translate(55, 76)">
+    <!-- Subtitle / Mission -->
+    <text x="0" y="20" class="mono-pill" fill="#39d353">
       &gt; BUILDING SOFTWARE FROM FIRST PRINCIPLES
     </text>
 
     <!-- Main Title -->
-    <text x="0" y="62" class="name-text" fill="url(#textGrad)">
+    <text x="0" y="64" class="name-text" fill="url(#textGrad)">
       DIYAN SHAH
     </text>
 
-    <!-- Exact Academic Description across two balanced lines -->
-    <text x="0" y="94" class="tagline-primary">
+    <!-- Exact Academic Description across two balanced lines with 400px+ room to spare -->
+    <text x="0" y="96" class="tagline-primary">
       Information Technology Sophomore at VJTI Mumbai
     </text>
-    <text x="0" y="115" class="tagline-sub">
+    <text x="0" y="118" class="tagline-sub">
       Engineering full-stack architectures, systems tooling, AI workflows &amp; interactive applications.
     </text>
 
-    <!-- 4 Technical Focus Badges with generous horizontal spacing -->
-    <g transform="translate(0, 138)">
-      <!-- Badge 1: Academic Base (width: 140) -->
+    <!-- 4 Technical Focus Badges with generous width and spacing (zero clipping) -->
+    <g transform="translate(0, 142)">
+      <!-- Badge 1: Academic Base (width: 145) -->
       <g transform="translate(0, 0)">
-        <rect width="140" height="28" rx="5" fill="#141f2c" stroke="#1e293b" stroke-width="1"/>
-        <circle cx="12" cy="14" r="3" fill="#39d353"/>
-        <text x="24" y="18" class="badge-label">B.Tech IT • VJTI</text>
+        <rect width="145" height="30" rx="5" fill="#141f2c" stroke="#212e3e" stroke-width="1"/>
+        <circle cx="14" cy="15" r="3" fill="#39d353"/>
+        <text x="26" y="19" class="badge-label">B.Tech IT • VJTI</text>
       </g>
 
-      <!-- Badge 2: Full-Stack & Systems (width: 175, x: 152) -->
-      <g transform="translate(152, 0)">
-        <rect width="175" height="28" rx="5" fill="#141f2c" stroke="#1e293b" stroke-width="1"/>
-        <circle cx="12" cy="14" r="3" fill="#22c55e"/>
-        <text x="24" y="18" class="badge-label">Full Stack &amp; Systems</text>
+      <!-- Badge 2: Full-Stack & Systems (width: 185, x: 155) -->
+      <g transform="translate(155, 0)">
+        <rect width="185" height="30" rx="5" fill="#141f2c" stroke="#212e3e" stroke-width="1"/>
+        <circle cx="14" cy="15" r="3" fill="#22c55e"/>
+        <text x="26" y="19" class="badge-label">Full Stack &amp; Systems</text>
       </g>
 
-      <!-- Badge 3: Applied AI & Data (width: 160, x: 339) -->
-      <g transform="translate(339, 0)">
-        <rect width="160" height="28" rx="5" fill="#141f2c" stroke="#1e293b" stroke-width="1"/>
-        <circle cx="12" cy="14" r="3" fill="#38bdf8"/>
-        <text x="24" y="18" class="badge-label">Applied AI &amp; Data</text>
+      <!-- Badge 3: Applied AI & Data (width: 175, x: 350) -->
+      <g transform="translate(350, 0)">
+        <rect width="175" height="30" rx="5" fill="#141f2c" stroke="#212e3e" stroke-width="1"/>
+        <circle cx="14" cy="15" r="3" fill="#38bdf8"/>
+        <text x="26" y="19" class="badge-label">Applied AI &amp; Data</text>
       </g>
 
-      <!-- Badge 4: Interactive & Game Dev (width: 185, x: 511) -> Ends at 696px -->
-      <g transform="translate(511, 0)">
-        <rect width="185" height="28" rx="5" fill="#141f2c" stroke="#1e293b" stroke-width="1"/>
-        <circle cx="12" cy="14" r="3" fill="#f59e0b"/>
-        <text x="24" y="18" class="badge-label">Interactive &amp; Game Dev</text>
+      <!-- Badge 4: Interactive & Game Dev (width: 220, x: 535) -> ends at 755px -->
+      <g transform="translate(535, 0)">
+        <rect width="220" height="30" rx="5" fill="#141f2c" stroke="#212e3e" stroke-width="1"/>
+        <circle cx="14" cy="15" r="3" fill="#f59e0b"/>
+        <text x="26" y="19" class="badge-label">Interactive &amp; Game Dev</text>
       </g>
     </g>
   </g>
 
-  <!-- Right Decorative Node Element (Centered at x=830, y=155) -->
-  <g transform="translate(830, 155)">
+  <!-- Right Decorative Node Element (Centered at x=875, y=160) -->
+  <g transform="translate(875, 160)">
     <circle cx="0" cy="0" r="50" fill="none" stroke="#1a2738" stroke-width="1.2"/>
-    <circle cx="0" cy="0" r="36" fill="none" stroke="#234932" stroke-width="1.2" stroke-dasharray="4, 4"/>
-    <circle cx="0" cy="0" r="22" fill="#14221b" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#234e32" stroke-width="1.2" stroke-dasharray="4, 4"/>
+    <circle cx="0" cy="0" r="22" fill="#13241b" stroke="#22c55e" stroke-width="1.5"/>
     <circle cx="0" cy="0" r="6" fill="#39d353"/>
 
     <!-- Satellites -->
@@ -143,25 +142,25 @@
   </g>
 
   <!-- Bottom Terminal Status Bar -->
-  <g transform="translate(0, 258)">
-    <rect width="960" height="32" fill="#090d14" stroke="#162230" stroke-width="1"/>
-    <text x="35" y="20" class="telemetry-text" fill="#8b949e">
+  <g transform="translate(0, 268)">
+    <rect width="1000" height="32" fill="#0a0e14" stroke="#162230" stroke-width="1"/>
+    <text x="35" y="20" class="mono-pill" fill="#8b949e">
       CORE TECH: <tspan fill="#f0f6fc">TypeScript</tspan> • <tspan fill="#f0f6fc">C++</tspan> • <tspan fill="#f0f6fc">Python</tspan> • <tspan fill="#f0f6fc">Next.js</tspan> • <tspan fill="#f0f6fc">Node.js</tspan> • <tspan fill="#f0f6fc">Godot</tspan> • <tspan fill="#f0f6fc">Docker</tspan>
     </text>
 
-    <!-- Lower-Right Badge: Fixed width 230, text x=115 text-anchor=middle. Never clips! -->
-    <g transform="translate(695, 4)">
-      <rect width="230" height="24" rx="4" fill="#14221b" stroke="#234932" stroke-width="1"/>
-      <text x="115" y="16" class="telemetry-text" text-anchor="middle" fill="#39d353">
+    <!-- Lower-Right Badge: width 240, centered text. Generous 40px margin from canvas edge! -->
+    <g transform="translate(720, 4)">
+      <rect width="240" height="24" rx="4" fill="#13241b" stroke="#234e32" stroke-width="1"/>
+      <text x="120" y="16" class="mono-pill" text-anchor="middle" fill="#39d353">
         17 REPOSITORIES • ACTIVE
       </text>
     </g>
   </g>
 
   <!-- Outer Border Frame with Corner Accents -->
-  <rect x="1" y="1" width="958" height="288" rx="11" fill="none" stroke="#1c293c" stroke-width="1.2"/>
+  <rect x="1" y="1" width="998" height="298" rx="11" fill="none" stroke="#1c293c" stroke-width="1.2"/>
   <path d="M 1 25 L 1 1 L 25 1" fill="none" stroke="#39d353" stroke-width="2"/>
-  <path d="M 935 1 L 959 1 L 959 25" fill="none" stroke="#39d353" stroke-width="2"/>
-  <path d="M 1 265 L 1 289 L 25 289" fill="none" stroke="#39d353" stroke-width="2"/>
-  <path d="M 935 289 L 959 289 L 959 265" fill="none" stroke="#39d353" stroke-width="2"/>
+  <path d="M 975 1 L 999 1 L 999 25" fill="none" stroke="#39d353" stroke-width="2"/>
+  <path d="M 1 275 L 1 299 L 25 299" fill="none" stroke="#39d353" stroke-width="2"/>
+  <path d="M 975 299 L 999 299 L 999 275" fill="none" stroke="#39d353" stroke-width="2"/>
 </svg>
