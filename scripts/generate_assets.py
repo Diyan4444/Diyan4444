@@ -602,7 +602,9 @@ def generate_workflow_inside_build():
 
 def generate_animated_stats_card():
     # 1000 x 200 viewBox with pure SMIL rolling counter digits + animated language progress bars
-    # Numbers roll from 0 on load! Works 100% natively in GitHub camo image renderer without JS!
+    # Seamless 6.5s continuous cycle with 4.5s steady hold:
+    # Rolls up from 0 with ease-out deceleration, holds rock-solid for reading, then cycles.
+    # Guaranteed to animate in front of the user's eyes whenever they scroll down!
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="100%" height="100%">
   <defs>
     <linearGradient id="stBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -612,6 +614,11 @@ def generate_animated_stats_card():
     <linearGradient id="stCard" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#141f2a"/>
       <stop offset="100%" stop-color="#101720"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="{ACCENT_LIME}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="{ACCENT_LIME}" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="{ACCENT_LIME}" stop-opacity="0"/>
     </linearGradient>
     
     <clipPath id="digitClip">
@@ -628,15 +635,24 @@ def generate_animated_stats_card():
 
   <rect width="1000" height="200" rx="10" fill="url(#stBg)" stroke="{BORDER_SUBTLE}" stroke-width="1.2"/>
 
-  <!-- Header -->
+  <!-- Header with Telemetry Ping Indicator -->
   <g transform="translate(35, 24)">
-    <circle cx="6" cy="6" r="4" fill="{ACCENT_LIME}"/>
+    <circle cx="6" cy="6" r="4" fill="{ACCENT_LIME}">
+      <animate attributeName="r" values="3; 5; 3" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5; 1; 0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
     <text x="18" y="10" class="st-title">GITHUB TELEMETRY &amp; ACTIVITY BENCHMARKS</text>
   </g>
 
-  <!-- 4 Balanced Metric Cards (width 218 each, gap 16. 35 + 4*218 + 3*16 = 35 + 872 + 48 = 955 -> ends with 45px right margin) -->
+  <!-- Telemetry Scan Line across Header -->
+  <line x1="35" y1="36" x2="140" y2="36" stroke="url(#sweepGrad)" stroke-width="1.5">
+    <animate attributeName="x1" values="35; 860; 35" dur="6.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.5; 1" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+    <animate attributeName="x2" values="140; 965; 140" dur="6.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.5; 1" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+  </line>
 
-  <!-- Card 1: Total Contributions (Rolls 0 -> 187) -->
+  <!-- 4 Balanced Metric Cards (width 218 each, gap 16) -->
+
+  <!-- Card 1: Total Contributions (Rolls 0 -> 187, holds 4.5s, repeats) -->
   <g transform="translate(35, 48)">
     <rect width="218" height="132" rx="8" fill="url(#stCard)" stroke="{BORDER_GREEN}" stroke-width="1.2"/>
     <text x="18" y="26" class="st-lbl">CONTRIBUTIONS (YTD)</text>
@@ -646,28 +662,28 @@ def generate_animated_stats_card():
       <g clip-path="url(#digitClip)" transform="translate(0, 0)">
         <g class="st-num">
           <text x="2" y="30">0</text><text x="2" y="68">1</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -38" dur="1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -38; 0 -38; 0 0" keyTimes="0; 0.18; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
       <g clip-path="url(#digitClip)" transform="translate(24, 0)">
         <g class="st-num">
           <text x="2" y="30">0</text><text x="2" y="68">1</text><text x="2" y="106">2</text><text x="2" y="144">3</text>
           <text x="2" y="182">4</text><text x="2" y="220">5</text><text x="2" y="258">6</text><text x="2" y="296">7</text><text x="2" y="334">8</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -304" dur="1.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -304; 0 -304; 0 0" keyTimes="0; 0.21; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
       <g clip-path="url(#digitClip)" transform="translate(48, 0)">
         <g class="st-num">
           <text x="2" y="30">0</text><text x="2" y="68">1</text><text x="2" y="106">2</text><text x="2" y="144">3</text>
           <text x="2" y="182">4</text><text x="2" y="220">5</text><text x="2" y="258">6</text><text x="2" y="296">7</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -266" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -266; 0 -266; 0 0" keyTimes="0; 0.24; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
     </g>
     <text x="18" y="112" class="st-sub">Live public GitHub stream</text>
   </g>
 
-  <!-- Card 2: Public Repos (Rolls 0 -> 17) -->
+  <!-- Card 2: Public Repos (Rolls 0 -> 17, holds 4.5s, repeats) -->
   <g transform="translate(269, 48)">
     <rect width="218" height="132" rx="8" fill="url(#stCard)" stroke="{BORDER_SUBTLE}" stroke-width="1.2"/>
     <text x="18" y="26" class="st-lbl">PUBLIC REPOSITORIES</text>
@@ -677,21 +693,21 @@ def generate_animated_stats_card():
       <g clip-path="url(#digitClip)" transform="translate(0, 0)">
         <g class="st-num">
           <text x="2" y="30">0</text><text x="2" y="68">1</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -38" dur="0.9s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -38; 0 -38; 0 0" keyTimes="0; 0.18; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
       <g clip-path="url(#digitClip)" transform="translate(24, 0)">
         <g class="st-num">
           <text x="2" y="30">0</text><text x="2" y="68">1</text><text x="2" y="106">2</text><text x="2" y="144">3</text>
           <text x="2" y="182">4</text><text x="2" y="220">5</text><text x="2" y="258">6</text><text x="2" y="296">7</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -266" dur="1.4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -266; 0 -266; 0 0" keyTimes="0; 0.22; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
     </g>
     <text x="18" y="112" class="st-sub">Full-stack, tools, &amp; games</text>
   </g>
 
-  <!-- Card 3: Longest Streak (Rolls 0 -> 13) -->
+  <!-- Card 3: Longest Streak (Rolls 0 -> 13, holds 4.5s, repeats) -->
   <g transform="translate(503, 48)">
     <rect width="218" height="132" rx="8" fill="url(#stCard)" stroke="{BORDER_SUBTLE}" stroke-width="1.2"/>
     <text x="18" y="26" class="st-lbl">LONGEST STREAK (DAYS)</text>
@@ -701,13 +717,13 @@ def generate_animated_stats_card():
       <g clip-path="url(#digitClip)" transform="translate(0, 0)">
         <g class="st-num" fill="{ACCENT_AMBER}">
           <text x="2" y="30">0</text><text x="2" y="68">1</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -38" dur="0.8s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -38; 0 -38; 0 0" keyTimes="0; 0.17; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
       <g clip-path="url(#digitClip)" transform="translate(24, 0)">
         <g class="st-num" fill="{ACCENT_AMBER}">
           <text x="2" y="30">0</text><text x="2" y="68">1</text><text x="2" y="106">2</text><text x="2" y="144">3</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -114" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -114; 0 -114; 0 0" keyTimes="0; 0.21; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
     </g>
@@ -724,22 +740,22 @@ def generate_animated_stats_card():
         <g class="st-num" fill="{ACCENT_BLUE}">
           <text x="2" y="30">0</text><text x="2" y="68">1</text><text x="2" y="106">2</text><text x="2" y="144">3</text>
           <text x="2" y="182">4</text><text x="2" y="220">5</text><text x="2" y="258">6</text><text x="2" y="296">7</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -266" dur="1.1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -266; 0 -266; 0 0" keyTimes="0; 0.20; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
       <g clip-path="url(#digitClip)" transform="translate(24, 0)">
         <g class="st-num" fill="{ACCENT_BLUE}">
           <text x="2" y="30">0</text><text x="2" y="68">1</text><text x="2" y="106">2</text><text x="2" y="144">3</text><text x="2" y="182">4</text>
-          <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -152" dur="1.4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -152; 0 -152; 0 0" keyTimes="0; 0.23; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
         </g>
       </g>
       <text x="50" y="30" class="st-num" fill="{ACCENT_BLUE}">%</text>
     </g>
 
-    <!-- Animated progress bar from width 0 to 140 -->
+    <!-- Animated progress bar from width 0 to 134, holds, then cycles -->
     <rect x="18" y="86" width="180" height="6" rx="3" fill="#162230"/>
     <rect x="18" y="86" width="0" height="6" rx="3" fill="{ACCENT_BLUE}">
-      <animate attributeName="width" from="0" to="134" dur="1.5s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      <animate attributeName="width" values="0; 134; 134; 0" keyTimes="0; 0.24; 0.88; 1" keySplines="0.16 1 0.3 1; 0 0 1 1; 0.7 0 0.84 0" calcMode="spline" dur="6.5s" repeatCount="indefinite"/>
     </rect>
     <text x="18" y="112" class="st-sub">7.27 MB verified code</text>
   </g>

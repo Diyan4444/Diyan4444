@@ -418,9 +418,6 @@
           <p class="project-desc">
             Curated salon discovery and direct appointment booking platform handcrafted for Mumbai (Bandra, Juhu, Worli, Colaba, Andheri). Built with zero forced online prepayments, 100% transparent rate cards, Shop Act provider verification, real-time stylist calendar slots, instant email passes, and an AI Concierge assistant.
           </p>
-          <div class="project-diagram">
-            <img src="../assets/pipeline-glamourly.svg" alt="Glamourly Pipeline Diagram" />
-          </div>
           <div class="tech-tags">
             <span class="tech-tag">Next.js</span>
             <span class="tech-tag">React</span>
@@ -442,9 +439,6 @@
           <p class="project-desc">
             Chrome Extension (Manifest V3) that synchronizes accepted LeetCode solutions to GitHub. Engineered with user-controlled named solutions (e.g., <code>heap-sort.cpp</code>, <code>merge-sort.cpp</code>), snapshot state machine triggered exclusively on submission, zero-PAT OAuth broker, SHA duplicate detection, collision resolution, offline alarm queue, and 18+ language mappings.
           </p>
-          <div class="project-diagram">
-            <img src="../assets/pipeline-leetvault.svg" alt="Leet-Vault Pipeline Diagram" />
-          </div>
           <div class="tech-tags">
             <span class="tech-tag">TypeScript</span>
             <span class="tech-tag">Chrome Extension MV3</span>
@@ -466,9 +460,6 @@
           <p class="project-desc">
             A multi-model debate orchestration platform allowing users to pit distinct language models against each other across topics and difficulty tiers. Features turn-based prompt state machines, dynamic argument rebuttal streams, and an AI scoring judge evaluating logical consistency, fallacies, and persuasiveness.
           </p>
-          <div class="project-diagram">
-            <img src="../assets/pipeline-debater.svg" alt="AI Debate Arena Pipeline Diagram" />
-          </div>
           <div class="tech-tags">
             <span class="tech-tag">Node.js</span>
             <span class="tech-tag">Express.js API</span>
@@ -489,9 +480,6 @@
           <p class="project-desc">
             Satellite intelligence system built for Smart India Hackathon 2026. Segments oil slicks from SAR radar imagery, executes hydrodynamic backward-in-time drift trajectory hindcasting to pinpoint exact origin coordinates, and attributes spills to candidate vessels using AIS GPS cross-matching and anomaly scoring.
           </p>
-          <div class="project-diagram">
-            <img src="../assets/pipeline-oceanguard.svg" alt="OceanGuard Pipeline Diagram" />
-          </div>
           <div class="tech-tags">
             <span class="tech-tag">FastAPI (Python)</span>
             <span class="tech-tag">NumPy &amp; SciPy</span>
@@ -512,9 +500,6 @@
           <p class="project-desc">
             Handcrafted retro 2D platformer for Windows built with Godot Engine 4.6. Implements responsive kinematic movement with Coyote Time jump forgiveness, input buffering, CharacterBody2D state machines (IDLE/RUN/JUMP), raycast-based slime patrol AI, decoupled coin event bus, and standalone Windows build packaging.
           </p>
-          <div class="project-diagram">
-            <img src="../assets/pipeline-runestriker.svg" alt="Rune-Striker Pipeline Diagram" />
-          </div>
           <div class="tech-tags">
             <span class="tech-tag">Godot 4.6</span>
             <span class="tech-tag">GDScript</span>
@@ -535,9 +520,6 @@
           <p class="project-desc">
             High-throughput media transcoding microservice built with Flask, yt-dlp, FFmpeg, and Docker. Features concurrent worker throttling (MAX_CONCURRENT=5), real-time progress &amp; ETA polling, MP4/MP3 format conversion, and automated temp file sanitation.
           </p>
-          <div class="project-diagram">
-            <img src="../assets/pipeline-ytconverter.svg" alt="YouTube Converter Pipeline Diagram" />
-          </div>
           <div class="tech-tags">
             <span class="tech-tag">Python &amp; Flask</span>
             <span class="tech-tag">yt-dlp</span>
@@ -615,7 +597,7 @@
         <a href="https://github.com/Diyan4444" target="_blank" class="project-repo-link" style="padding: 9px 18px; font-size: 13px;">
           🐙 GitHub Profile ↗
         </a>
-        <a href="https://leetcode.com/u/Diyan4444/" target="_blank" class="project-repo-link" style="padding: 9px 18px; font-size: 13px;">
+        <a href="https://leetcode.com/u/diddy4/" target="_blank" class="project-repo-link" style="padding: 9px 18px; font-size: 13px;">
           ⚔ LeetCode Profile ↗
         </a>
       </div>
@@ -629,7 +611,7 @@
       <div class="footer-links">
         <a href="https://github.com/Diyan4444">GitHub</a>
         <a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/">LinkedIn</a>
-        <a href="https://leetcode.com/u/Diyan4444/">LeetCode</a>
+        <a href="https://leetcode.com/u/diddy4/">LeetCode</a>
         <a href="mailto:diyanshah2301@gmail.com">Email</a>
       </div>
       <p style="color: var(--text-muted); font-size: 12px; font-family: var(--font-mono);">
@@ -652,29 +634,29 @@
 
       document.querySelectorAll('.viewport-reveal').forEach(el => observer.observe(el));
 
-      // 2. Count-Up Animation for numbers
-      let counted = false;
+      // 2. Count-Up Animation: plays whenever user scrolls into the stats section
       const countObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-          if (entry.isIntersecting && !counted) {
-            counted = true;
+          if (entry.isIntersecting) {
             document.querySelectorAll('.counter-number').forEach(counter => {
               const target = +counter.getAttribute('data-target');
-              const hasPercent = counter.innerHTML.includes('%');
+              const hasPercent = counter.getAttribute('data-percent') === 'true' || counter.innerHTML.includes('%');
+              counter.setAttribute('data-percent', hasPercent);
               let current = 0;
               const step = Math.max(1, Math.ceil(target / 40));
-              const timer = setInterval(() => {
+              if (counter._timer) clearInterval(counter._timer);
+              counter._timer = setInterval(() => {
                 current += step;
                 if (current >= target) {
                   current = target;
-                  clearInterval(timer);
+                  clearInterval(counter._timer);
                 }
                 counter.innerHTML = hasPercent ? `${current}<span style="font-size: 20px;">%</span>` : `${current}`;
               }, 25);
             });
           }
         });
-      }, { threshold: 0.25 });
+      }, { threshold: 0.2 });
 
       const analyticsSection = document.getElementById('analytics');
       if (analyticsSection) countObserver.observe(analyticsSection);

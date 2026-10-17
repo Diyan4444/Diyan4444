@@ -90,10 +90,6 @@ A closer look at some of the primary projects I've built, how they work under th
 ### 1. 💇 Glamourly — Mumbai Salon Discovery & Direct Booking Platform
 > **Repository:** [`Diyan4444/Glamourly`](https://github.com/Diyan4444/Glamourly)
 
-<div align="center">
-  <img src="assets/pipeline-glamourly.svg" width="100%" alt="Glamourly Pipeline Diagram" />
-</div>
-
 * **Problem Solved:** Most salon booking portals enforce upfront online prepayments, lack verified licenses, or obscure true treatment pricing.
 * **Architecture & Capabilities:**
   * **Geospatial Discovery:** Filter verified beauty studios across Mumbai (Bandra, Juhu, Worli, Colaba, Andheri) by real distance, rating, and explicit treatment rate cards.
@@ -106,10 +102,6 @@ A closer look at some of the primary projects I've built, how they work under th
 
 ### 2. ⚡ Leet-Vault — Chrome Extension (Manifest V3) Solution Sync
 > **Repository:** [`Diyan4444/Leet-Vault`](https://github.com/Diyan4444/Leet-Vault) • **Test Suite:** 50+ Unit/Integration Tests
-
-<div align="center">
-  <img src="assets/pipeline-leetvault.svg" width="100%" alt="Leet-Vault Pipeline Diagram" />
-</div>
 
 * **Problem Solved:** Existing LeetCode sync extensions blindly overwrite previous solutions, leak personal access tokens (PATs), trigger false-positive commits on page navigation, or crash on network drops.
 * **Architecture & Capabilities:**
@@ -125,10 +117,6 @@ A closer look at some of the primary projects I've built, how they work under th
 ### 3. 🤖 AI Debate Arena — Multi-Model Argumentation & Scoring Engine
 > **Repository:** [`Diyan4444/AI-Debater`](https://github.com/Diyan4444/AI-Debater)
 
-<div align="center">
-  <img src="assets/pipeline-debater.svg" width="100%" alt="AI Debate Arena Pipeline Diagram" />
-</div>
-
 * **Problem Solved:** Evaluating and comparing how different LLMs reason, handle rebuttals, and maintain logical integrity when debating contentious motions.
 * **Architecture & Capabilities:**
   * **Turn-Based Debate Orchestration:** Configures topics, stances, difficulty parameters, and round counts between two distinct language models.
@@ -140,10 +128,6 @@ A closer look at some of the primary projects I've built, how they work under th
 
 ### 4. 🛰️ OceanGuard AI — SAR Satellite Oil Spill & AIS Vessel Attribution
 > **Repository:** [`Diyan4444/OceanGuard`](https://github.com/Diyan4444/OceanGuard) • Built for Smart India Hackathon 2026 (Problem SIH26143)
-
-<div align="center">
-  <img src="assets/pipeline-oceanguard.svg" width="100%" alt="OceanGuard AI Pipeline Diagram" />
-</div>
 
 * **Problem Solved:** Identifying illegal marine oil dumping from space, accounting for ocean surface drift, and legally holding responsible maritime vessels accountable.
 * **Architecture & Capabilities:**
@@ -158,10 +142,6 @@ A closer look at some of the primary projects I've built, how they work under th
 ### 5. ⚔️ Rune-Striker — 2D Retro Action-Platformer
 > **Repository:** [`Diyan4444/Rune-Striker`](https://github.com/Diyan4444/Rune-Striker)
 
-<div align="center">
-  <img src="assets/pipeline-runestriker.svg" width="100%" alt="Rune-Striker Pipeline Diagram" />
-</div>
-
 * **Problem Solved:** Designing responsive, forgiving 2D kinematic platforming mechanics and autonomous enemy patrol AI without bloated engine overhead.
 * **Architecture & Capabilities:**
   * **Precision Movement & Coyote Time:** Implements jump forgiveness (Coyote Time) and input buffering to prevent missed inputs at platform ledges.
@@ -175,10 +155,6 @@ A closer look at some of the primary projects I've built, how they work under th
 
 ### 6. 🎬 YouTube Converter (`yt-to-mp4`) — Media Transcoding Service
 > **Repository:** [`Diyan4444/yt-to-mp4`](https://github.com/Diyan4444/yt-to-mp4)
-
-<div align="center">
-  <img src="assets/pipeline-ytconverter.svg" width="100%" alt="YouTube Converter Pipeline Diagram" />
-</div>
 
 * **Problem Solved:** Lightweight, containerized web service for high-quality audio and video transcoding without third-party ad injection.
 * **Architecture & Capabilities:**
