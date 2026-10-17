@@ -14,7 +14,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-Diyan4444-22c55e?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=16202c)](https://github.com/Diyan4444)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-39d353?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=16202c)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Diyan4444-f59e0b?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=16202c)](https://leetcode.com/u/Diyan4444/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Diyan4444-f59e0b?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=16202c)](https://leetcode.com/u/diddy4/)
 [![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-38bdf8?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=16202c)](mailto:diyanshah2301@gmail.com)
 
 </div>
@@ -367,7 +367,7 @@ I'm always keen to chat about software engineering, developer tooling, or discus
   <img src="https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-22c55e?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=16202c" alt="Follow on GitHub" />
 </a>
 &nbsp;&nbsp;
-<a href="https://leetcode.com/u/diddy/" target="_blank">
+<a href="https://leetcode.com/u/diddy4/" target="_blank">
   <img src="https://img.shields.io/badge/LeetCode-Diyan4444-f59e0b?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=16202c" alt="View LeetCode Profile" />
 </a>
 
