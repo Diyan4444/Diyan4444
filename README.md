@@ -1,16 +1,20 @@
 <!-- ================================================================= -->
-<!--                DIYAN SHAH — THE ENGINEERING PLAYGROUND            -->
+<!--                DIYAN SHAH — GITHUB PROFILE PORTFOLIO              -->
 <!-- ================================================================= -->
 
 <div align="center">
   <a href="https://github.com/Diyan4444">
-    <img src="assets/hero-banner.svg" width="100%" alt="Diyan Shah — The Engineering Playground Hero Banner" />
+    <img src="assets/hero-banner.svg" width="100%" alt="Diyan Shah — Engineering Portfolio Banner" />
   </a>
 </div>
 
 <br>
 
 <div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1000&color=FF6B35&center=true&vCenter=true&width=750&lines=Information+Technology+Sophomore+%40+VJTI+Mumbai;Full-Stack+Architectures+%26+Browser+Systems;Building+Real+Software+from+First+Principles;Smart+India+Hackathon+Developer)](https://github.com/Diyan4444)
+
+<br>
 
 [![GitHub](https://img.shields.io/badge/GitHub-Diyan4444-ef4444?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=171922)](https://github.com/Diyan4444)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-f97316?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=171922)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
@@ -19,172 +23,118 @@
 
 </div>
 
-<br>
-
 ---
 
 ## ⚡ About Me
 
-I'm **Diyan Shah**, an **Information Technology Sophomore at VJTI Mumbai (Veermata Jijabai Technological Institute)**. 
+I'm **Diyan Shah**, an **Information Technology Sophomore at VJTI Mumbai (Veermata Jijabai Technological Institute)**.
 
-I love engineering software by building real systems from the ground up. Instead of just following tutorials, I learn by shipping: from full-stack platforms and production Chrome extensions (Manifest V3) to multi-model LLM debate engines, satellite radar geospatial pipelines, and 2D games in Godot.
+I believe in learning by shipping real software from first principles. Rather than stopping at surface tutorials, I focus on building resilient systems that solve real operational bottlenecks—from full-stack platforms and production Chrome extensions (Manifest V3) to SAR satellite oil spill tracking, media transcoding pipelines, and predictive industrial telemetry.
 
 ```text
-  [ Core Stack ]   C++ • Python • Next.js • Node.js • Godot • Docker • MongoDB • TypeScript 
-  [ Education  ]   Information Technology Sophomore — VJTI Mumbai
-  [ Focus Area ]   Full-Stack Systems • Browser Tools • Applied AI • Algorithmic Problem Solving
-  [ Philosophy ]   "Learn by shipping real software. Deep dives over surface tutorials."
+  [ Education   ]   Information Technology Sophomore — VJTI Mumbai
+  [ Core Focus  ]   Full-Stack Systems • Browser Tooling • Applied AI • Algorithmic Problem Solving
+  [ Current DSA ]   C++ STL & Data Structures — LeetCode (@diddy4)
+  [ Philosophy  ]   "Learn by shipping real software. Deep dives over surface tutorials."
 ```
-
----
-
-## 🌐 Project Architecture & Domains
-
-The diagram below shows how my core foundation connects across different technical domains and projects.
-
-<div align="center">
-  <img src="assets/engineering-network.svg" width="100%" alt="Project Network Architecture" />
-</div>
-
-<br>
-
-
-
----
-
-## 🎛️ Developer Console HUD
-
-<div align="center">
-  <img src="assets/profile-matrix.svg" width="100%" alt="Diyan Shah Identity & Telemetry HUD Matrix" />
-</div>
 
 ---
 
 ## 🚀 Featured Projects
 
-A closer look at some of the primary projects I've built, how they work under the hood, and the problems they solve.
+A curated selection of production applications and engineering tools I've designed and shipped:
 
-<br>
-
-### 1. 🛰️ OceanGuard AI — SAR Satellite Oil Spill & AIS Vessel Attribution
-> **Repository:** [`Diyan4444/OceanGuard`](https://github.com/Diyan4444/OceanGuard) • Built for Smart India Hackathon 2026 (Problem SIH26143)
-
-* **Problem Solved:** Identifying illegal marine oil dumping from space, accounting for ocean surface drift, and legally holding responsible maritime vessels accountable.
-* **Architecture & Capabilities:**
-  * **SAR Satellite Segmentation:** Extracts dark slicks from Synthetic Aperture Radar (SAR) imagery via computer vision segmentation models.
-  * **Hydrodynamic Drift Hindcasting:** Simulates ocean currents and wind vectors backward in time to calculate the exact spill origin coordinates.
-  * **AIS Telemetry Cross-Referencing:** Cross-references global AIS vessel tracks with the calculated origin coordinates and timestamps.
-  * **Suspect Anomaly Scoring:** Evaluates candidate ships on proximity, speed anomalies, and deliberate AIS transmitter blackouts.
-* **Stack:** `Python` • `FastAPI` • `NumPy` • `SciPy` • `React 19` • `Vite` • `Leaflet` • `CartoDB Dark Tiles` • `SQLite`
+### 1. 💇 [Glamourly](https://github.com/Diyan4444/Glamourly) — Mumbai Salon Discovery & Direct Booking
+> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/Glamourly) • [`Live Demo`](https://glamourly.vercel.app)  
+* **Problem Solved:** Traditional booking aggregators force upfront payments, add hidden convenience markups, and lack local stylist transparency.
+* **Architecture & Highlights:** Direct slot reservation engine with a 100% pay-at-salon offline model, verified Mumbai studio directory, instant email booking passes with Google Maps coordinates, customer appointment management portal, and an integrated AI concierge assistant.
+* **Tech Stack:** `Next.js (App Router)` • `React` • `TypeScript` • `Tailwind CSS` • `MongoDB Atlas` • `Netlify`
 
 ---
 
-### 2. ⚔️ Rune-Striker — 2D Retro Action-Platformer
-> **Repository:** [`Diyan4444/Rune-Striker`](https://github.com/Diyan4444/Rune-Striker)
-
-* **Problem Solved:** Designing responsive, forgiving 2D kinematic platforming mechanics and autonomous enemy patrol AI without bloated engine overhead.
-* **Architecture & Capabilities:**
-  * **Precision Movement & Coyote Time:** Implements jump forgiveness (Coyote Time) and input buffering to prevent missed inputs at platform ledges.
-  * **Character Kinematic FSM:** Smooth state transitions between `IDLE`, `RUN`, and `JUMP` with direction facing logic.
-  * **Raycast Enemy Patrols:** Slimes patrol platforms autonomously, using horizontal and downward ledge raycasts to detect barriers and turnaround points.
-  * **Decoupled Game Manager Event Bus:** Coin collection and HUD counter updates communicated via Godot signals.
-  * **Release Packaging:** Exported as an optimized, standalone Windows `.exe` binary.
-* **Stack:** `Godot 4.6` • `GDScript` • `2D Vector Physics` • `Raycast Collision AI` • `Windows Executable`
+### 2. ⚡ [Leet-Vault](https://github.com/Diyan4444/Leet-Vault) — Multi-Solution GitHub Sync Chrome Extension
+> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/Leet-Vault) • [`Live Dashboard`](https://leet-git-hub.vercel.app)  
+* **Problem Solved:** Standard LeetCode extension sync tools overwrite prior submissions, preventing developers from saving multiple algorithmic approaches to the same problem.
+* **Architecture & Highlights:** Production Manifest V3 extension enabling unlimited named solutions per problem (`0912-sort-an-array/heap-sort.cpp`, `merge-sort.cpp`), offline alarm queue for network resilience, GitHub OAuth broker, and 50+ unit tests across DOM observers.
+* **Tech Stack:** `TypeScript` • `Chrome Extensions MV3` • `Vite` • `Vitest` • `Tailwind CSS` • `Vercel Serverless`
 
 ---
 
-### 3. 🎬 YouTube Converter (`yt-to-mp4`) — Media Transcoding Service
-> **Repository:** [`Diyan4444/yt-to-mp4`](https://github.com/Diyan4444/yt-to-mp4)
-
-* **Problem Solved:** Lightweight, containerized web service for high-quality audio and video transcoding without third-party ad injection.
-* **Architecture & Capabilities:**
-  * **Format & Quality Probing:** Fetches available container formats, resolutions, and audio bitrates dynamically.
-  * **Worker Concurrency Throttling:** Strict queue management (`MAX_CONCURRENT_DOWNLOADS=5`) prevents CPU exhaustion during FFmpeg transcode jobs.
-  * **Real-Time Progress Streaming:** API polling for download percentages, byte rates, and estimated completion times.
-  * **Automated Ephemeral Cleanup:** Temporary scratch files automatically purged post-transcoding to maintain disk health.
-* **Stack:** `Python` • `Flask` • `yt-dlp` • `FFmpeg` • `Docker` • `Render Config`
+### 3. 🚗 [RentWheels](https://github.com/Diyan4444/RentWheels) — Multi-Category Vehicle Rental Marketplace
+> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/RentWheels) • [`Live Demo`](https://wheel-rent.netlify.app/)  
+* **Problem Solved:** Vehicle rental platforms are typically fragmented across separate apps for two-wheelers, passenger cars, and commercial transport.
+* **Architecture & Highlights:** Unified multi-tier rental catalog spanning scooters, superbikes, sedans, electric trucks, and passenger buses; dynamic client-side filtering, interactive reservation cart, booking confirmation modals, and responsive dark UI without framework bloat.
+* **Tech Stack:** `JavaScript (ES6+)` • `HTML5` • `CSS3` • `Netlify`
 
 ---
 
-## 🛠️ How I Build Software
+### 4. 🛰️ [OceanGuard AI](https://github.com/Diyan4444/OceanGuard) — Satellite Oil Spill Attribution & Hindcasting
+> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/OceanGuard) • *Smart India Hackathon 2026 (Problem SIH26143)*  
+* **Problem Solved:** Marine vessels illegally discharge bilge oil in open waters; ocean drift makes identifying the guilty vessel nearly impossible without automated spatial-temporal hindcasting.
+* **Architecture & Highlights:** Computer vision segmentation of Synthetic Aperture Radar (SAR) imagery to isolate dark slicks, hydrodynamic backward drift simulation using wind and current vectors to pinpoint origin coordinates, and automated cross-referencing against global AIS ship tracks to compute suspect anomaly scores.
+* **Tech Stack:** `Python` • `FastAPI` • `NumPy` • `SciPy` • `React 19` • `Vite` • `Leaflet` • `CartoDB Dark Tiles` • `SQLite`
 
-How I take an idea from initial specification to a deployed, working build:
+---
 
-<div align="center">
-  <img src="assets/workflow-inside-build.svg" width="100%" alt="How I Build Software" />
-</div>
+### 5. 🎬 [yt-to-mp4](https://github.com/Diyan4444/yt-to-mp4) — Containerized Media Transcoder & Converter
+> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/yt-to-mp4)  
+* **Problem Solved:** Online media converters are bloated with intrusive ads, redirect traps, and fail on high-bitrate media transcoding tasks.
+* **Architecture & Highlights:** Clean, ad-free web service with dynamic container format and audio bitrate probing, concurrency throttling (`MAX_CONCURRENT_DOWNLOADS=5`) to prevent CPU starvation during FFmpeg jobs, real-time download progress streaming via API polling, and automated ephemeral scratch file cleanup.
+* **Tech Stack:** `Python` • `Flask` • `yt-dlp` • `FFmpeg` • `Docker` • `Render Config`
 
-<br>
+---
+
+### 6. 🛢️ [Well-Whisperer](https://github.com/Diyan4444/Well-Whisperer) — Predictive Well Telemetry & Oilfield Analytics
+> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/Well-Whisperer) • *Smart India Hackathon 2026 (PS 121 — Oil India Limited)*  
+* **Problem Solved:** Undetected drill-string anomalies and pressure spikes cause catastrophic downhole equipment failures and non-productive drilling time.
+* **Architecture & Highlights:** Real-time wellbore telemetry monitoring dashboard, automated sensor anomaly detection, predictive maintenance alerting thresholds, and comparative performance benchmarking against historical synthetic field datasets.
+* **Tech Stack:** `React 19` • `TypeScript` • `FastAPI (Python 3.12)` • `Supabase (PostgreSQL)` • `Vite`
 
 ---
 
 ## 💻 Skills & Technologies
 
-Technologies I actively work with and have shipped projects using:
-
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <h4>⚡ Languages</h4>
       <ul>
-        <li><b>TypeScript</b> (Glamourly, Leet-Vault, Report-Maker)</li>
-        <li><b>JavaScript [ES6+]</b> (AI-Debater, RentWheels)</li>
-        <li><b>C++ [STL / DSA]</b> (LeetCode, Shorties, OSTLAB)</li>
-        <li><b>Python</b> (OceanGuard, yt-to-mp4)</li>
-        <li><b>GDScript</b> (Rune-Striker Engine)</li>
-        <li><b>SQL / PLpgSQL</b> (PostgreSQL / Prisma)</li>
-        <li><b>HTML5 & CSS3</b> (Modern responsive semantic layouts)</li>
+        <li><b>TypeScript</b></li>
+        <li><b>JavaScript [ES6+]</b></li>
+        <li><b>C++ [STL / DSA]</b></li>
+        <li><b>Python 3</b></li>
+        <li><b>SQL / PostgreSQL</b></li>
+        <li><b>HTML5 &amp; CSS3</b></li>
       </ul>
     </td>
-    <td width="33%" valign="top">
-      <h4>🌐 Frontend & UI</h4>
+    <td width="25%" valign="top">
+      <h4>🌐 Frontend &amp; UI</h4>
       <ul>
         <li><b>Next.js (App Router)</b></li>
-        <li><b>React & React 19</b></li>
+        <li><b>React &amp; React 19</b></li>
         <li><b>Tailwind CSS</b></li>
-        <li><b>Vite & Bundlers</b></li>
-        <li><b>Leaflet.js & CartoDB Maps</b></li>
+        <li><b>Vite &amp; Bundlers</b></li>
+        <li><b>Leaflet.js Maps</b></li>
       </ul>
     </td>
-    <td width="33%" valign="top">
-      <h4>⚙️ Backend & Systems</h4>
+    <td width="25%" valign="top">
+      <h4>⚙️ Backend &amp; Systems</h4>
       <ul>
-        <li><b>Node.js & Express.js</b></li>
+        <li><b>Node.js &amp; Express</b></li>
         <li><b>FastAPI (Python)</b></li>
         <li><b>Flask REST APIs</b></li>
-        <li><b>Chrome Extension MV3 Architecture</b></li>
-        <li><b>Chrome Identity API & OAuth Brokers</b></li>
-        <li><b>FFmpeg & yt-dlp Transcoding</b></li>
+        <li><b>Chrome Extensions (MV3)</b></li>
+        <li><b>FFmpeg &amp; Transcoding</b></li>
       </ul>
     </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top">
-      <h4>🗄️ Databases & Storage</h4>
+    <td width="25%" valign="top">
+      <h4>🗄️ Database &amp; DevOps</h4>
       <ul>
-        <li><b>MongoDB Atlas</b> (Document Store)</li>
-        <li><b>PostgreSQL & Prisma ORM</b></li>
-        <li><b>Redis</b> (Cache & Sessions)</li>
-        <li><b>SQLite</b> (Zero-config local DB)</li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <h4>🛠️ DevOps & Environments</h4>
-      <ul>
-        <li><b>Docker & Containerization</b></li>
-        <li><b>Git & GitHub Actions</b></li>
-        <li><b>Linux Command Line & Bash</b></li>
-        <li><b>VS Code & Android Studio</b></li>
-        <li><b>Netlify & Render Deployments</b></li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <h4>🔭 Active Learning & Research</h4>
-      <ul>
-        <li><b>Computer Vision</b> (OpenCV workshops)</li>
-        <li><b>Multi-Agent LLM Orchestration</b></li>
-        <li><b>AI/ML</b></li>
-        <li><b>Advanced Competitive DSA (C++)</b></li>
+        <li><b>MongoDB Atlas</b></li>
+        <li><b>Supabase &amp; Postgres</b></li>
+        <li><b>Redis &amp; SQLite</b></li>
+        <li><b>Docker &amp; Containers</b></li>
+        <li><b>Git &amp; GitHub Actions</b></li>
       </ul>
     </td>
   </tr>
@@ -193,8 +143,6 @@ Technologies I actively work with and have shipped projects using:
 ---
 
 ## 📊 GitHub Stats & Activity
-
-A snapshot of my development activity across 17 public repositories with live counters:
 
 <div align="center">
   <img src="assets/github-stats-animated.svg" width="100%" alt="Live Telemetry & Activity Benchmarks" />
@@ -220,19 +168,9 @@ A snapshot of my development activity across 17 public repositories with live co
 
 ## 🟩 Contribution Calendar
 
-A visual calendar of my GitHub contributions over the past year:
-
 <div align="center">
   <img src="assets/github-contribution-grid-snake.svg" width="100%" alt="Diyan Shah Contribution Snake Animation" />
 </div>
-
----
-
-## 🧭 My Journey & What's Next
-
-* **Where I've spent time:** Building complete products from start to finish—salon booking platforms, browser extensions, 2D game mechanics, and media processing tools.
-* **What I'm exploring now:** AI/ML, computer vision with OpenCV, and scalable backend design.
-* **What I want to build:** High-throughput distributed systems and developer tools that make developers' lives easier.
 
 ---
 
@@ -240,24 +178,12 @@ A visual calendar of my GitHub contributions over the past year:
 
 <div align="center">
 
-<a href="mailto:diyanshah2301@gmail.com">
-  <img src="https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-ff3355?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=171922" alt="Send Email" />
-</a>
+[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-ff3355?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=171922)](mailto:diyanshah2301@gmail.com)
 &nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/diyan-shah-14b4993a9/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20Diyan-f97316?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=171922" alt="Connect on LinkedIn" />
-</a>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20Diyan-f97316?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=171922)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
 &nbsp;&nbsp;
-<a href="https://github.com/Diyan4444" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-ef4444?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=171922" alt="Follow on GitHub" />
-</a>
+[![GitHub](https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-ef4444?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=171922)](https://github.com/Diyan4444)
 &nbsp;&nbsp;
-<a href="https://leetcode.com/u/diddy4/" target="_blank">
-  <img src="https://img.shields.io/badge/LeetCode-diddy4-ff6b35?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=171922" alt="View LeetCode Profile" />
-</a>
+[![LeetCode](https://img.shields.io/badge/LeetCode-diddy4-ff6b35?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=171922)](https://leetcode.com/u/diddy4/)
 
 </div>
-
-<!-- ================================================================= -->
-<!--                        END OF PORTFOLIO                           -->
-<!-- ================================================================= -->
