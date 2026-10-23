@@ -93,7 +93,7 @@ A closer look at some of the primary projects I've built, how they work under th
 
 ---
 
-### 6. 🎬 YouTube Converter (`yt-to-mp4`) — Media Transcoding Service
+### 3. 🎬 YouTube Converter (`yt-to-mp4`) — Media Transcoding Service
 > **Repository:** [`Diyan4444/yt-to-mp4`](https://github.com/Diyan4444/yt-to-mp4)
 
 * **Problem Solved:** Lightweight, containerized web service for high-quality audio and video transcoding without third-party ad injection.
