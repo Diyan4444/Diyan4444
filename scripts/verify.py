@@ -9,7 +9,7 @@ def verify_all():
     print("==================================================")
     all_ok = True
 
-    # 1. Check all SVGs
+    # 1. Check all SVGs for XML validity
     assets = list(Path('assets').glob('*.svg'))
     print(f"\n[1] Checking {len(assets)} SVG files for XML validity and well-formedness:")
     for p in assets:
@@ -55,7 +55,6 @@ def verify_all():
                 print(f"    [FAIL] Missing permitted project: {proj}")
                 all_ok = False
         
-        # Check that excluded projects are NOT in featured section
         excluded = ["AI-Debater", "Rune-Striker", "Report-Maker", "OSTLAB", "Shorties"]
         for bad in excluded:
             if bad in f_text:
@@ -76,11 +75,19 @@ def verify_all():
         print("    [FAIL] Academic identity missing or mismatched")
         all_ok = False
 
-    # 5. Check Image References
+    # 5. Check Image References in README.md & Verify No Snake References
     img_srcs = re.findall(r'<img[^>]+src=[\'"]([^\'"]+)[\'"]', readme_content)
     md_imgs = re.findall(r'!\[[^\]]*\]\(([^)]+)\)', readme_content)
     all_imgs = img_srcs + md_imgs
     print(f"\n[5] Checking {len(all_imgs)} image references in README.md:")
+    
+    # Verify snake is not referenced
+    if any("snake" in src.lower() for src in all_imgs):
+        print("    [FAIL] Unwanted snake image reference still found in README.md")
+        all_ok = False
+    else:
+        print("    [PASS] Confirmed zero snake animation references in README.md")
+        
     for src in all_imgs:
         if src.startswith(('http://', 'https://')):
             print(f"    [REMOTE OK] {src[:65]}...")
@@ -92,18 +99,18 @@ def verify_all():
                 print(f"    [LOCAL FAIL] {src} DOES NOT EXIST")
                 all_ok = False
 
-    # 6. Check Workflow Syntax (.github/workflows/snake.yml)
+    # 6. Check GitHub Actions Workflow (.github/workflows/contribution-graph.yml)
     print(f"\n[6] Checking GitHub Actions workflow:")
-    wf_path = Path('.github/workflows/snake.yml')
+    wf_path = Path('.github/workflows/contribution-graph.yml')
     if wf_path.exists():
         wf_text = wf_path.read_text(encoding='utf-8')
-        if 'Platane/snk/svg-only@v3' in wf_text and 'contents: write' in wf_text and 'Diyan4444' in wf_text:
-            print("    [PASS] .github/workflows/snake.yml is properly configured with least-privilege permissions")
+        if 'generate_contribution_graph.py' in wf_text and 'contents: write' in wf_text:
+            print("    [PASS] .github/workflows/contribution-graph.yml is properly configured with least-privilege permissions")
         else:
-            print("    [FAIL] .github/workflows/snake.yml missing required configuration")
+            print("    [FAIL] .github/workflows/contribution-graph.yml missing required configuration")
             all_ok = False
     else:
-        print("    [FAIL] .github/workflows/snake.yml does not exist")
+        print("    [FAIL] .github/workflows/contribution-graph.yml does not exist")
         all_ok = False
 
     # 7. Check for Secrets Leak

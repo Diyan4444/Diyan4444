@@ -1,0 +1,48 @@
+name: Refresh 2-Month Contribution Graph
+
+on:
+  schedule:
+    # Run every 6 hours to refresh live daily contribution activity
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-graph:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate 2-Month Contribution Graph SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_contribution_graph.py
+
+      - name: Commit and push updated graph asset
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/contribution-graph.svg assets/contributions_cache.json
+          if git diff --staged --quiet; then
+            echo "No changes in contribution graph."
+          else
+            git commit -m "chore(telemetry): auto-refresh 2-month contribution graph [skip ci]"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
