@@ -75,18 +75,20 @@ def verify_all():
         print("    [FAIL] Academic identity missing or mismatched")
         all_ok = False
 
-    # 5. Check Image References in README.md & Verify No Snake References
+    # 5. Check Image References in README.md (Both Contribution Graph and Snake)
     img_srcs = re.findall(r'<img[^>]+src=[\'"]([^\'"]+)[\'"]', readme_content)
     md_imgs = re.findall(r'!\[[^\]]*\]\(([^)]+)\)', readme_content)
     all_imgs = img_srcs + md_imgs
     print(f"\n[5] Checking {len(all_imgs)} image references in README.md:")
     
-    # Verify snake is not referenced
-    if any("snake" in src.lower() for src in all_imgs):
-        print("    [FAIL] Unwanted snake image reference still found in README.md")
-        all_ok = False
+    # Confirm both graph and snake are present
+    has_graph = any("contribution-graph.svg" in s for s in all_imgs)
+    has_snake = any("github-contribution-grid-snake.svg" in s for s in all_imgs)
+    if has_graph and has_snake:
+        print("    [PASS] Both 2-Month Contribution Graph and Snake Animation are present in order")
     else:
-        print("    [PASS] Confirmed zero snake animation references in README.md")
+        print(f"    [FAIL] Missing expected image reference (graph={has_graph}, snake={has_snake})")
+        all_ok = False
         
     for src in all_imgs:
         if src.startswith(('http://', 'https://')):
@@ -99,18 +101,18 @@ def verify_all():
                 print(f"    [LOCAL FAIL] {src} DOES NOT EXIST")
                 all_ok = False
 
-    # 6. Check GitHub Actions Workflow (.github/workflows/contribution-graph.yml)
-    print(f"\n[6] Checking GitHub Actions workflow:")
-    wf_path = Path('.github/workflows/contribution-graph.yml')
+    # 6. Check GitHub Actions Workflow (.github/workflows/snake.yml)
+    print(f"\n[6] Checking GitHub Actions workflow (.github/workflows/snake.yml):")
+    wf_path = Path('.github/workflows/snake.yml')
     if wf_path.exists():
         wf_text = wf_path.read_text(encoding='utf-8')
-        if 'generate_contribution_graph.py' in wf_text and 'contents: write' in wf_text:
-            print("    [PASS] .github/workflows/contribution-graph.yml is properly configured with least-privilege permissions")
+        if 'generate_contribution_graph.py' in wf_text and 'Platane/snk' in wf_text and 'contents: write' in wf_text:
+            print("    [PASS] .github/workflows/snake.yml generates both the 2-Month graph and snake animation")
         else:
-            print("    [FAIL] .github/workflows/contribution-graph.yml missing required configuration")
+            print("    [FAIL] .github/workflows/snake.yml missing required configuration")
             all_ok = False
     else:
-        print("    [FAIL] .github/workflows/contribution-graph.yml does not exist")
+        print("    [FAIL] .github/workflows/snake.yml does not exist")
         all_ok = False
 
     # 7. Check for Secrets Leak

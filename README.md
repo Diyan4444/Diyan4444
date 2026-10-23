@@ -166,10 +166,16 @@ A curated selection of production applications and engineering tools I've design
 
 ---
 
-## 📈 2-Month Contribution Graph
+## 📈 2-Month Contribution Graph & Calendar
 
 <div align="center">
   <img src="assets/contribution-graph.svg" width="100%" alt="Diyan's 2-Month GitHub Contribution Graph" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/github-contribution-grid-snake.svg" width="100%" alt="Diyan Shah Contribution Snake Animation" />
 </div>
 
 ---
