@@ -20,8 +20,8 @@
 &nbsp;
 [![Codeforces](https://img.shields.io/badge/Codeforces-diyanshah2301-263842?style=flat-square&logo=codeforces&logoColor=f1ede6&labelColor=161c28)](https://codeforces.com/profile/diyanshah2301)
 </div>
-
 <br>
+
 ## Who I Am
 
 I’m **Diyan Shah**, an Information Technology sophomore at **VJTI Mumbai**.
