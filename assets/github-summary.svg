@@ -50,7 +50,7 @@
   <g transform="translate(40, 80)">
     <rect width="160" height="96" rx="8" fill="#192230" stroke="#253245" stroke-width="1"/>
     <text x="16" y="24" class="card-label">Repositories &amp; Stars</text>
-    <text x="16" y="58" class="card-num" fill="#f1ede6">24 <tspan font-size="13" font-weight="500">repos</tspan></text>
+    <text x="16" y="58" class="card-num" fill="#f1ede6">25 <tspan font-size="13" font-weight="500">repos</tspan></text>
     <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#7eb2a8">• 1 follower · 11 stars</text>
   </g>
 
@@ -59,7 +59,7 @@
     <rect width="160" height="96" rx="8" fill="#192230" stroke="#253245" stroke-width="1"/>
     <text x="16" y="24" class="card-label">Commits &amp; Activity</text>
     <text x="16" y="58" class="card-num" fill="#ea937d">131 <tspan font-size="13" font-weight="500">commits</tspan></text>
-    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7">• 249 yr contributions</text>
+    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7">• 251 yr contributions</text>
   </g>
 
   <!-- Metric Tile 3: Pull Requests, Issues & Streak -->
@@ -67,7 +67,7 @@
     <rect width="160" height="96" rx="8" fill="#192230" stroke="#253245" stroke-width="1"/>
     <text x="16" y="24" class="card-label">PRs, Issues &amp; Streak</text>
     <text x="16" y="58" class="card-num" fill="#dfb17b">9 <tspan font-size="13" font-weight="500">day streak</tspan></text>
-    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#dfb17b">• 9 PRs · 1 issue</text>
+    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#dfb17b">• 10 PRs · 1 issue</text>
   </g>
 
   <!-- Languages Breakdown (Right Card) -->
