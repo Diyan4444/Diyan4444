@@ -58,7 +58,7 @@
   <g transform="translate(215, 80)">
     <rect width="160" height="96" rx="8" fill="#192230" stroke="#253245" stroke-width="1"/>
     <text x="16" y="24" class="card-label">Commits &amp; Activity</text>
-    <text x="16" y="58" class="card-num" fill="#ea937d">170 <tspan font-size="13" font-weight="500">commits</tspan></text>
+    <text x="16" y="58" class="card-num" fill="#ea937d">171 <tspan font-size="13" font-weight="500">commits</tspan></text>
     <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7">• 245 yr contributions</text>
   </g>
 
