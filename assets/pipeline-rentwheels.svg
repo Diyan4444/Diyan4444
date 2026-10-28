@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 175" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111622"/>
+      <stop offset="100%" stop-color="#161c28"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="175" rx="10" fill="url(#pBg)" stroke="#253245" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <g transform="translate(25, 24)">
+    <circle cx="6" cy="4" r="3.5" fill="#ea937d"/>
+    <text x="18" y="8" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="600" fill="#f1ede6" letter-spacing="0.8">
+      RENTWHEELS • ARCHITECTURAL FLOW (VEHICLE RENTAL CATALOG)
+    </text>
+  </g>
+
+  
+  <!-- Step 1 -->
+  <g transform="translate(25, 42)">
+    <rect width="195" height="110" rx="8" fill="#192230" stroke="#253245" stroke-width="1.2"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700" fill="#ea937d" letter-spacing="0.5">01. SEMANTIC CATALOG</text>
+    <text x="14" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Structured vehicle markup</text>
+    <text x="14" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Multi-category layout</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Accessible page hierarchy</text>
+    <text x="14" y="100" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#8696a7">Semantic HTML5</text>
+  </g>
+  <line x1="220" y1="97" x2="245" y2="97" stroke="#314159" stroke-width="1.5" stroke-dasharray="3, 3"/>
+  <polygon points="245,94 251,97 245,100" fill="#314159"/>
+  <!-- Step 2 -->
+  <g transform="translate(245, 42)">
+    <rect width="195" height="110" rx="8" fill="#192230" stroke="#253245" stroke-width="1.2"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700" fill="#7eb2a8" letter-spacing="0.5">02. RESPONSIVE DESIGN</text>
+    <text x="14" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Fluid grid &amp; cards</text>
+    <text x="14" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Clean typography &amp; layout</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Zero CSS framework</text>
+    <text x="14" y="100" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#8696a7">Modern CSS3</text>
+  </g>
+  <line x1="440" y1="97" x2="465" y2="97" stroke="#314159" stroke-width="1.5" stroke-dasharray="3, 3"/>
+  <polygon points="465,94 471,97 465,100" fill="#314159"/>
+  <!-- Step 3 -->
+  <g transform="translate(465, 42)">
+    <rect width="195" height="110" rx="8" fill="#192230" stroke="#253245" stroke-width="1.2"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700" fill="#dfb17b" letter-spacing="0.5">03. CLIENT INTERACTION</text>
+    <text x="14" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Category filtering logic</text>
+    <text x="14" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Interactive rental cart</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Daily pricing calculation</text>
+    <text x="14" y="100" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#8696a7">Vanilla JavaScript</text>
+  </g>
+  <line x1="660" y1="97" x2="685" y2="97" stroke="#314159" stroke-width="1.5" stroke-dasharray="3, 3"/>
+  <polygon points="685,94 691,97 685,100" fill="#314159"/>
+  <!-- Step 4 -->
+  <g transform="translate(685, 42)">
+    <rect width="195" height="110" rx="8" fill="#192230" stroke="#253245" stroke-width="1.2"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700" fill="#f1ede6" letter-spacing="0.5">04. EDGE HOSTING</text>
+    <text x="14" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Zero runtime dependencies</text>
+    <text x="14" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Instant asset loading</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Production deployment</text>
+    <text x="14" y="100" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#8696a7">Netlify Edge</text>
+  </g>
+</svg>

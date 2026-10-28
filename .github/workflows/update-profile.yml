@@ -1,0 +1,56 @@
+name: Update Profile Telemetry & Visuals
+
+on:
+  schedule:
+    # Refresh every 4 hours automatically
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate Calm Dusk Contribution Grid Snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Diyan4444
+          outputs: |
+            assets/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#ea937d&color_dots=#161e2b,#253644,#3d5761,#6b8782,#7eb2a8
+
+      - name: Generate Dusk Workspace Visuals & Inject Snake Container
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_dusk_assets.py
+
+      - name: Commit and push refreshed profile assets
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/
+          if git diff --staged --quiet; then
+            echo "Profile assets are already up to date."
+          else
+            git commit -m "chore(telemetry): auto-refresh profile telemetry & visuals [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

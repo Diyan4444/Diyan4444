@@ -1,223 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" width="100%" height="100%">
   <defs>
-    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0b0e"/>
-      <stop offset="50%" stop-color="#12141a"/>
-      <stop offset="100%" stop-color="#140f12"/>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111622"/>
+      <stop offset="50%" stop-color="#161c28"/>
+      <stop offset="100%" stop-color="#141924"/>
     </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="60%" stop-color="#ffffff"/>
-      <stop offset="85%" stop-color="#ff6b35"/>
-      <stop offset="100%" stop-color="#ff3355"/>
+
+    <linearGradient id="warmRule" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea937d" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#dfb17b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7eb2a8" stop-opacity="0.4"/>
     </linearGradient>
-    <linearGradient id="flameLaser" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff3355"/>
-      <stop offset="50%" stop-color="#ff6b35"/>
-      <stop offset="100%" stop-color="#f59e0b"/>
-    </linearGradient>
-    <linearGradient id="coreFlame" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff3355"/>
-      <stop offset="100%" stop-color="#ff6b35"/>
-    </linearGradient>
-    <pattern id="techGrid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#25161d" stroke-width="0.8"/>
-      <circle cx="0" cy="0" r="1.2" fill="#ff6b35" fill-opacity="0.2"/>
+
+    <pattern id="softGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#253245" stroke-width="0.75" stroke-opacity="0.45"/>
     </pattern>
 
     <style>
-      .mono-pill {
-        font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
-        font-size: 11px;
-        fill: #ff6b35;
-        letter-spacing: 0.8px;
-        font-weight: 600;
+      .name-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        fill: #f1ede6;
+        letter-spacing: 0.5px;
       }
-      .tagline-primary {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
-        font-size: 15.5px;
-        font-weight: 600;
-        fill: #ffffff;
-      }
-      .tagline-sub {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
-        font-size: 13.5px;
-        fill: #94a3b8;
-      }
-      .name-text {
+      .edu-sub {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 42px;
-        font-weight: 800;
-        letter-spacing: 2px;
+        font-size: 15px;
+        font-weight: 500;
+        fill: #ea937d;
+        letter-spacing: 0.2px;
       }
-      .badge-label {
-        font-family: 'JetBrains Mono', Consolas, monospace;
+      .intro-line {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 13.5px;
+        fill: #8696a7;
+        line-height: 1.5;
+      }
+      .tech-chip-text {
+        font-family: 'JetBrains Mono', Consolas, 'SF Mono', monospace;
         font-size: 11px;
+        font-weight: 500;
+        fill: #c7d2df;
+      }
+      .tag-quiet {
+        font-family: 'JetBrains Mono', Consolas, monospace;
+        font-size: 10.5px;
         font-weight: 600;
-        letter-spacing: 0.3px;
-        fill: #ffffff;
+        fill: #7eb2a8;
+        letter-spacing: 0.6px;
       }
     </style>
   </defs>
 
-  <rect width="1000" height="300" rx="12" fill="url(#heroBg)"/>
-  <rect width="1000" height="300" rx="12" fill="url(#techGrid)"/>
+  <!-- Card Background -->
+  <rect width="960" height="240" rx="12" fill="url(#bannerBg)" stroke="#253245" stroke-width="1.2"/>
+  <rect width="960" height="240" rx="12" fill="url(#softGrid)"/>
 
-  <!-- Static Top Circuit Guide Line -->
-  <path d="M 35 25 L 360 25 L 375 38 L 610 38 L 625 25 L 965 25" fill="none" stroke="#2a1820" stroke-width="1.2"/>
+  <!-- Left Accent Notch (Notebook Spine Detail) -->
+  <line x1="0" y1="20" x2="0" y2="220" stroke="#ea937d" stroke-width="4" stroke-linecap="round"/>
 
-  <!-- Animated Glowing Laser Trace along Header Circuit (Works 100% natively in GitHub) -->
-  <path d="M 35 25 L 360 25 L 375 38 L 610 38 L 625 25 L 965 25" fill="none" stroke="url(#flameLaser)" stroke-width="1.8" stroke-dasharray="10, 16">
-    <animate attributeName="stroke-dashoffset" from="0" to="-104" dur="2.4s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Glowing Circuit Intersection Nodes -->
-  <circle cx="360" cy="25" r="2.8" fill="#ff3355"/>
-  <circle cx="625" cy="25" r="2.8" fill="#ff6b35"/>
-
-  <!-- Animated Ambient Data Stream Wave in Background -->
-  <path d="M 35 185 Q 260 155 490 185 T 965 185" fill="none" stroke="url(#flameLaser)" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="8, 14">
-    <animate attributeName="stroke-dashoffset" from="0" to="-88" dur="3.6s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Top Status Pill: ONLINE • READY TO BUILD (Width: 290px, generous padding) -->
-  <g transform="translate(45, 24)">
-    <rect width="290" height="28" rx="14" fill="#1c1116" stroke="#4a242b" stroke-width="1.2"/>
-    <!-- Pulsing Red/Orange Status Dot -->
-    <circle cx="16" cy="14" r="4.5" fill="#ff3355">
-      <animate attributeName="r" values="3.5; 5.5; 3.5" dur="1.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4; 1; 0.4" dur="1.8s" repeatCount="indefinite"/>
+  <!-- Top Status / Discipline Pill -->
+  <g transform="translate(48, 30)">
+    <rect width="180" height="24" rx="12" fill="#192230" stroke="#253245" stroke-width="1"/>
+    <circle cx="12" cy="12" r="3.5" fill="#7eb2a8">
+      <animate attributeName="opacity" values="0.5; 1; 0.5" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <text x="32" y="18" class="mono-pill" fill="#ff6b35">ONLINE • READY TO BUILD</text>
+    <text x="24" y="15.5" class="tag-quiet">DIYAN SHAH • MUMBAI</text>
   </g>
 
-  <!-- Top Right Academic Tag (Width: 260px) -->
-  <g transform="translate(695, 24)">
-    <rect width="260" height="28" rx="6" fill="#171216" stroke="#331c22" stroke-width="1.2"/>
-    <text x="18" y="18" class="mono-pill" fill="#94a3b8">VJTI MUMBAI • IT SOPHOMORE</text>
+  <!-- Main Headline Block -->
+  <g transform="translate(48, 76)">
+    <text x="0" y="24" class="name-title">Diyan Shah</text>
+    <text x="195" y="22" class="edu-sub">B.Tech IT sophomore at VJTI Mumbai</text>
+    
+    <text x="0" y="54" class="intro-line">
+      I build full-stack web applications, browser tools, and hackathon prototypes.
+    </text>
+    <text x="0" y="73" class="intro-line">
+      I like projects that solve one real problem well, and I learn best by shipping them.
+    </text>
   </g>
 
-  <!-- Main Identity Content Block -->
-  <g transform="translate(55, 76)">
-    <!-- Subtitle / Mission -->
-    <text x="0" y="20" class="mono-pill" fill="#ff3355">
-      &gt; BUILDING SOFTWARE FROM FIRST PRINCIPLES
+  <!-- Calming Horizon Rule -->
+  <line x1="48" y1="180" x2="912" y2="180" stroke="url(#warmRule)" stroke-width="1"/>
+
+  <!-- Quiet Core Tech Strip -->
+  <g transform="translate(48, 204)">
+    <text x="0" y="0" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" fill="#8696a7" font-weight="600" letter-spacing="0.5">CORE TOOLKIT</text>
+    <text x="100" y="0" class="tech-chip-text">
+      TypeScript <tspan fill="#314159">•</tspan> C++ (STL) <tspan fill="#314159">•</tspan> Python <tspan fill="#314159">•</tspan> Next.js <tspan fill="#314159">•</tspan> FastAPI <tspan fill="#314159">•</tspan> Node.js <tspan fill="#314159">•</tspan> PostgreSQL <tspan fill="#314159">•</tspan> Docker
     </text>
-
-    <!-- Main Title: Pure White with Flame Orange Shimmer -->
-    <text x="0" y="64" class="name-text" fill="url(#textGrad)">
-      DIYAN SHAH
-    </text>
-
-    <!-- Exact Academic Description across two balanced lines -->
-    <text x="0" y="96" class="tagline-primary">
-      Information Technology Sophomore at VJTI Mumbai
-    </text>
-    <text x="0" y="118" class="tagline-sub">
-      Engineering full-stack architectures, systems tooling, AI workflows &amp; interactive applications.
-    </text>
-
-    <!-- 4 Technical Focus Badges with generous width and spacing (zero clipping) -->
-    <g transform="translate(0, 142)">
-      <!-- Badge 1: Academic Base (width: 145) -->
-      <g transform="translate(0, 0)">
-        <rect width="145" height="30" rx="5" fill="#1a1419" stroke="#4a242b" stroke-width="1"/>
-        <circle cx="14" cy="15" r="3" fill="#ff3355"/>
-        <text x="26" y="19" class="badge-label">B.Tech IT • VJTI</text>
-      </g>
-
-      <!-- Badge 2: Full-Stack & Systems (width: 185, x: 155) -->
-      <g transform="translate(155, 0)">
-        <rect width="185" height="30" rx="5" fill="#1a1419" stroke="#4a242b" stroke-width="1"/>
-        <circle cx="14" cy="15" r="3" fill="#ff6b35"/>
-        <text x="26" y="19" class="badge-label">Full Stack &amp; Systems</text>
-      </g>
-
-      <!-- Badge 3: Applied AI & Data (width: 175, x: 350) -->
-      <g transform="translate(350, 0)">
-        <rect width="175" height="30" rx="5" fill="#1a1419" stroke="#4a242b" stroke-width="1"/>
-        <circle cx="14" cy="15" r="3" fill="#f59e0b"/>
-        <text x="26" y="19" class="badge-label">Applied AI &amp; Data</text>
-      </g>
-
-      <!-- Badge 4: Interactive & Game Dev (width: 220, x: 535) -> ends at 755px -->
-      <g transform="translate(535, 0)">
-        <rect width="220" height="30" rx="5" fill="#1a1419" stroke="#4a242b" stroke-width="1"/>
-        <circle cx="14" cy="15" r="3" fill="#f43f5e"/>
-        <text x="26" y="19" class="badge-label">Interactive &amp; Game Dev</text>
-      </g>
-    </g>
   </g>
 
-  <!-- Right Animated Orbital Radar Gyroscope (Centered at x=875, y=155) -->
-  <g transform="translate(875, 155)">
-    <!-- Outer Radar Track -->
-    <circle cx="0" cy="0" r="54" fill="none" stroke="#25161e" stroke-width="1.2"/>
-
-    <!-- Rotating Outer Dashed Ring (Flame Orange) -->
-    <circle cx="0" cy="0" r="46" fill="none" stroke="#ff6b35" stroke-width="1.4" stroke-dasharray="6, 6" stroke-opacity="0.75">
-      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="12s" repeatCount="indefinite"/>
+  <!-- Right Notebook Stamp Motif -->
+  <g transform="translate(800, 42)">
+    <rect width="112" height="112" rx="10" fill="#192230" stroke="#253245" stroke-width="1"/>
+    <circle cx="56" cy="56" r="38" fill="none" stroke="#314159" stroke-width="1" stroke-dasharray="3, 3">
+      <animateTransform attributeName="transform" type="rotate" from="0 56 56" to="360 56 56" dur="36s" repeatCount="indefinite"/>
     </circle>
-
-    <!-- Counter-Rotating Inner Dashed Ring (Crimson Red) -->
-    <circle cx="0" cy="0" r="32" fill="none" stroke="#ff3355" stroke-width="1.4" stroke-dasharray="5, 5" stroke-opacity="0.85">
-      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="8s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Orbiting Satellite 1 (Flame Orange, r=46) -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="5s" repeatCount="indefinite"/>
-      <circle cx="46" cy="0" r="3.5" fill="#ff6b35"/>
-      <line x1="0" y1="0" x2="46" y2="0" stroke="#ff6b35" stroke-width="0.8" stroke-opacity="0.4"/>
-    </g>
-
-    <!-- Orbiting Satellite 2 (Crimson Red, r=32) -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="7s" repeatCount="indefinite"/>
-      <circle cx="-32" cy="0" r="3" fill="#ff3355"/>
-      <line x1="0" y1="0" x2="-32" y2="0" stroke="#ff3355" stroke-width="0.8" stroke-opacity="0.4"/>
-    </g>
-
-    <!-- Orbiting Satellite 3 (Pure White, r=58) -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="45 0 0" to="405 0 0" dur="11s" repeatCount="indefinite"/>
-      <circle cx="58" cy="0" r="2.5" fill="#ffffff"/>
-    </g>
-
-    <!-- Central Pulsing Core Orb -->
-    <circle cx="0" cy="0" r="14" fill="url(#coreFlame)" stroke="#ffffff" stroke-width="1.5">
-      <animate attributeName="r" values="13; 16; 13" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="56" cy="56" r="24" fill="none" stroke="#ea937d" stroke-opacity="0.3" stroke-width="1.2"/>
+    <text x="56" y="59" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ea937d" font-weight="700" text-anchor="middle" letter-spacing="1">VJTI</text>
   </g>
-
-  <!-- Bottom Terminal Status Bar -->
-  <g transform="translate(0, 268)">
-    <rect width="1000" height="32" fill="#0c0d12" stroke="#25161d" stroke-width="1"/>
-    <text x="35" y="20" class="mono-pill" fill="#94a3b8">
-      CORE TECH: <tspan fill="#ffffff">TypeScript</tspan> • <tspan fill="#ffffff">C++</tspan> • <tspan fill="#ffffff">Python</tspan> • <tspan fill="#ffffff">Next.js</tspan> • <tspan fill="#ffffff">Node.js</tspan> • <tspan fill="#ffffff">Godot</tspan> • <tspan fill="#ffffff">Docker</tspan>
-    </text>
-
-    <!-- Lower-Right Badge: width 240, centered text. Generous 40px margin from canvas edge! -->
-    <g transform="translate(720, 4)">
-      <rect width="240" height="24" rx="4" fill="#1c1116" stroke="#4a242b" stroke-width="1"/>
-      <text x="120" y="16" class="mono-pill" text-anchor="middle" fill="#ff6b35">
-        17 REPOSITORIES • ACTIVE
-      </text>
-    </g>
-  </g>
-
-  <!-- Outer Border Frame with Corner Accents -->
-  <rect x="1" y="1" width="998" height="298" rx="11" fill="none" stroke="#331c22" stroke-width="1.2"/>
-  <path d="M 1 25 L 1 1 L 25 1" fill="none" stroke="#ff3355" stroke-width="2">
-    <animate attributeName="stroke" values="#ff3355; #ff6b35; #ff3355" dur="3s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 975 1 L 999 1 L 999 25" fill="none" stroke="#ff3355" stroke-width="2">
-    <animate attributeName="stroke" values="#ff3355; #ff6b35; #ff3355" dur="3s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 1 275 L 1 299 L 25 299" fill="none" stroke="#ff3355" stroke-width="2">
-    <animate attributeName="stroke" values="#ff3355; #ff6b35; #ff3355" dur="3s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 975 299 L 999 299 L 999 275" fill="none" stroke="#ff3355" stroke-width="2">
-    <animate attributeName="stroke" values="#ff3355; #ff6b35; #ff3355" dur="3s" repeatCount="indefinite"/>
-  </path>
 </svg>

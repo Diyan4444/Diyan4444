@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 175" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111622"/>
+      <stop offset="100%" stop-color="#161c28"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="175" rx="10" fill="url(#pBg)" stroke="#253245" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <g transform="translate(25, 24)">
+    <circle cx="6" cy="4" r="3.5" fill="#ea937d"/>
+    <text x="18" y="8" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="600" fill="#f1ede6" letter-spacing="0.8">
+      WELL-WHISPERER • ARCHITECTURAL FLOW (SIH 2026 PS 121)
+    </text>
+  </g>
+
+  
+  <!-- Step 1 -->
+  <g transform="translate(25, 42)">
+    <rect width="195" height="110" rx="8" fill="#192230" stroke="#253245" stroke-width="1.2"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700" fill="#ea937d" letter-spacing="0.5">01. OFFSET WELL LOGS</text>
+    <text x="14" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Historical drilling data</text>
+    <text x="14" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Wellbore trajectory logs</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Synthetic field benchmarks</text>
+    <text x="14" y="100" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#8696a7">FastAPI • Python 3.12</text>
+  </g>
+  <line x1="220" y1="97" x2="245" y2="97" stroke="#314159" stroke-width="1.5" stroke-dasharray="3, 3"/>
+  <polygon points="245,94 251,97 245,100" fill="#314159"/>
+  <!-- Step 2 -->
+  <g transform="translate(245, 42)">
+    <rect width="195" height="110" rx="8" fill="#192230" stroke="#253245" stroke-width="1.2"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700" fill="#7eb2a8" letter-spacing="0.5">02. DRILLING INTEL</text>
+    <text x="14" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Nearby wells correlation</text>
+    <text x="14" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Formation pressure curves</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Hazard &amp; loss prediction</text>
+    <text x="14" y="100" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#8696a7">NumPy • SciPy • Pandas</text>
+  </g>
+  <line x1="440" y1="97" x2="465" y2="97" stroke="#314159" stroke-width="1.5" stroke-dasharray="3, 3"/>
+  <polygon points="465,94 471,97 465,100" fill="#314159"/>
+  <!-- Step 3 -->
+  <g transform="translate(465, 42)">
+    <rect width="195" height="110" rx="8" fill="#192230" stroke="#253245" stroke-width="1.2"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700" fill="#dfb17b" letter-spacing="0.5">03. 3D TRAJECTORY HUD</text>
+    <text x="14" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Interactive 3D wellbore</text>
+    <text x="14" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Real-time advisory alerts</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Spatial distance mapping</text>
+    <text x="14" y="100" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#8696a7">React 19 • Three.js</text>
+  </g>
+  <line x1="660" y1="97" x2="685" y2="97" stroke="#314159" stroke-width="1.5" stroke-dasharray="3, 3"/>
+  <polygon points="685,94 691,97 685,100" fill="#314159"/>
+  <!-- Step 4 -->
+  <g transform="translate(685, 42)">
+    <rect width="195" height="110" rx="8" fill="#192230" stroke="#253245" stroke-width="1.2"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700" fill="#f1ede6" letter-spacing="0.5">04. PERSISTENT STORAGE</text>
+    <text x="14" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">Offset database storage</text>
+    <text x="14" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">High-performance queries</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#c7d2df">eRTMAC operational sync</text>
+    <text x="14" y="100" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#8696a7">Supabase PostgreSQL</text>
+  </g>
+</svg>

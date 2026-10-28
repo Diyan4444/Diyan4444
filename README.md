@@ -1,195 +1,243 @@
 <!-- ================================================================= -->
-<!--                DIYAN SHAH — GITHUB PROFILE PORTFOLIO              -->
+<!--                       DIYAN SHAH — PROFILE                        -->
 <!-- ================================================================= -->
 
 <div align="center">
-  <a href="https://github.com/Diyan4444">
-    <img src="assets/hero-banner.svg" width="100%" alt="Diyan Shah — Engineering Portfolio Banner" />
-  </a>
+  <img src="assets/hero-banner.svg" width="100%" alt="Diyan Shah — B.Tech IT sophomore at VJTI Mumbai" />
 </div>
 
 <br>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1000&color=FF6B35&center=true&vCenter=true&width=750&lines=Information+Technology+Sophomore+%40+VJTI+Mumbai;Full-Stack+Architectures+%26+Browser+Systems;Building+Real+Software+from+First+Principles;Smart+India+Hackathon+Developer)](https://github.com/Diyan4444)
-
-<br>
-
-[![GitHub](https://img.shields.io/badge/GitHub-Diyan4444-ef4444?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=171922)](https://github.com/Diyan4444)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-f97316?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=171922)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-diddy4-ff6b35?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=171922)](https://leetcode.com/u/diddy4/)
-[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-ff3355?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=171922)](mailto:diyanshah2301@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Diyan4444-1f2937?style=flat-square&logo=github&logoColor=f1ede6&labelColor=161c28)](https://github.com/Diyan4444)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-2d3b4e?style=flat-square&logo=linkedin&logoColor=f1ede6&labelColor=161c28)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
+&nbsp;
+[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-4a373b?style=flat-square&logo=gmail&logoColor=f1ede6&labelColor=161c28)](mailto:diyanshah2301@gmail.com)
+&nbsp;
+[![LeetCode](https://img.shields.io/badge/LeetCode-diddy4-3a3328?style=flat-square&logo=leetcode&logoColor=f1ede6&labelColor=161c28)](https://leetcode.com/u/diddy4/)
+&nbsp;
+[![Codeforces](https://img.shields.io/badge/Codeforces-diyanshah2301-263842?style=flat-square&logo=codeforces&logoColor=f1ede6&labelColor=161c28)](https://codeforces.com/profile/diyanshah2301)
 
 </div>
 
----
+<br>
 
-## ⚡ About Me
+## Who I Am
 
-I'm **Diyan Shah**, an **Information Technology Sophomore at VJTI Mumbai (Veermata Jijabai Technological Institute)**.
+I’m **Diyan Shah**, an Information Technology sophomore at **VJTI Mumbai**.
 
-I believe in learning by shipping real software from first principles. Rather than stopping at surface tutorials, I focus on building resilient systems that solve real operational bottlenecks—from full-stack platforms and production Chrome extensions (Manifest V3) to SAR satellite oil spill tracking, media transcoding pipelines, and predictive industrial telemetry.
+I enjoy building full-stack web applications, browser tools, and hackathon prototypes, alongside practicing data structures and algorithms in C++. I like software that solves one real, annoying problem well, and I learn best by shipping working systems from the ground up.
 
-```text
-  [ Education   ]   Information Technology Sophomore — VJTI Mumbai
-  [ Core Focus  ]   Full-Stack Systems • Browser Tooling • Applied AI • Algorithmic Problem Solving
-  [ Current DSA ]   C++ STL & Data Structures — LeetCode (@diddy4)
-  [ Philosophy  ]   "Learn by shipping real software. Deep dives over surface tutorials."
-```
+* **Currently:** Practicing C++ STL & algorithmic problem solving on LeetCode, and developing our Smart India Hackathon 2026 builds ([OceanGuard AI](https://github.com/Diyan4444/OceanGuard) and [Well-Whisperer](https://github.com/Diyan4444/Well-Whisperer)).
+* **Open to:** Hackathon teams, open-source initiatives, and engineering collaborations.
 
 ---
 
-## 🚀 Featured Projects
-
-A curated selection of production applications and engineering tools I've designed and shipped:
-
-### 1. 💇 [Glamourly](https://github.com/Diyan4444/Glamourly) — Mumbai Salon Discovery & Direct Booking
-> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/Glamourly) • [`Live Demo`](https://glamourly.vercel.app)  
-* **Problem Solved:** Traditional booking aggregators force upfront payments, add hidden convenience markups, and lack local stylist transparency.
-* **Architecture & Highlights:** Direct slot reservation engine with a 100% pay-at-salon offline model, verified Mumbai studio directory, instant email booking passes with Google Maps coordinates, customer appointment management portal, and an integrated AI concierge assistant.
-* **Tech Stack:** `Next.js (App Router)` • `React` • `TypeScript` • `Tailwind CSS` • `MongoDB Atlas` • `Netlify`
-
----
-
-### 2. ⚡ [Leet-Vault](https://github.com/Diyan4444/Leet-Vault) — Multi-Solution GitHub Sync Chrome Extension
-> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/Leet-Vault) • [`Live Dashboard`](https://leet-git-hub.vercel.app)  
-* **Problem Solved:** Standard LeetCode extension sync tools overwrite prior submissions, preventing developers from saving multiple algorithmic approaches to the same problem.
-* **Architecture & Highlights:** Production Manifest V3 extension enabling unlimited named solutions per problem (`0912-sort-an-array/heap-sort.cpp`, `merge-sort.cpp`), offline alarm queue for network resilience, GitHub OAuth broker, and 50+ unit tests across DOM observers.
-* **Tech Stack:** `TypeScript` • `Chrome Extensions MV3` • `Vite` • `Vitest` • `Tailwind CSS` • `Vercel Serverless`
-
----
-
-### 3. 🚗 [RentWheels](https://github.com/Diyan4444/RentWheels) — Multi-Category Vehicle Rental Marketplace
-> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/RentWheels) • [`Live Demo`](https://wheel-rent.netlify.app/)  
-* **Problem Solved:** Vehicle rental platforms are typically fragmented across separate apps for two-wheelers, passenger cars, and commercial transport.
-* **Architecture & Highlights:** Unified multi-tier rental catalog spanning scooters, superbikes, sedans, electric trucks, and passenger buses; dynamic client-side filtering, interactive reservation cart, booking confirmation modals, and responsive dark UI without framework bloat.
-* **Tech Stack:** `JavaScript (ES6+)` • `HTML5` • `CSS3` • `Netlify`
-
----
-
-### 4. 🛰️ [OceanGuard AI](https://github.com/Diyan4444/OceanGuard) — Satellite Oil Spill Attribution & Hindcasting
-> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/OceanGuard) • *Smart India Hackathon 2026 (Problem SIH26143)*  
-* **Problem Solved:** Marine vessels illegally discharge bilge oil in open waters; ocean drift makes identifying the guilty vessel nearly impossible without automated spatial-temporal hindcasting.
-* **Architecture & Highlights:** Computer vision segmentation of Synthetic Aperture Radar (SAR) imagery to isolate dark slicks, hydrodynamic backward drift simulation using wind and current vectors to pinpoint origin coordinates, and automated cross-referencing against global AIS ship tracks to compute suspect anomaly scores.
-* **Tech Stack:** `Python` • `FastAPI` • `NumPy` • `SciPy` • `React 19` • `Vite` • `Leaflet` • `CartoDB Dark Tiles` • `SQLite`
-
----
-
-### 5. 🎬 [yt-to-mp4](https://github.com/Diyan4444/yt-to-mp4) — Containerized Media Transcoder & Converter
-> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/yt-to-mp4)  
-* **Problem Solved:** Online media converters are bloated with intrusive ads, redirect traps, and fail on high-bitrate media transcoding tasks.
-* **Architecture & Highlights:** Clean, ad-free web service with dynamic container format and audio bitrate probing, concurrency throttling (`MAX_CONCURRENT_DOWNLOADS=5`) to prevent CPU starvation during FFmpeg jobs, real-time download progress streaming via API polling, and automated ephemeral scratch file cleanup.
-* **Tech Stack:** `Python` • `Flask` • `yt-dlp` • `FFmpeg` • `Docker` • `Render Config`
-
----
-
-### 6. 🛢️ [Well-Whisperer](https://github.com/Diyan4444/Well-Whisperer) — Predictive Well Telemetry & Oilfield Analytics
-> **Links:** [`GitHub Repository`](https://github.com/Diyan4444/Well-Whisperer) • *Smart India Hackathon 2026 (PS 121 — Oil India Limited)*  
-* **Problem Solved:** Undetected drill-string anomalies and pressure spikes cause catastrophic downhole equipment failures and non-productive drilling time.
-* **Architecture & Highlights:** Real-time wellbore telemetry monitoring dashboard, automated sensor anomaly detection, predictive maintenance alerting thresholds, and comparative performance benchmarking against historical synthetic field datasets.
-* **Tech Stack:** `React 19` • `TypeScript` • `FastAPI (Python 3.12)` • `Supabase (PostgreSQL)` • `Vite`
-
----
-
-## 💻 Skills & Technologies
+## Toolkit
 
 <table>
   <tr>
     <td width="25%" valign="top">
       <h4>⚡ Languages</h4>
       <ul>
-        <li><b>TypeScript</b></li>
-        <li><b>JavaScript [ES6+]</b></li>
-        <li><b>C++ [STL / DSA]</b></li>
-        <li><b>Python 3</b></li>
-        <li><b>SQL / PostgreSQL</b></li>
-        <li><b>HTML5 &amp; CSS3</b></li>
+        <li>TypeScript</li>
+        <li>JavaScript (ES6+)</li>
+        <li>C++ (STL / DSA)</li>
+        <li>Python 3.12</li>
+        <li>SQL (PostgreSQL)</li>
+        <li>HTML5 &amp; CSS3</li>
       </ul>
     </td>
     <td width="25%" valign="top">
-      <h4>🌐 Frontend &amp; UI</h4>
+      <h4>🌐 Frontend</h4>
       <ul>
-        <li><b>Next.js (App Router)</b></li>
-        <li><b>React &amp; React 19</b></li>
-        <li><b>Tailwind CSS</b></li>
-        <li><b>Vite &amp; Bundlers</b></li>
-        <li><b>Leaflet.js Maps</b></li>
+        <li>React &amp; React 19</li>
+        <li>Next.js (App Router)</li>
+        <li>Tailwind CSS</li>
+        <li>Vite &amp; Vitest</li>
+        <li>Leaflet &amp; Three.js</li>
       </ul>
     </td>
     <td width="25%" valign="top">
       <h4>⚙️ Backend &amp; Systems</h4>
       <ul>
-        <li><b>Node.js &amp; Express</b></li>
-        <li><b>FastAPI (Python)</b></li>
-        <li><b>Flask REST APIs</b></li>
-        <li><b>Chrome Extensions (MV3)</b></li>
-        <li><b>FFmpeg &amp; Transcoding</b></li>
+        <li>FastAPI (Python)</li>
+        <li>Flask REST APIs</li>
+        <li>Chrome Extensions (MV3)</li>
+        <li>Docker &amp; Gunicorn</li>
+        <li>yt-dlp &amp; FFmpeg</li>
       </ul>
     </td>
     <td width="25%" valign="top">
-      <h4>🗄️ Database &amp; DevOps</h4>
+      <h4>🗄️ Data &amp; Deploy</h4>
       <ul>
-        <li><b>MongoDB Atlas</b></li>
-        <li><b>Supabase &amp; Postgres</b></li>
-        <li><b>Redis &amp; SQLite</b></li>
-        <li><b>Docker &amp; Containers</b></li>
-        <li><b>Git &amp; GitHub Actions</b></li>
+        <li>Supabase PostgreSQL</li>
+        <li>MongoDB (Mongoose)</li>
+        <li>SQLite (aiosqlite)</li>
+        <li>Netlify &amp; Vercel</li>
+        <li>GitHub Actions CI/CD</li>
       </ul>
     </td>
   </tr>
 </table>
 
----
-
-## 📊 GitHub Stats & Activity
-
-<div align="center">
-  <img src="assets/github-stats-animated.svg" width="100%" alt="Live Telemetry & Activity Benchmarks" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Diyan4444&show_icons=true&theme=radical&bg_color=0a0b0e&border_color=331c22&title_color=ff3355&text_color=cbd5e1&icon_color=ff6b35&hide_border=false" width="48%" alt="Diyan's GitHub Stats" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Diyan4444&layout=compact&theme=radical&bg_color=0a0b0e&border_color=331c22&title_color=ff3355&text_color=cbd5e1&icon_color=ff6b35&hide_border=false" width="48%" alt="Top Languages Used" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=Diyan4444&theme=radical&background=0a0b0e&border=331c22&stroke=ff3355&ring=ff6b35&fire=ff3355&currStreakLabel=ff6b35" width="97%" alt="Contribution Streak" />
-</div>
-
-<br>
+> *Built so far: an accepted-solution GitHub sync extension for LeetCode, a curated salon discovery & booking platform, a satellite oil-spill tracer, a nearby wells drilling intelligence system, a containerised media converter, and an accessible vehicle rental marketplace.*
 
 ---
 
-## 📈 2-Month Contribution Graph & Calendar
+## Projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>1. <a href="https://github.com/Diyan4444/Leet-Vault">Leet-Vault</a></h3>
+      <p>Automated Chrome extension for syncing accepted LeetCode solutions directly to your GitHub repository.</p>
+      <ul>
+        <li>Keeps unlimited named solutions per problem without overwriting previous algorithms.</li>
+        <li>Triggers strictly on submission clicks with deterministic fallback numbering.</li>
+        <li>Uses Chrome Identity OAuth and GitHub REST API (no LeetCode GraphQL).</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>TypeScript</code> · <code>Manifest V3</code> · <code>Vite</code> · <code>Vitest</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/Leet-Vault"><strong>Repository</strong></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>2. <a href="https://github.com/Diyan4444/Glamourly">Glamourly</a></h3>
+      <p>Curated salon discovery and direct offline appointment booking platform for Mumbai neighbourhoods.</p>
+      <ul>
+        <li>100% pay-at-salon booking model with transparent rate cards and zero advance deposit.</li>
+        <li>Browse verified listings with distance filtering, ratings, and Leaflet map directions.</li>
+        <li>Provider dashboard for stylist rosters, schedules, and Shop Act verification.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>Next.js</code> · <code>React</code> · <code>TypeScript</code> · <code>Tailwind CSS</code> · <code>MongoDB</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/Glamourly"><strong>Repository</strong></a> · <a href="https://glamourly.vercel.app"><strong>Live Demo</strong></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>3. <a href="https://github.com/Diyan4444/OceanGuard">OceanGuard AI</a></h3>
+      <p>AI satellite radar analysis detecting marine oil spills, hindcasting drift paths, and attributing suspect ships.</p>
+      <ul>
+        <li>Extracts dark slicks from SAR satellite imagery using AI radar segmentation.</li>
+        <li>Hindcasts ocean and wind drift backward in time to solve exact spill origin coordinates.</li>
+        <li>Cross-references AIS vessel GPS tracks to score suspects by speed anomalies and signal gaps.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>Python</code> · <code>FastAPI</code> · <code>NumPy</code> · <code>SciPy</code> · <code>React 19</code> · <code>Vite</code> · <code>Tailwind</code> · <code>Leaflet</code> · <code>SQLite</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/OceanGuard"><strong>Repository</strong></a> · <em>SIH 2026 (PS SIH26143)</em></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>4. <a href="https://github.com/Diyan4444/Well-Whisperer">Well-Whisperer</a></h3>
+      <p>Nearby wells intelligence system (NWIS) analyzing offset well logs to forecast drilling hazards.</p>
+      <ul>
+        <li>Multi-well correlation and pressure forecasting to detect kick and loss-circulation risks early.</li>
+        <li>Interactive 3D wellbore trajectory visualization built with React 19 and Three.js.</li>
+        <li>Automated drilling advisory engine supported by Supabase PostgreSQL and scientific Python.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>React 19</code> · <code>TypeScript</code> · <code>FastAPI (Python 3.12)</code> · <code>Supabase PostgreSQL</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/Well-Whisperer"><strong>Repository</strong></a> · <em>SIH 2026 (PS 121 — Oil India Limited)</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>5. <a href="https://github.com/Diyan4444/yt-to-mp4">yt-to-mp4</a></h3>
+      <p>Containerised web application for downloading YouTube videos as MP4 or extracting audio as MP3.</p>
+      <ul>
+        <li>Dynamic resolution and bitrate picker with real-time transfer progress and ETA streaming.</li>
+        <li>Worker concurrency limiting to safeguard system memory during heavy FFmpeg jobs.</li>
+        <li>Production Docker container deployment with multi-worker Gunicorn server.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>Python</code> · <code>Flask</code> · <code>yt-dlp</code> · <code>FFmpeg</code> · <code>Vanilla JavaScript</code> · <code>Docker</code> · <code>Gunicorn</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/yt-to-mp4"><strong>Repository</strong></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>6. <a href="https://github.com/Diyan4444/RentWheels">RentWheels</a></h3>
+      <p>Accessible multi-category vehicle rental browsing website bringing bikes, cars, and vans together.</p>
+      <ul>
+        <li>Multi-tier vehicle browsing with daily rental price comparison and category filtering.</li>
+        <li>Interactive reservation cart and confirmation modals built with zero heavy frameworks.</li>
+        <li>Pure responsive web fundamentals deployed with instant edge delivery on Netlify.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>HTML</code> · <code>CSS</code> · <code>JavaScript (No Framework)</code> · <code>Netlify</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/RentWheels"><strong>Repository</strong></a> · <a href="https://wheel-rent.netlify.app/"><strong>Live Website</strong></a></p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+*More exploring:* [Rune-Striker](https://github.com/Diyan4444/Rune-Striker) (a 2D retro action-platformer made in Godot with a standalone Windows build), [LeetCode](https://github.com/Diyan4444/LeetCode) (auto-synced solutions in C++), and [Shorties](https://github.com/Diyan4444/Shorties) (small C++ algorithmic utility programs).
+
+<details>
+<summary><b>🔍 See how these are built (Architecture Flows)</b></summary>
+<br>
 
 <div align="center">
-  <img src="assets/contribution-graph.svg" width="100%" alt="Diyan's 2-Month GitHub Contribution Graph" />
+  <img src="assets/pipeline-leetvault.svg" width="100%" alt="Leet-Vault Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-glamourly.svg" width="100%" alt="Glamourly Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-oceanguard.svg" width="100%" alt="OceanGuard Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-wellwhisperer.svg" width="100%" alt="Well-Whisperer Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-ytconverter.svg" width="100%" alt="yt-to-mp4 Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-rentwheels.svg" width="100%" alt="RentWheels Architectural Flow" />
+</div>
+
+</details>
+
+---
+
+## Open Source
+
+I mostly build and learn in the open for now. I'm always open to discussing, reviewing, and contributing to developer tooling, systems libraries, and open-source infrastructure.
+
+<!-- Template for future contributions:
+* **[Project Name](link)** — Brief description of merged PR or enhancement.
+-->
+
+---
+
+## Live Numbers & Activity
+
+<div align="center">
+  <img src="assets/github-summary.svg" width="100%" alt="GitHub Overview & Activity Telemetry" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="assets/github-contribution-grid-snake.svg" width="100%" alt="Diyan Shah Contribution Snake Animation" />
+  <img src="assets/monthly-contribution-graph.svg" width="100%" alt="Monthly Contribution Graph" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/github-contribution-grid-snake.svg" width="100%" alt="Contribution Calendar Snake" />
 </div>
 
 ---
 
-## 📬 Get in Touch
+## Say Hi
+
+I’m always glad to connect with fellow developers, students, and collaborators.
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-ff3355?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=171922)](mailto:diyanshah2301@gmail.com)
+[![Email](https://img.shields.io/badge/Email-diyanshah2301%40gmail.com-4a373b?style=for-the-badge&logo=gmail&logoColor=f1ede6&labelColor=161c28)](mailto:diyanshah2301@gmail.com)
 &nbsp;&nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20Diyan-f97316?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=171922)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Diyan_Shah-2d3b4e?style=for-the-badge&logo=linkedin&logoColor=f1ede6&labelColor=161c28)](https://www.linkedin.com/in/diyan-shah-14b4993a9/)
 &nbsp;&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-ef4444?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=171922)](https://github.com/Diyan4444)
-&nbsp;&nbsp;
-[![LeetCode](https://img.shields.io/badge/LeetCode-diddy4-ff6b35?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=171922)](https://leetcode.com/u/diddy4/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow%20%40Diyan4444-1f2937?style=for-the-badge&logo=github&logoColor=f1ede6&labelColor=161c28)](https://github.com/Diyan4444)
 
+</div>
+
+<br>
+
+<div align="center">
+  <sub>Also on: <a href="https://leetcode.com/u/diddy4/">LeetCode (@diddy4)</a> • <a href="https://codeforces.com/profile/diyanshah2301">Codeforces (@diyanshah2301)</a></sub>
+  <br><br>
+  <em>"Learn by shipping."</em>
 </div>

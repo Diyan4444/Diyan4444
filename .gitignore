@@ -1,5 +1,20 @@
-# Research files
+# Research and temporary files
 *_readme.md
+scripts/capture_screenshots.py
+scripts/inspect_repos.py
+scripts/fetch_repo_configs.py
+scripts/print_project_details.py
+scripts/project_details.txt
+scripts/repo_data.json
+scripts/*_README.md
+scripts/*_package.json
+scripts/*_manifest.json
+scripts/*_requirements.txt
+scripts/*_Dockerfile
+scripts/*_index.html
+
+# Preview files and screenshots
+preview/
 
 # Python
 __pycache__/

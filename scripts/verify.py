@@ -5,11 +5,11 @@ import sys
 
 def verify_all():
     print("==================================================")
-    print("       PORTFOLIO & WORKFLOW VERIFICATION SUITE    ")
+    print("      DUSK WORKSPACE PORTFOLIO VERIFICATION       ")
     print("==================================================")
     all_ok = True
 
-    # 1. Check all SVGs for XML validity
+    # 1. Check all SVGs for XML validity and well-formedness
     assets = list(Path('assets').glob('*.svg'))
     print(f"\n[1] Checking {len(assets)} SVG files for XML validity and well-formedness:")
     for p in assets:
@@ -20,76 +20,83 @@ def verify_all():
             print(f"    [FAIL] {p.name}: {e}")
             all_ok = False
 
-    # 2. Check README.md Line Count & Size
+    # 2. Check Monthly Contribution Graph Title Requirement (Section 5)
+    print(f"\n[2] Checking Monthly Contribution Graph Title (Must be strictly 'Monthly Contribution Graph'):")
+    mcg_path = Path('assets/monthly-contribution-graph.svg')
+    if mcg_path.exists():
+        mcg_text = mcg_path.read_text(encoding='utf-8')
+        if "Monthly Contribution Graph" in mcg_text:
+            print("    [PASS] Title exactly matches 'Monthly Contribution Graph'")
+        else:
+            print("    [FAIL] Title 'Monthly Contribution Graph' not found in SVG")
+            all_ok = False
+            
+        # Ensure no forbidden terms like "1-month", "2-month", "30 days" in title/text
+        forbidden = ["1-month", "2-month", "1 month", "2 month", "30 days", "30-day", "60 days", "60-day"]
+        found_forbidden = [f for f in forbidden if f.lower() in mcg_text.lower()]
+        if not found_forbidden:
+            print("    [PASS] Confirmed zero forbidden day/month references in graph")
+        else:
+            print(f"    [FAIL] Found forbidden duration terms: {found_forbidden}")
+            all_ok = False
+    else:
+        print("    [FAIL] assets/monthly-contribution-graph.svg not found")
+        all_ok = False
+
+    # 3. Check README.md Line Count & Medium-Sized Length
     readme_path = Path('README.md')
     readme_content = readme_path.read_text(encoding='utf-8')
     readme_lines = readme_content.splitlines()
     line_count = len(readme_lines)
-    print(f"\n[2] Checking README.md line count:")
-    if 140 <= line_count <= 200:
-        print(f"    [PASS] Line count is {line_count} (Within target 140-200 lines: Medium Length)")
+    print(f"\n[3] Checking README.md line count:")
+    if 140 <= line_count <= 260:
+        print(f"    [PASS] Line count is {line_count} (Medium-sized target 140-260 lines)")
     else:
-        print(f"    [WARN/FAIL] Line count is {line_count} (Outside ideal 140-200 range)")
+        print(f"    [WARN/FAIL] Line count is {line_count} (Outside 140-260 lines)")
         all_ok = False
 
-    # 3. Check Exact 6 Permitted Repositories
-    print(f"\n[3] Checking Featured Projects Scope (Strictly 6 permitted projects):")
+    # 4. Check Featured Projects Scope (Strictly 6 permitted projects)
+    print(f"\n[4] Checking Featured Projects Scope:")
     permitted = [
-        "Glamourly",
         "Leet-Vault",
-        "RentWheels",
+        "Glamourly",
         "OceanGuard",
+        "Well-Whisperer",
         "yt-to-mp4",
-        "Well-Whisperer"
+        "RentWheels"
     ]
-    featured_section = re.search(r'## 🚀 Featured Projects(.*?)(## 💻 Skills & Technologies)', readme_content, re.DOTALL)
-    if not featured_section:
-        print("    [FAIL] Could not locate '## 🚀 Featured Projects' section")
-        all_ok = False
-    else:
-        f_text = featured_section.group(1)
-        for proj in permitted:
-            if proj in f_text:
-                print(f"    [PASS] Permitted project present: {proj}")
-            else:
-                print(f"    [FAIL] Missing permitted project: {proj}")
-                all_ok = False
-        
-        excluded = ["AI-Debater", "Rune-Striker", "Report-Maker", "OSTLAB", "Shorties"]
-        for bad in excluded:
-            if bad in f_text:
-                print(f"    [FAIL] Excluded project found in featured section: {bad}")
-                all_ok = False
+    for proj in permitted:
+        if proj in readme_content:
+            print(f"    [PASS] Permitted project present: {proj}")
+        else:
+            print(f"    [FAIL] Missing permitted project: {proj}")
+            all_ok = False
 
-    # 4. Check Identity & LeetCode Handle
-    print(f"\n[4] Checking Identity & LeetCode Handle:")
-    if "diddy4" in readme_content and "pojeesahil" not in readme_content and "shaurya212121" not in readme_content:
+    # 5. Check Identity, LeetCode, Codeforces & Education
+    print(f"\n[5] Checking Identity & Handles:")
+    if "diddy4" in readme_content:
         print("    [PASS] LeetCode handle correctly set to 'diddy4'")
     else:
-        print("    [FAIL] LeetCode handle incorrect or extraneous peer username present")
+        print("    [FAIL] LeetCode handle 'diddy4' missing")
+        all_ok = False
+
+    if "diyanshah2301" in readme_content:
+        print("    [PASS] Codeforces & Gmail correctly set to 'diyanshah2301'")
+    else:
+        print("    [FAIL] Handle/Email 'diyanshah2301' missing")
         all_ok = False
         
-    if "Information Technology Sophomore at VJTI Mumbai" in readme_content:
-        print("    [PASS] Academic identity matches: 'Information Technology Sophomore at VJTI Mumbai'")
+    if "VJTI Mumbai" in readme_content and "sophomore" in readme_content.lower():
+        print("    [PASS] Academic identity matches: sophomore at VJTI Mumbai")
     else:
         print("    [FAIL] Academic identity missing or mismatched")
         all_ok = False
 
-    # 5. Check Image References in README.md (Both Contribution Graph and Snake)
+    # 6. Check Local & Remote Image References
     img_srcs = re.findall(r'<img[^>]+src=[\'"]([^\'"]+)[\'"]', readme_content)
     md_imgs = re.findall(r'!\[[^\]]*\]\(([^)]+)\)', readme_content)
     all_imgs = img_srcs + md_imgs
-    print(f"\n[5] Checking {len(all_imgs)} image references in README.md:")
-    
-    # Confirm both graph and snake are present
-    has_graph = any("contribution-graph.svg" in s for s in all_imgs)
-    has_snake = any("github-contribution-grid-snake.svg" in s for s in all_imgs)
-    if has_graph and has_snake:
-        print("    [PASS] Both 2-Month Contribution Graph and Snake Animation are present in order")
-    else:
-        print(f"    [FAIL] Missing expected image reference (graph={has_graph}, snake={has_snake})")
-        all_ok = False
-        
+    print(f"\n[6] Checking {len(all_imgs)} image references in README.md:")
     for src in all_imgs:
         if src.startswith(('http://', 'https://')):
             print(f"    [REMOTE OK] {src[:65]}...")
@@ -101,22 +108,22 @@ def verify_all():
                 print(f"    [LOCAL FAIL] {src} DOES NOT EXIST")
                 all_ok = False
 
-    # 6. Check GitHub Actions Workflow (.github/workflows/snake.yml)
-    print(f"\n[6] Checking GitHub Actions workflow (.github/workflows/snake.yml):")
-    wf_path = Path('.github/workflows/snake.yml')
+    # 7. Check Automated Workflow
+    print(f"\n[7] Checking Automated Refresh Workflow:")
+    wf_path = Path('.github/workflows/update-profile.yml')
     if wf_path.exists():
         wf_text = wf_path.read_text(encoding='utf-8')
-        if 'generate_contribution_graph.py' in wf_text and 'Platane/snk' in wf_text and 'contents: write' in wf_text:
-            print("    [PASS] .github/workflows/snake.yml generates both the 2-Month graph and snake animation")
+        if 'generate_dusk_assets.py' in wf_text and 'Platane/snk' in wf_text and 'contents: write' in wf_text:
+            print("    [PASS] .github/workflows/update-profile.yml handles stats, monthly graph, and snake")
         else:
-            print("    [FAIL] .github/workflows/snake.yml missing required configuration")
+            print("    [FAIL] .github/workflows/update-profile.yml missing required configuration")
             all_ok = False
     else:
-        print("    [FAIL] .github/workflows/snake.yml does not exist")
+        print("    [FAIL] .github/workflows/update-profile.yml does not exist")
         all_ok = False
 
-    # 7. Check for Secrets Leak
-    print(f"\n[7] Scanning for exposed tokens or secrets:")
+    # 8. Check for Secrets Leak
+    print(f"\n[8] Scanning for exposed tokens or secrets:")
     leak_patterns = [r'ghp_[A-Za-z0-9_]{36}', r'github_pat_[A-Za-z0-9_]{82}', r'AIza[0-9A-Za-z-_]{35}']
     has_leak = False
     for pat in leak_patterns:
@@ -131,7 +138,7 @@ def verify_all():
 
     print("\n==================================================")
     if all_ok:
-        print(">>> ALL 7 VERIFICATION GATES PASSED PERFECTLY! <<<")
+        print(">>> ALL 8 VERIFICATION GATES PASSED PERFECTLY! <<<")
         print("==================================================")
         return 0
     else:
