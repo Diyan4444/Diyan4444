@@ -35,6 +35,11 @@ I enjoy building full-stack web applications, browser tools, and hackathon proto
 
 ---
 
+### 🌐 Open-Source Development
+* Exploring, discussing, and reviewing open-source developer tooling, systems libraries, and backend infrastructure. Learning in public across personal repositories, problem-solving archives and community issues.
+
+---
+
 ## Toolkit
 
 <table>
@@ -172,9 +177,6 @@ I enjoy building full-stack web applications, browser tools, and hackathon proto
 * **[OceanGuard AI](https://github.com/Diyan4444/OceanGuard)** — AI satellite radar imagery analysis platform detecting marine oil spills, hindcasting drift paths, and attributing suspect ships via AIS data *(Smart India Hackathon 2026 • Problem SIH26143)*.
 * **[Well-Whisperer](https://github.com/Diyan4444/Well-Whisperer)** — Real-time Nearby Wells Intelligence System (NWIS) and eRTMAC drilling advisory platform analyzing historical offset well logs before the bit drills *(Smart India Hackathon 2026 • PS 121 — Oil India Limited)*.
 
-#### 🌐 Open-Source Development
-* Exploring, discussing, and reviewing open-source developer tooling, systems libraries, and backend infrastructure. Learning in public across personal repositories, problem-solving archives like **[LeetCode](https://github.com/Diyan4444/LeetCode)**, and community issues.
-
 <!-- Template for future contributions:
 * **[Project Name](link)** — Brief description of merged PR or enhancement.
 -->
@@ -223,9 +225,11 @@ I enjoy building full-stack web applications, browser tools, and hackathon proto
 
 ---
 
-## Say Hi
+<div align="center">
+  <img src="assets/quote.svg" width="100%" alt="“Code is like humor. When you have to explain it, it’s bad.” — Cory House" />
+</div>
 
-I’m always glad to connect with fellow developers, students, and collaborators.
+<h4 align="center">I’m always glad to connect with fellow developers, students, and collaborators.</h4>
 
 <div align="center">
 
@@ -242,5 +246,5 @@ I’m always glad to connect with fellow developers, students, and collaborators
 <div align="center">
   <sub>Also on: <a href="https://leetcode.com/u/diddy4/">LeetCode (@diddy4)</a> • <a href="https://codeforces.com/profile/diyanshah2301">Codeforces (@diyanshah2301)</a></sub>
   <br><br>
-  <em>"Learn by shipping."</em>
 </div>
+<h3 align="center">Learn by shipping.</h3>
