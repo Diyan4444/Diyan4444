@@ -5,14 +5,16 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 headers = {'User-Agent': 'Mozilla/5.0'}
 
-# List of 6 permitted projects
+# List of verified profile repositories (Featured Projects + SIH Projects)
 projects = [
-    'Glamourly',
-    'Leet-Vault',
-    'RentWheels',
-    'OceanGuard',
-    'yt-to-mp4',
-    'Well-Whisperer'
+    'Glamourly',       # 1. Glamourly
+    'Rune-Striker',    # 2. Rune-Striker
+    'RentWheels',      # 3. Rent Wheels
+    'Shorties',        # 4. Code Crumbs
+    'Leet-Vault',      # 5. LeetVault
+    'yt-to-mp4',       # 6. YouTube-to-MP4
+    'OceanGuard',      # SIH Development: OceanGuard AI
+    'Well-Whisperer'   # SIH Development: Well-Whisperer
 ]
 
 print("=== CHECKING DIYAN'S 6 PERMITTED REPOSITORIES ===")

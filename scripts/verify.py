@@ -55,22 +55,62 @@ def verify_all():
         print(f"    [WARN/FAIL] Line count is {line_count} (Outside 140-260 lines)")
         all_ok = False
 
-    # 4. Check Featured Projects Scope (Strictly 6 permitted projects)
-    print(f"\n[4] Checking Featured Projects Scope:")
-    permitted = [
-        "Leet-Vault",
-        "Glamourly",
-        "OceanGuard",
-        "Well-Whisperer",
-        "yt-to-mp4",
-        "RentWheels"
-    ]
-    for proj in permitted:
-        if proj in readme_content:
-            print(f"    [PASS] Permitted project present: {proj}")
+    # 4. Check Featured Projects Scope & More Exploring Organization
+    print(f"\n[4] Checking Featured Projects Scope & Organization:")
+    
+    # 4A. Verify 6 featured projects in ## Projects section in order
+    proj_sec_match = re.search(r'## Projects\s*(.*?)### More Exploring', readme_content, re.DOTALL)
+    if proj_sec_match:
+        proj_sec = proj_sec_match.group(1)
+        ordered_projects = [
+            ("Glamourly", "https://github.com/Diyan4444/Glamourly"),
+            ("Rune-Striker", "https://github.com/Diyan4444/Rune-Striker"),
+            ("Rent Wheels", "https://github.com/Diyan4444/RentWheels"),
+            ("Code Crumbs", "https://github.com/Diyan4444/Shorties"),
+            ("LeetVault", "https://github.com/Diyan4444/Leet-Vault"),
+            ("YouTube-to-MP4", "https://github.com/Diyan4444/yt-to-mp4"),
+        ]
+        last_pos = -1
+        for name, url in ordered_projects:
+            pos = proj_sec.find(url)
+            if pos != -1 and name in proj_sec:
+                if pos > last_pos:
+                    print(f"    [PASS] Featured project in correct sequence: {name} -> {url}")
+                    last_pos = pos
+                else:
+                    print(f"    [FAIL] Project {name} out of sequence")
+                    all_ok = False
+            else:
+                print(f"    [FAIL] Featured project missing in Projects section: {name} ({url})")
+                all_ok = False
+    else:
+        print("    [FAIL] Could not isolate ## Projects section")
+        all_ok = False
+
+    # 4B. Verify More Exploring section
+    more_exp_match = re.search(r'### More Exploring\s*(.*?)(?:<details>|---)', readme_content, re.DOTALL)
+    if more_exp_match:
+        more_sec = more_exp_match.group(1)
+        if "SIH Development" in more_sec and "https://github.com/Diyan4444/OceanGuard" in more_sec and "https://github.com/Diyan4444/Well-Whisperer" in more_sec:
+            print("    [PASS] SIH Development present with OceanGuard and Well-Whisperer")
         else:
-            print(f"    [FAIL] Missing permitted project: {proj}")
+            print("    [FAIL] SIH Development missing or incomplete in More Exploring")
             all_ok = False
+
+        if "Open-Source Development" in more_sec and "https://github.com/Diyan4444/LeetCode" in more_sec:
+            print("    [PASS] Open-Source Development present with LeetCode")
+        else:
+            print("    [FAIL] Open-Source Development missing or incomplete in More Exploring")
+            all_ok = False
+
+        if "Rune-Striker" not in more_sec and "Shorties" not in more_sec and "Code Crumbs" not in more_sec:
+            print("    [PASS] Zero duplicates of Rune-Striker / Code Crumbs in More Exploring")
+        else:
+            print("    [FAIL] Duplication detected in More Exploring")
+            all_ok = False
+    else:
+        print("    [FAIL] Could not isolate ### More Exploring section")
+        all_ok = False
 
     # 5. Check Identity, LeetCode, Codeforces & Education
     print(f"\n[5] Checking Identity & Handles:")

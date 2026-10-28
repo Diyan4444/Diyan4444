@@ -775,6 +775,15 @@ def restyle_pipeline_diagrams():
                 ("03. CLIENT INTERACTION", "Category filtering logic", "Interactive rental cart", "Daily pricing calculation", "Vanilla JavaScript", ACCENT_AMBER),
                 ("04. EDGE HOSTING", "Zero runtime dependencies", "Instant asset loading", "Production deployment", "Netlify Edge", TEXT_TITLE),
             ]
+        },
+        "pipeline-runestriker.svg": {
+            "title": "RUNE-STRIKER • ARCHITECTURAL FLOW (2D RETRO PLATFORMER)",
+            "steps": [
+                ("01. KINEMATIC FSM", "Coyote time jump cushion", "Input buffer queue", "Responsive state machine", "Godot 4.6 • GDScript", ACCENT_PEACH),
+                ("02. PATROL AI", "Raycast barrier detection", "Ledge turnaround logic", "Autonomous slime patrol", "2D Vector Physics", ACCENT_SAGE),
+                ("03. SIGNAL EVENT BUS", "Decoupled coin pickup signal", "HUD counter refresh", "Audio bus triggers", "Godot Signals", ACCENT_AMBER),
+                ("04. DESKTOP RELEASE", "Optimized draw calls", "Asset texture atlas pack", "Standalone Windows .exe", "Windows Executable", TEXT_TITLE),
+            ]
         }
     }
 
@@ -839,6 +848,9 @@ def generate_calm_contribution_snake(username="Diyan4444"):
     snake_file = ASSETS_DIR / "github-contribution-grid-snake.svg"
     if snake_file.exists():
         content = snake_file.read_text(encoding="utf-8")
+        svg_end = content.find("</svg>")
+        if svg_end != -1:
+            content = content[:svg_end + 6]
         bg_rect = '<rect x="-16" y="-32" width="880" height="192" rx="10" fill="#161c28" stroke="#253245" stroke-width="1.2"/>'
         if bg_rect not in content:
             desc_end = content.find("</desc>")
@@ -848,8 +860,8 @@ def generate_calm_contribution_snake(username="Diyan4444"):
                 svg_start = content.find(">")
                 if svg_start != -1:
                     content = content[:svg_start + 1] + bg_rect + content[svg_start + 1:]
-            snake_file.write_text(content, encoding="utf-8")
-            print("Injected soft dusk card container into github-contribution-grid-snake.svg")
+        snake_file.write_text(content, encoding="utf-8")
+        print("Injected soft dusk card container into github-contribution-grid-snake.svg")
     print("Calm contribution snake configured for workflow palette:")
     print("  color_snake=#ea937d")
     print("  color_dots=#161e2b,#253644,#3d5761,#6b8782,#7eb2a8")

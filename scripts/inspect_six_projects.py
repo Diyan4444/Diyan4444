@@ -5,12 +5,15 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 headers = {'User-Agent': 'Mozilla/5.0'}
 
+# List of profile repositories to inspect (Featured Projects + SIH Projects)
 projects = [
     'Glamourly',
-    'Leet-Vault',
+    'Rune-Striker',
     'RentWheels',
-    'OceanGuard',
+    'Shorties',
+    'Leet-Vault',
     'yt-to-mp4',
+    'OceanGuard',
     'Well-Whisperer'
 ]
 

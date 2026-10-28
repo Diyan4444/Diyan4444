@@ -92,7 +92,55 @@ I enjoy building full-stack web applications, browser tools, and hackathon proto
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>1. <a href="https://github.com/Diyan4444/Leet-Vault">Leet-Vault</a></h3>
+      <h3>1. <a href="https://github.com/Diyan4444/Glamourly">Glamourly</a></h3>
+      <p>Curated salon discovery and direct offline appointment booking platform for Mumbai neighbourhoods.</p>
+      <ul>
+        <li>100% pay-at-salon booking model with transparent rate cards and zero advance deposit.</li>
+        <li>Browse verified listings with distance filtering, ratings, and Leaflet map directions.</li>
+        <li>Provider dashboard for stylist rosters, schedules, and Shop Act verification.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>Next.js</code> · <code>React</code> · <code>TypeScript</code> · <code>Tailwind CSS</code> · <code>MongoDB</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/Glamourly"><strong>Repository</strong></a> · <a href="https://glamourly.vercel.app"><strong>Live Demo</strong></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>2. <a href="https://github.com/Diyan4444/Rune-Striker">Rune-Striker</a></h3>
+      <p>Fast-paced retro 2D platforming adventure focusing on responsive movement, timing, and precision.</p>
+      <ul>
+        <li>Kinematic state machine with responsive jumping, coyote time, and directional turn animations.</li>
+        <li>Autonomous slime patrol enemies, raycast ledge detection, and death/retry mechanics.</li>
+        <li>Decoupled signal architecture with HUD tracking and standalone Windows release build.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>Godot Engine</code> · <code>GDScript</code> · <code>Windows Executable</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/Rune-Striker"><strong>Repository</strong></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>3. <a href="https://github.com/Diyan4444/RentWheels">Rent Wheels</a></h3>
+      <p>Accessible multi-category vehicle rental browsing website bringing bikes, cars, and vans together.</p>
+      <ul>
+        <li>Multi-tier vehicle browsing with daily rental price comparison and category filtering.</li>
+        <li>Interactive reservation cart and confirmation modals built with zero heavy frameworks.</li>
+        <li>Pure responsive web fundamentals deployed with instant edge delivery on Netlify.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>HTML</code> · <code>CSS</code> · <code>JavaScript (No Framework)</code> · <code>Netlify</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/RentWheels"><strong>Repository</strong></a> · <a href="https://wheel-rent.netlify.app/"><strong>Live Website</strong></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>4. <a href="https://github.com/Diyan4444/Shorties">Code Crumbs</a></h3>
+      <p>Lightweight collection of C++ console programs, modular utilities, and logic drills.</p>
+      <ul>
+        <li>Direct implementation of student records, grading algorithms, and console data processing.</li>
+        <li>Clean source code organization paired with pre-compiled <code>.exe</code> binaries for rapid execution.</li>
+        <li>Practical drills exploring C++ standard library structures, memory layout, and system interaction.</li>
+      </ul>
+      <p><strong>Stack:</strong> <code>C++</code> · <code>STL</code> · <code>Windows CLI</code></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/Shorties"><strong>Repository</strong></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>5. <a href="https://github.com/Diyan4444/Leet-Vault">LeetVault</a></h3>
       <p>Automated Chrome extension for syncing accepted LeetCode solutions directly to your GitHub repository.</p>
       <ul>
         <li>Keeps unlimited named solutions per problem without overwriting previous algorithms.</li>
@@ -103,44 +151,7 @@ I enjoy building full-stack web applications, browser tools, and hackathon proto
       <p>🔗 <a href="https://github.com/Diyan4444/Leet-Vault"><strong>Repository</strong></a></p>
     </td>
     <td width="50%" valign="top">
-      <h3>2. <a href="https://github.com/Diyan4444/Glamourly">Glamourly</a></h3>
-      <p>Curated salon discovery and direct offline appointment booking platform for Mumbai neighbourhoods.</p>
-      <ul>
-        <li>100% pay-at-salon booking model with transparent rate cards and zero advance deposit.</li>
-        <li>Browse verified listings with distance filtering, ratings, and Leaflet map directions.</li>
-        <li>Provider dashboard for stylist rosters, schedules, and Shop Act verification.</li>
-      </ul>
-      <p><strong>Stack:</strong> <code>Next.js</code> · <code>React</code> · <code>TypeScript</code> · <code>Tailwind CSS</code> · <code>MongoDB</code></p>
-      <p>🔗 <a href="https://github.com/Diyan4444/Glamourly"><strong>Repository</strong></a> · <a href="https://glamourly.vercel.app"><strong>Live Demo</strong></a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>3. <a href="https://github.com/Diyan4444/OceanGuard">OceanGuard AI</a></h3>
-      <p>AI satellite radar analysis detecting marine oil spills, hindcasting drift paths, and attributing suspect ships.</p>
-      <ul>
-        <li>Extracts dark slicks from SAR satellite imagery using AI radar segmentation.</li>
-        <li>Hindcasts ocean and wind drift backward in time to solve exact spill origin coordinates.</li>
-        <li>Cross-references AIS vessel GPS tracks to score suspects by speed anomalies and signal gaps.</li>
-      </ul>
-      <p><strong>Stack:</strong> <code>Python</code> · <code>FastAPI</code> · <code>NumPy</code> · <code>SciPy</code> · <code>React 19</code> · <code>Vite</code> · <code>Tailwind</code> · <code>Leaflet</code> · <code>SQLite</code></p>
-      <p>🔗 <a href="https://github.com/Diyan4444/OceanGuard"><strong>Repository</strong></a> · <em>SIH 2026 (PS SIH26143)</em></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>4. <a href="https://github.com/Diyan4444/Well-Whisperer">Well-Whisperer</a></h3>
-      <p>Nearby wells intelligence system (NWIS) analyzing offset well logs to forecast drilling hazards.</p>
-      <ul>
-        <li>Multi-well correlation and pressure forecasting to detect kick and loss-circulation risks early.</li>
-        <li>Interactive 3D wellbore trajectory visualization built with React 19 and Three.js.</li>
-        <li>Automated drilling advisory engine supported by Supabase PostgreSQL and scientific Python.</li>
-      </ul>
-      <p><strong>Stack:</strong> <code>React 19</code> · <code>TypeScript</code> · <code>FastAPI (Python 3.12)</code> · <code>Supabase PostgreSQL</code></p>
-      <p>🔗 <a href="https://github.com/Diyan4444/Well-Whisperer"><strong>Repository</strong></a> · <em>SIH 2026 (PS 121 — Oil India Limited)</em></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>5. <a href="https://github.com/Diyan4444/yt-to-mp4">yt-to-mp4</a></h3>
+      <h3>6. <a href="https://github.com/Diyan4444/yt-to-mp4">YouTube-to-MP4</a></h3>
       <p>Containerised web application for downloading YouTube videos as MP4 or extracting audio as MP3.</p>
       <ul>
         <li>Dynamic resolution and bitrate picker with real-time transfer progress and ETA streaming.</li>
@@ -150,53 +161,45 @@ I enjoy building full-stack web applications, browser tools, and hackathon proto
       <p><strong>Stack:</strong> <code>Python</code> · <code>Flask</code> · <code>yt-dlp</code> · <code>FFmpeg</code> · <code>Vanilla JavaScript</code> · <code>Docker</code> · <code>Gunicorn</code></p>
       <p>🔗 <a href="https://github.com/Diyan4444/yt-to-mp4"><strong>Repository</strong></a></p>
     </td>
-    <td width="50%" valign="top">
-      <h3>6. <a href="https://github.com/Diyan4444/RentWheels">RentWheels</a></h3>
-      <p>Accessible multi-category vehicle rental browsing website bringing bikes, cars, and vans together.</p>
-      <ul>
-        <li>Multi-tier vehicle browsing with daily rental price comparison and category filtering.</li>
-        <li>Interactive reservation cart and confirmation modals built with zero heavy frameworks.</li>
-        <li>Pure responsive web fundamentals deployed with instant edge delivery on Netlify.</li>
-      </ul>
-      <p><strong>Stack:</strong> <code>HTML</code> · <code>CSS</code> · <code>JavaScript (No Framework)</code> · <code>Netlify</code></p>
-      <p>🔗 <a href="https://github.com/Diyan4444/RentWheels"><strong>Repository</strong></a> · <a href="https://wheel-rent.netlify.app/"><strong>Live Website</strong></a></p>
-    </td>
   </tr>
 </table>
 
 <br>
 
-*More exploring:* [Rune-Striker](https://github.com/Diyan4444/Rune-Striker) (a 2D retro action-platformer made in Godot with a standalone Windows build), [LeetCode](https://github.com/Diyan4444/LeetCode) (auto-synced solutions in C++), and [Shorties](https://github.com/Diyan4444/Shorties) (small C++ algorithmic utility programs).
+### More Exploring
+
+#### 🏛️ SIH Development
+* **[OceanGuard AI](https://github.com/Diyan4444/OceanGuard)** — AI satellite radar imagery analysis platform detecting marine oil spills, hindcasting drift paths, and attributing suspect ships via AIS data *(Smart India Hackathon 2026 • Problem SIH26143)*.
+* **[Well-Whisperer](https://github.com/Diyan4444/Well-Whisperer)** — Real-time Nearby Wells Intelligence System (NWIS) and eRTMAC drilling advisory platform analyzing historical offset well logs before the bit drills *(Smart India Hackathon 2026 • PS 121 — Oil India Limited)*.
+
+#### 🌐 Open-Source Development
+* Exploring, discussing, and reviewing open-source developer tooling, systems libraries, and backend infrastructure. Learning in public across personal repositories, problem-solving archives like **[LeetCode](https://github.com/Diyan4444/LeetCode)**, and community issues.
+
+<!-- Template for future contributions:
+* **[Project Name](link)** — Brief description of merged PR or enhancement.
+-->
 
 <details>
 <summary><b>🔍 See how these are built (Architecture Flows)</b></summary>
 <br>
 
 <div align="center">
-  <img src="assets/pipeline-leetvault.svg" width="100%" alt="Leet-Vault Architectural Flow" />
-  <br><br>
   <img src="assets/pipeline-glamourly.svg" width="100%" alt="Glamourly Architectural Flow" />
   <br><br>
-  <img src="assets/pipeline-oceanguard.svg" width="100%" alt="OceanGuard Architectural Flow" />
+  <img src="assets/pipeline-runestriker.svg" width="100%" alt="Rune-Striker Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-rentwheels.svg" width="100%" alt="Rent Wheels Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-leetvault.svg" width="100%" alt="LeetVault Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-ytconverter.svg" width="100%" alt="YouTube-to-MP4 Architectural Flow" />
+  <br><br>
+  <img src="assets/pipeline-oceanguard.svg" width="100%" alt="OceanGuard AI Architectural Flow" />
   <br><br>
   <img src="assets/pipeline-wellwhisperer.svg" width="100%" alt="Well-Whisperer Architectural Flow" />
-  <br><br>
-  <img src="assets/pipeline-ytconverter.svg" width="100%" alt="yt-to-mp4 Architectural Flow" />
-  <br><br>
-  <img src="assets/pipeline-rentwheels.svg" width="100%" alt="RentWheels Architectural Flow" />
 </div>
 
 </details>
-
----
-
-## Open Source
-
-I mostly build and learn in the open for now. I'm always open to discussing, reviewing, and contributing to developer tooling, systems libraries, and open-source infrastructure.
-
-<!-- Template for future contributions:
-* **[Project Name](link)** — Brief description of merged PR or enhancement.
--->
 
 ---
 
