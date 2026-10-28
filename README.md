@@ -209,7 +209,7 @@ I mostly build and learn in the open for now. I'm always open to discussing, rev
 <br>
 
 <div align="center">
-  <img src="assets/monthly-contribution-graph.svg" width="100%" alt="Monthly Contribution Graph" />
+  <img src="assets/github-contribution-grid-snake.svg" width="100%" alt="Monthly Contribution Graph" />
 </div>
 
 <br>
