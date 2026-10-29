@@ -67,7 +67,7 @@
     <rect width="160" height="96" rx="8" fill="#192230" stroke="#253245" stroke-width="1"/>
     <text x="16" y="24" class="card-label">PRs, Issues &amp; Streak</text>
     <text x="16" y="58" class="card-num" fill="#dfb17b">10 <tspan font-size="13" font-weight="500">day streak</tspan></text>
-    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#dfb17b">• 11 PRs · 1 issue</text>
+    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#dfb17b">• 12 PRs · 1 issue</text>
   </g>
 
   <!-- Languages Breakdown (Right Card) -->
