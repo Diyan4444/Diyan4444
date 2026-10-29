@@ -4,27 +4,27 @@
   "following": 1,
   "total_stars": 11,
   "total_contributions": 241,
-  "total_commits": 131,
-  "pull_requests": 10,
+  "total_commits": 134,
+  "pull_requests": 11,
   "issues": 1,
   "current_streak": 9,
   "longest_streak": 13,
   "top_languages": [
     [
       "C++",
-      29.6
-    ],
-    [
-      "Python",
-      22.4
+      32.1
     ],
     [
       "JavaScript",
-      15.8
+      17.1
+    ],
+    [
+      "HTML",
+      17.0
     ],
     [
       "TypeScript",
-      15.5
+      16.8
     ]
   ]
 }
