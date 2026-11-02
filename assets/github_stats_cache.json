@@ -4,7 +4,7 @@
   "following": 7,
   "total_stars": 11,
   "total_contributions": 241,
-  "total_commits": 136,
+  "total_commits": 146,
   "pull_requests": 12,
   "issues": 1,
   "current_streak": 9,
@@ -12,19 +12,19 @@
   "top_languages": [
     [
       "C++",
-      29.5
+      34.8
     ],
     [
       "Python",
-      18.1
+      16.8
     ],
     [
       "HTML",
-      16.9
+      15.6
     ],
     [
       "JavaScript",
-      15.7
+      14.5
     ]
   ]
 }

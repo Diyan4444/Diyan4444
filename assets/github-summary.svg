@@ -58,8 +58,8 @@
   <g transform="translate(215, 80)">
     <rect width="160" height="96" rx="8" fill="#192230" stroke="#253245" stroke-width="1"/>
     <text x="16" y="24" class="card-label">Commits &amp; Activity</text>
-    <text x="16" y="58" class="card-num" fill="#ea937d">136 <tspan font-size="13" font-weight="500">commits</tspan></text>
-    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7">• 263 yr contributions</text>
+    <text x="16" y="58" class="card-num" fill="#ea937d">146 <tspan font-size="13" font-weight="500">commits</tspan></text>
+    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7">• 265 yr contributions</text>
   </g>
 
   <!-- Metric Tile 3: Pull Requests, Issues & Streak -->
@@ -75,33 +75,33 @@
     <rect width="355" height="96" rx="8" fill="#192230" stroke="#253245" stroke-width="1"/>
     <text x="18" y="22" class="card-label">Authored Languages</text>
     
-    <!-- Language 1: C++ (29.5%) -->
+    <!-- Language 1: C++ (34.8%) -->
     <g transform="translate(18, 33)">
       <text x="0" y="8" class="lang-label">C++</text>
-      <text x="110" y="8" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7" text-anchor="end">29.5%</text>
+      <text x="110" y="8" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7" text-anchor="end">34.8%</text>
       <rect x="120" y="1" width="195" height="7" rx="3.5" fill="#111622"/>
-      <rect x="120" y="1" width="57.5" height="7" rx="3.5" fill="#ea937d"/>
+      <rect x="120" y="1" width="67.9" height="7" rx="3.5" fill="#ea937d"/>
     </g>
-    <!-- Language 2: Python (18.1%) -->
+    <!-- Language 2: Python (16.8%) -->
     <g transform="translate(18, 48)">
       <text x="0" y="8" class="lang-label">Python</text>
-      <text x="110" y="8" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7" text-anchor="end">18.1%</text>
+      <text x="110" y="8" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7" text-anchor="end">16.8%</text>
       <rect x="120" y="1" width="195" height="7" rx="3.5" fill="#111622"/>
-      <rect x="120" y="1" width="35.3" height="7" rx="3.5" fill="#7eb2a8"/>
+      <rect x="120" y="1" width="32.8" height="7" rx="3.5" fill="#7eb2a8"/>
     </g>
-    <!-- Language 3: HTML (16.9%) -->
+    <!-- Language 3: HTML (15.6%) -->
     <g transform="translate(18, 63)">
       <text x="0" y="8" class="lang-label">HTML</text>
-      <text x="110" y="8" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7" text-anchor="end">16.9%</text>
+      <text x="110" y="8" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7" text-anchor="end">15.6%</text>
       <rect x="120" y="1" width="195" height="7" rx="3.5" fill="#111622"/>
-      <rect x="120" y="1" width="33.0" height="7" rx="3.5" fill="#dfb17b"/>
+      <rect x="120" y="1" width="30.4" height="7" rx="3.5" fill="#dfb17b"/>
     </g>
-    <!-- Language 4: JavaScript (15.7%) -->
+    <!-- Language 4: JavaScript (14.5%) -->
     <g transform="translate(18, 78)">
       <text x="0" y="8" class="lang-label">JavaScript</text>
-      <text x="110" y="8" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7" text-anchor="end">15.7%</text>
+      <text x="110" y="8" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8696a7" text-anchor="end">14.5%</text>
       <rect x="120" y="1" width="195" height="7" rx="3.5" fill="#111622"/>
-      <rect x="120" y="1" width="30.6" height="7" rx="3.5" fill="#64a6bd"/>
+      <rect x="120" y="1" width="28.3" height="7" rx="3.5" fill="#64a6bd"/>
     </g>
   </g>
 </svg>
