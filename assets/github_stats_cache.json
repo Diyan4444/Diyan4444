@@ -1,7 +1,7 @@
 {
   "public_repos": 28,
   "followers": 2,
-  "following": 7,
+  "following": 1,
   "total_stars": 11,
   "total_contributions": 241,
   "total_commits": 162,
@@ -12,19 +12,19 @@
   "top_languages": [
     [
       "C++",
-      31.9
+      32.3
     ],
     [
       "Python",
-      23.8
+      23.6
     ],
     [
       "HTML",
-      14.3
+      14.2
     ],
     [
       "JavaScript",
-      13.3
+      13.2
     ]
   ]
 }
