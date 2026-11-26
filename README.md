@@ -127,7 +127,7 @@ I enjoy building full-stack web applications, browser tools, and hackathon proto
         <li>Pure responsive web fundamentals deployed with instant edge delivery on Netlify.</li>
       </ul>
       <p><strong>Stack:</strong> <code>HTML</code> · <code>CSS</code> · <code>JavaScript (No Framework)</code> · <code>Netlify</code></p>
-      <p>🔗 <a href="https://github.com/Diyan4444/RentWheels"><strong>Repository</strong></a> · <a href="https://wheel-rent.netlify.app/"><strong>Live Website</strong></a></p>
+      <p>🔗 <a href="https://github.com/Diyan4444/RentWheels"><strong>Repository</strong></a> · <a href="https://rentwheels-livid.vercel.app/"><strong>Live Website</strong></a></p>
     </td>
     <td width="50%" valign="top">
       <h3>4. <a href="https://github.com/Diyan4444/Shorties">Code Crumbs</a></h3>
