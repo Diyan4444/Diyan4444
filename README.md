@@ -126,7 +126,7 @@ I enjoy building full-stack web applications, browser tools, and hackathon proto
         <li>Interactive reservation cart and confirmation modals built with zero heavy frameworks.</li>
         <li>Pure responsive web fundamentals deployed with instant edge delivery on Netlify.</li>
       </ul>
-      <p><strong>Stack:</strong> <code>HTML</code> · <code>CSS</code> · <code>JavaScript (No Framework)</code> · <code>Netlify</code></p>
+      <p><strong>Stack:</strong> <code>HTML</code> · <code>CSS</code> · <code>JavaScript (No Framework)</code> · <code>Vercel</code></p>
       <p>🔗 <a href="https://github.com/Diyan4444/RentWheels"><strong>Repository</strong></a> · <a href="https://rentwheels-livid.vercel.app/"><strong>Live Website</strong></a></p>
     </td>
     <td width="50%" valign="top">
