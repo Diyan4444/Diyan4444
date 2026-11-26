@@ -1,10 +1,10 @@
 {
-  "public_repos": 35,
+  "public_repos": 34,
   "followers": 3,
   "following": 2,
-  "total_stars": 12,
+  "total_stars": 13,
   "total_contributions": 241,
-  "total_commits": 229,
+  "total_commits": 185,
   "pull_requests": 19,
   "issues": 1,
   "current_streak": 9,
@@ -12,19 +12,19 @@
   "top_languages": [
     [
       "TypeScript",
-      45.1
-    ],
-    [
-      "C++",
-      18.9
+      55.3
     ],
     [
       "Python",
-      11.5
+      14.1
     ],
     [
       "HTML",
-      9.1
+      11.1
+    ],
+    [
+      "JavaScript",
+      10.5
     ]
   ]
 }
